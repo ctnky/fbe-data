@@ -2,8 +2,8 @@
   "meta": {
     "schema": "fbe_catalog_data_v2",
     "source_url": "https://raw.githubusercontent.com/ctnky/fbe-data/main/fbe-catalog-data.json",
-    "updated_at": "2026-09-16T15:09:25.434Z",
-    "version": "1.0.2"
+    "updated_at": "2026-09-16T15:13:36.986Z",
+    "version": "1.0.3"
   },
   "persons": [
     {
@@ -447,6 +447,22 @@
       "last_name": "İŞLEYEN",
       "avesis": "https://avesis.gazi.edu.tr/isleyens",
       "photo": "https://avesis.gazi.edu.tr/user/image/13097"
+    },
+    {
+      "id": "a_idil_aycam",
+      "title": "Prof. Dr.",
+      "first_name": "İdil",
+      "last_name": "AYÇAM",
+      "avesis": "https://avesis.gazi.edu.tr/iaycam",
+      "photo": "https://avesis.gazi.edu.tr/user/image/11843"
+    },
+    {
+      "id": "a_adem_acir",
+      "title": "Prof. Dr.",
+      "first_name": "Adem",
+      "last_name": "ACIR",
+      "avesis": "https://avesis.gazi.edu.tr/adema",
+      "photo": "https://avesis.gazi.edu.tr/user/image/10041"
     }
   ],
   "departments": [
@@ -609,7 +625,8 @@
     {
       "id": "MBT",
       "sec_id": "i_derya_yucel",
-      "stu_id": "i_baris_cem_onal"
+      "stu_id": "i_baris_cem_onal",
+      "head_id": "a_sedat_surdem"
     },
     {
       "id": "MET",
@@ -620,12 +637,14 @@
     {
       "id": "MİM",
       "sec_id": "i_murat_sahin",
-      "stu_id": "i_emine_kocamemik"
+      "stu_id": "i_emine_kocamemik",
+      "head_id": "a_idil_aycam"
     },
     {
       "id": "NUB",
       "sec_id": "i_didem_balaban",
-      "stu_id": "i_asli_gultekin"
+      "stu_id": "i_asli_gultekin",
+      "head_id": "a_adem_acir"
     },
     {
       "id": "OTO",
