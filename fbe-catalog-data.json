@@ -2,8 +2,8 @@
   "meta": {
     "schema": "fbe_catalog_data_v2",
     "source_url": "https://raw.githubusercontent.com/ctnky/fbe-data/main/fbe-catalog-data.json",
-    "updated_at": "2026-09-16T15:05:43.853Z",
-    "version": "1.0.1"
+    "updated_at": "2026-09-16T15:09:25.434Z",
+    "version": "1.0.2"
   },
   "persons": [
     {
@@ -13,14 +13,6 @@
       "last_name": "ÖZSUNAR",
       "avesis": "https://avesis.gazi.edu.tr/ozsunar",
       "photo": "https://avesis.gazi.edu.tr/user/image/10038"
-    },
-    {
-      "id": "a_alper_uzun",
-      "title": "Doç. Dr.",
-      "first_name": "Alper",
-      "last_name": "UZUN",
-      "avesis": "https://avesis.gazi.edu.tr/alperuzun",
-      "photo": "https://avesis.gazi.edu.tr/user/image/10291"
     },
     {
       "id": "a_arap_duran_turkoglu",
@@ -175,36 +167,12 @@
       "photo": "https://avesis.gazi.edu.tr/user/image/12016"
     },
     {
-      "id": "a_m_zafer_akdemir",
-      "title": "Prof. Dr.",
-      "first_name": "M. Zafer",
-      "last_name": "AKDEMİR",
-      "avesis": "https://avesis.gazi.edu.tr/akdemir",
-      "photo": "https://avesis.gazi.edu.tr/user/image/12338"
-    },
-    {
-      "id": "a_mahmut_dogru",
-      "title": "Prof. Dr.",
-      "first_name": "Mahmut",
-      "last_name": "DOĞRU",
-      "avesis": "https://avesis.gazi.edu.tr/mdogru",
-      "photo": "https://avesis.gazi.edu.tr/user/image/12349"
-    },
-    {
       "id": "a_mehmet_akif_bakir",
       "title": "Prof. Dr.",
       "first_name": "Mehmet Akif",
       "last_name": "BAKIR",
       "avesis": "https://avesis.gazi.edu.tr/mabakir",
       "photo": "https://avesis.gazi.edu.tr/user/image/12125"
-    },
-    {
-      "id": "a_mehmet_burcin_piskin",
-      "title": "Prof. Dr.",
-      "first_name": "Mehmet Burçin",
-      "last_name": "PİŞKİN",
-      "avesis": "https://avesis.gazi.edu.tr/bpiskin",
-      "photo": "https://avesis.gazi.edu.tr/user/image/10574"
     },
     {
       "id": "a_murat_bilen",
@@ -640,7 +608,6 @@
     },
     {
       "id": "MBT",
-      "head_id": "a_mehmet_burcin_piskin",
       "sec_id": "i_derya_yucel",
       "stu_id": "i_baris_cem_onal"
     },
@@ -652,13 +619,11 @@
     },
     {
       "id": "MİM",
-      "head_id": "a_m_zafer_akdemir",
       "sec_id": "i_murat_sahin",
       "stu_id": "i_emine_kocamemik"
     },
     {
       "id": "NUB",
-      "head_id": "a_mahmut_dogru",
       "sec_id": "i_didem_balaban",
       "stu_id": "i_asli_gultekin"
     },
