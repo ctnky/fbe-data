@@ -2,7 +2,8 @@
   "meta": {
     "schema": "fbe_catalog_data_v2",
     "source_url": "https://raw.githubusercontent.com/ctnky/fbe-data/main/fbe-catalog-data.json",
-    "updated_at": "2026-09-16T14:44:04.772Z"
+    "updated_at": "2026-09-16T14:59:04.669Z",
+    "version": "1.0.0"
   },
   "persons": [
     {
@@ -454,206 +455,275 @@
       "last_name": "KANBAZ",
       "avesis": "https://avesis.gazi.edu.tr/ihsankanbaz",
       "photo": "https://avesis.gazi.edu.tr/user/image/11849"
+    },
+    {
+      "id": "a_suleyman_tekeli",
+      "title": "Prof. Dr.",
+      "first_name": "Süleyman",
+      "last_name": "TEKELİ",
+      "avesis": "https://avesis.gazi.edu.tr/stekeli",
+      "photo": ""
+    },
+    {
+      "id": "a_talip_kellegoz",
+      "title": "Prof. Dr.",
+      "first_name": "Talip",
+      "last_name": "KELLEGÖZ",
+      "avesis": "https://avesis.gazi.edu.tr/tkellegoz",
+      "photo": ""
+    },
+    {
+      "id": "a_selcuk_kursat_isleyen",
+      "title": "Prof. Dr.",
+      "first_name": "Selçuk Kürşat",
+      "last_name": "İŞLEYEN",
+      "avesis": "https://avesis.gazi.edu.tr/isleyens",
+      "photo": ""
     }
   ],
   "departments": [
     {
-      "id": "aiem",
+      "id": "AEM",
       "head_id": "a_hamza_cinar",
       "sec_id": "i_ozcan_eryilmaz",
       "stu_id": "i_asli_gultekin"
     },
     {
-      "id": "as",
+      "id": "ASB",
       "head_id": "a_erdal_irmak",
       "sec_id": "i_derya_yucel",
       "stu_id": "i_esengul_bosnak"
     },
     {
-      "id": "atmu",
+      "id": "ATM",
       "head_id": "a_gultekin_uzun",
       "sec_id": "i_derya_yucel",
       "stu_id": "i_zulfinaz_yuksel_boga"
     },
     {
-      "id": "bgm",
+      "id": "BGM",
       "head_id": "a_murat_dener",
       "sec_id": "i_derya_yucel",
       "stu_id": "i_baris_cem_onal"
     },
     {
-      "id": "bm_mf",
+      "id": "BMM",
       "head_id": "a_hacer_karacan",
       "sec_id": "i_fatma_arslan",
       "stu_id": "i_duygu_yurekli"
     },
     {
-      "id": "bm_tf",
+      "id": "BMT",
       "head_id": "a_ayhan_erdem",
       "sec_id": "i_ozcan_eryilmaz",
       "stu_id": "i_dogan_kara"
     },
     {
-      "id": "bio",
+      "id": "BİY",
       "head_id": "a_sule_coskun_cevher",
       "sec_id": "i_sevgi_erturk",
       "stu_id": "i_baris_cem_onal"
     },
     {
-      "id": "cev",
+      "id": "CEV",
       "head_id": "a_aysel_caglan_gunal",
       "sec_id": "i_derya_yucel",
       "stu_id": "i_emine_kocamemik"
     },
     {
-      "id": "eem_mf",
+      "id": "EEM",
       "head_id": "a_firat_hardalac",
       "sec_id": "i_nurgul_kose",
       "stu_id": "i_baris_cem_onal"
     },
     {
-      "id": "eem_tf",
+      "id": "EET",
       "head_id": "a_nihat_ozturk",
       "sec_id": "i_ozcan_eryilmaz",
       "stu_id": "i_esengul_bosnak"
     },
     {
-      "id": "em",
+      "id": "EMM",
       "head_id": "a_gul_didem_batur_sir",
       "sec_id": "i_nursel_kucuk",
       "stu_id": "i_figen_asal"
     },
     {
-      "id": "ent",
-      "head_id": "a_dilek_akbulut",
-      "sec_id": "i_gulsah_yilmaz",
-      "stu_id": "i_dogan_kara"
-    },
-    {
-      "id": "etm",
-      "head_id": "a_ismail_sahin",
-      "sec_id": "i_ozcan_eryilmaz",
-      "stu_id": "i_duygu_yurekli"
-    },
-    {
-      "id": "esm",
+      "id": "ESM",
       "head_id": "a_tayfun_menlik",
       "sec_id": "i_ozcan_eryilmaz",
       "stu_id": "i_asli_gultekin"
     },
     {
-      "id": "fiz",
+      "id": "ETM",
+      "head_id": "a_ismail_sahin",
+      "sec_id": "i_ozcan_eryilmaz",
+      "stu_id": "i_duygu_yurekli"
+    },
+    {
+      "id": "EUT",
+      "head_id": "a_dilek_akbulut",
+      "sec_id": "i_gulsah_yilmaz",
+      "stu_id": "i_dogan_kara"
+    },
+    {
+      "id": "FİZ",
       "head_id": "a_tarik_asar",
       "sec_id": "i_sevgi_erturk",
       "stu_id": "i_esengul_bosnak"
     },
     {
-      "id": "fot",
+      "id": "FOT",
       "head_id": "a_suleyman_ozcelik",
       "sec_id": "i_derya_yucel",
       "stu_id": "i_esengul_bosnak"
     },
     {
-      "id": "ilt",
+      "id": "İLT",
       "head_id": "a_sema_bilge_ocak",
       "sec_id": "i_derya_yucel",
       "stu_id": "i_esengul_bosnak"
     },
     {
-      "id": "im",
+      "id": "İMM",
       "head_id": "a_hakan_dilipak",
       "sec_id": "i_ozcan_eryilmaz",
       "stu_id": "i_duygu_yurekli"
     },
     {
-      "id": "ins_mf",
+      "id": "İNM",
       "head_id": "a_kerem_tastan",
       "sec_id": "i_esen_aydin",
       "stu_id": "i_figen_asal"
     },
     {
-      "id": "ins_tf",
+      "id": "İNT",
       "head_id": "a_salih_yazicioglu",
       "sec_id": "i_ozcan_eryilmaz",
       "stu_id": "i_emine_kocamemik"
     },
     {
-      "id": "ist",
+      "id": "İST",
       "head_id": "a_mehmet_akif_bakir",
       "sec_id": "i_sevgi_erturk",
       "stu_id": "i_esengul_bosnak"
     },
     {
-      "id": "kaza",
+      "id": "KAZ",
       "head_id": "a_sedat_surdem",
       "sec_id": "i_derya_yucel",
       "stu_id": "i_yildiz_koyuncu"
     },
     {
-      "id": "kim",
+      "id": "KİM",
       "head_id": "a_halit_arslan",
       "sec_id": "i_sevgi_erturk",
       "stu_id": "i_yildiz_koyuncu"
     },
     {
-      "id": "kim_muh",
+      "id": "KMM",
       "head_id": "a_murat_bilen",
       "sec_id": "i_gulsah_dogan",
       "stu_id": "i_yildiz_koyuncu"
     },
     {
-      "id": "mak",
+      "id": "MAK",
       "head_id": "a_abuzer_kadir_ozsunar",
       "sec_id": "i_songul_ozturk",
       "stu_id": "i_zulfinaz_yuksel_boga"
     },
     {
-      "id": "mat",
+      "id": "MAT",
       "head_id": "a_arap_duran_turkoglu",
       "sec_id": "i_sevgi_erturk",
       "stu_id": "i_dogan_kara"
     },
     {
-      "id": "mmm",
-      "head_id": "a_bulent_bostan",
-      "sec_id": "i_ozcan_eryilmaz",
-      "stu_id": "i_dogan_kara"
-    },
-    {
-      "id": "mim",
-      "head_id": "a_m_zafer_akdemir",
-      "sec_id": "i_murat_sahin",
-      "stu_id": "i_emine_kocamemik"
-    },
-    {
-      "id": "bor",
+      "id": "MBT",
       "head_id": "a_mehmet_burcin_piskin",
       "sec_id": "i_derya_yucel",
       "stu_id": "i_baris_cem_onal"
     },
     {
-      "id": "nuk",
+      "id": "MET",
+      "head_id": "a_bulent_bostan",
+      "sec_id": "i_ozcan_eryilmaz",
+      "stu_id": "i_dogan_kara"
+    },
+    {
+      "id": "MİM",
+      "head_id": "a_m_zafer_akdemir",
+      "sec_id": "i_murat_sahin",
+      "stu_id": "i_emine_kocamemik"
+    },
+    {
+      "id": "NUB",
       "head_id": "a_mahmut_dogru",
       "sec_id": "i_didem_balaban",
       "stu_id": "i_asli_gultekin"
     },
     {
-      "id": "oto",
+      "id": "OTO",
       "head_id": "a_hamit_solmaz",
       "sec_id": "i_ozcan_eryilmaz",
       "stu_id": "i_figen_asal"
     },
     {
-      "id": "sbp",
+      "id": "ŞBP",
       "head_id": "a_ebru_vesile_ocalir",
       "sec_id": "i_serife_omur",
       "stu_id": "i_asli_gultekin"
     },
     {
-      "id": "traf",
+      "id": "TRF",
       "head_id": "a_kursat_yildiz",
       "sec_id": "i_derya_yucel",
       "stu_id": "i_figen_asal"
+    },
+    {
+      "id": "ELE",
+      "head_id": "a_nihat_ozturk",
+      "stu_id": "i_esengul_bosnak"
+    },
+    {
+      "id": "ETE",
+      "head_id": "a_suleyman_tekeli",
+      "stu_id": "i_dogan_kara"
+    },
+    {
+      "id": "HAR",
+      "head_id": "a_talip_kellegoz",
+      "stu_id": "i_emine_kocamemik"
+    },
+    {
+      "id": "MAE",
+      "head_id": "a_hakan_dilipak",
+      "stu_id": "i_duygu_yurekli"
+    },
+    {
+      "id": "MDE",
+      "head_id": "a_hamza_cinar",
+      "stu_id": "i_asli_gultekin"
+    },
+    {
+      "id": "MTE",
+      "head_id": "a_bulent_bostan",
+      "stu_id": "i_dogan_kara"
+    },
+    {
+      "id": "SLH",
+      "head_id": "a_abuzer_kadir_ozsunar",
+      "stu_id": "i_zulfinaz_yuksel_boga"
+    },
+    {
+      "id": "TED",
+      "head_id": "a_selcuk_kursat_isleyen",
+      "stu_id": "i_figen_asal"
+    },
+    {
+      "id": "YPE",
+      "head_id": "a_salih_yazicioglu",
+      "stu_id": "i_duygu_yurekli"
     }
   ],
   "management": {
