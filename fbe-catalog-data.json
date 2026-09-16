@@ -1,0 +1,666 @@
+{
+  "meta": {
+    "schema": "fbe_catalog_data_v2",
+    "source_url": "https://raw.githubusercontent.com/ctnky/fbe-data/main/fbe-catalog-data.json",
+    "updated_at": "2026-09-16T14:44:04.772Z"
+  },
+  "persons": [
+    {
+      "id": "a_abuzer_kadir_ozsunar",
+      "title": "Prof. Dr.",
+      "first_name": "Abuzer Kadir",
+      "last_name": "ÖZSUNAR",
+      "avesis": "https://avesis.gazi.edu.tr/ozsunar",
+      "photo": "https://avesis.gazi.edu.tr/user/image/10041"
+    },
+    {
+      "id": "a_alper_uzun",
+      "title": "Doç. Dr.",
+      "first_name": "Alper",
+      "last_name": "UZUN",
+      "avesis": "https://avesis.gazi.edu.tr/alperuzun",
+      "photo": "https://avesis.gazi.edu.tr/user/image/10291"
+    },
+    {
+      "id": "a_arap_duran_turkoglu",
+      "title": "Prof. Dr.",
+      "first_name": "Arap Duran",
+      "last_name": "TÜRKOĞLU",
+      "avesis": "https://avesis.gazi.edu.tr/dturkoglu",
+      "photo": "https://avesis.gazi.edu.tr/user/image/10893"
+    },
+    {
+      "id": "a_ayhan_erdem",
+      "title": "Prof. Dr.",
+      "first_name": "Ayhan",
+      "last_name": "ERDEM",
+      "avesis": "https://avesis.gazi.edu.tr/ayerdem",
+      "photo": "https://avesis.gazi.edu.tr/user/image/12792"
+    },
+    {
+      "id": "a_aysel_caglan_gunal",
+      "title": "Prof. Dr.",
+      "first_name": "Aysel Çağlan",
+      "last_name": "GÜNAL",
+      "avesis": "https://avesis.gazi.edu.tr/caglangunal",
+      "photo": "https://avesis.gazi.edu.tr/user/image/10321"
+    },
+    {
+      "id": "a_berat_cinar_acar",
+      "title": "Doç. Dr.",
+      "first_name": "Berat",
+      "last_name": "ÇINAR ACAR",
+      "avesis": "https://avesis.gazi.edu.tr/beratcinar",
+      "photo": "https://avesis.gazi.edu.tr/user/image/100243"
+    },
+    {
+      "id": "a_bulent_bostan",
+      "title": "Prof. Dr.",
+      "first_name": "Bülent",
+      "last_name": "BOSTAN",
+      "avesis": "https://avesis.gazi.edu.tr/bostan",
+      "photo": "https://avesis.gazi.edu.tr/user/image/10636"
+    },
+    {
+      "id": "a_dilek_akbulut",
+      "title": "Prof. Dr.",
+      "first_name": "Dilek",
+      "last_name": "AKBULUT",
+      "avesis": "https://avesis.gazi.edu.tr/dilekakbulut",
+      "photo": "https://avesis.gazi.edu.tr/user/image/10852"
+    },
+    {
+      "id": "a_ebru_vesile_ocalir",
+      "title": "Prof. Dr.",
+      "first_name": "Ebru Vesile",
+      "last_name": "ÖCALIR",
+      "avesis": "https://avesis.gazi.edu.tr/ebruocalir",
+      "photo": "https://avesis.gazi.edu.tr/user/image/10920"
+    },
+    {
+      "id": "a_erdal_irmak",
+      "title": "Prof. Dr.",
+      "first_name": "Erdal",
+      "last_name": "IRMAK",
+      "avesis": "https://avesis.gazi.edu.tr/erdal",
+      "photo": "https://avesis.gazi.edu.tr/user/image/11102"
+    },
+    {
+      "id": "a_firat_hardalac",
+      "title": "Prof. Dr.",
+      "first_name": "Fırat",
+      "last_name": "HARDALAÇ",
+      "avesis": "https://avesis.gazi.edu.tr/firat",
+      "photo": "https://avesis.gazi.edu.tr/user/image/11346"
+    },
+    {
+      "id": "a_gul_didem_batur_sir",
+      "title": "Prof. Dr.",
+      "first_name": "Gül Didem",
+      "last_name": "BATUR SİR",
+      "avesis": "https://avesis.gazi.edu.tr/dbatur",
+      "photo": "https://avesis.gazi.edu.tr/user/image/11485"
+    },
+    {
+      "id": "a_gultekin_uzun",
+      "title": "Prof. Dr.",
+      "first_name": "Gültekin",
+      "last_name": "UZUN",
+      "avesis": "https://avesis.gazi.edu.tr/uzun.gultekin",
+      "photo": "https://avesis.gazi.edu.tr/user/image/11532"
+    },
+    {
+      "id": "a_hacer_karacan",
+      "title": "Prof. Dr.",
+      "first_name": "Hacer",
+      "last_name": "KARACAN",
+      "avesis": "https://avesis.gazi.edu.tr/hkaracan",
+      "photo": "https://avesis.gazi.edu.tr/user/image/11556"
+    },
+    {
+      "id": "a_hakan_dilipak",
+      "title": "Prof. Dr.",
+      "first_name": "Hakan",
+      "last_name": "DİLİPAK",
+      "avesis": "https://avesis.gazi.edu.tr/hdilipak",
+      "photo": "https://avesis.gazi.edu.tr/user/image/11499"
+    },
+    {
+      "id": "a_halit_arslan",
+      "title": "Prof. Dr.",
+      "first_name": "Halit",
+      "last_name": "ARSLAN",
+      "avesis": "https://avesis.gazi.edu.tr/halit",
+      "photo": "https://avesis.gazi.edu.tr/user/image/11624"
+    },
+    {
+      "id": "a_hamit_solmaz",
+      "title": "Prof. Dr.",
+      "first_name": "Hamit",
+      "last_name": "SOLMAZ",
+      "avesis": "https://avesis.gazi.edu.tr/hsolmaz",
+      "photo": "https://avesis.gazi.edu.tr/user/image/11630"
+    },
+    {
+      "id": "a_hamza_cinar",
+      "title": "Prof. Dr.",
+      "first_name": "Hamza",
+      "last_name": "ÇINAR",
+      "avesis": "https://avesis.gazi.edu.tr/hamzacinar",
+      "photo": "https://avesis.gazi.edu.tr/user/image/11632"
+    },
+    {
+      "id": "a_ismail_sahin",
+      "title": "Prof. Dr.",
+      "first_name": "İsmail",
+      "last_name": "ŞAHİN",
+      "avesis": "https://avesis.gazi.edu.tr/isahin",
+      "photo": "https://avesis.gazi.edu.tr/user/image/11925"
+    },
+    {
+      "id": "a_kerem_tastan",
+      "title": "Prof. Dr.",
+      "first_name": "Kerem",
+      "last_name": "TAŞTAN",
+      "avesis": "https://avesis.gazi.edu.tr/ktastan",
+      "photo": "https://avesis.gazi.edu.tr/user/image/12204"
+    },
+    {
+      "id": "a_kursat_yildiz",
+      "title": "Doç. Dr.",
+      "first_name": "Kürşat",
+      "last_name": "YILDIZ",
+      "avesis": "https://avesis.gazi.edu.tr/kursaty",
+      "photo": "https://avesis.gazi.edu.tr/user/image/12016"
+    },
+    {
+      "id": "a_m_zafer_akdemir",
+      "title": "Prof. Dr.",
+      "first_name": "M. Zafer",
+      "last_name": "AKDEMİR",
+      "avesis": "https://avesis.gazi.edu.tr/akdemir",
+      "photo": "https://avesis.gazi.edu.tr/user/image/12338"
+    },
+    {
+      "id": "a_mahmut_dogru",
+      "title": "Prof. Dr.",
+      "first_name": "Mahmut",
+      "last_name": "DOĞRU",
+      "avesis": "https://avesis.gazi.edu.tr/mdogru",
+      "photo": "https://avesis.gazi.edu.tr/user/image/12349"
+    },
+    {
+      "id": "a_mehmet_akif_bakir",
+      "title": "Prof. Dr.",
+      "first_name": "Mehmet Akif",
+      "last_name": "BAKIR",
+      "avesis": "https://avesis.gazi.edu.tr/mabakir",
+      "photo": "https://avesis.gazi.edu.tr/user/image/12318"
+    },
+    {
+      "id": "a_mehmet_burcin_piskin",
+      "title": "Prof. Dr.",
+      "first_name": "Mehmet Burçin",
+      "last_name": "PİŞKİN",
+      "avesis": "https://avesis.gazi.edu.tr/bpiskin",
+      "photo": "https://avesis.gazi.edu.tr/user/image/10574"
+    },
+    {
+      "id": "a_murat_bilen",
+      "title": "Prof. Dr.",
+      "first_name": "Murat",
+      "last_name": "BİLEN",
+      "avesis": "https://avesis.gazi.edu.tr/muratbilen",
+      "photo": "https://avesis.gazi.edu.tr/user/image/12384"
+    },
+    {
+      "id": "a_murat_dener",
+      "title": "Prof. Dr.",
+      "first_name": "Murat",
+      "last_name": "DENER",
+      "avesis": "https://avesis.gazi.edu.tr/muratdener",
+      "photo": "https://avesis.gazi.edu.tr/user/image/12397"
+    },
+    {
+      "id": "a_nihat_ozturk",
+      "title": "Prof. Dr.",
+      "first_name": "Nihat",
+      "last_name": "ÖZTÜRK",
+      "avesis": "https://avesis.gazi.edu.tr/ozturk",
+      "photo": "https://avesis.gazi.edu.tr/user/image/12641"
+    },
+    {
+      "id": "a_orhan_kaplan",
+      "title": "Prof. Dr.",
+      "first_name": "Orhan",
+      "last_name": "KAPLAN",
+      "avesis": "https://avesis.gazi.edu.tr/okaplan",
+      "photo": "https://avesis.gazi.edu.tr/user/image/12774"
+    },
+    {
+      "id": "a_salih_yazicioglu",
+      "title": "Prof. Dr.",
+      "first_name": "Salih",
+      "last_name": "YAZICIOĞLU",
+      "avesis": "https://avesis.gazi.edu.tr/syazicioglu",
+      "photo": "https://avesis.gazi.edu.tr/user/image/13214"
+    },
+    {
+      "id": "a_sedat_surdem",
+      "title": "Doç. Dr.",
+      "first_name": "Sedat",
+      "last_name": "SÜRDEM",
+      "avesis": "https://avesis.gazi.edu.tr/sedatsurdem",
+      "photo": "https://avesis.gazi.edu.tr/user/image/13233"
+    },
+    {
+      "id": "a_sema_bilge_ocak",
+      "title": "Prof. Dr.",
+      "first_name": "Sema Bilge",
+      "last_name": "OCAK",
+      "avesis": "https://avesis.gazi.edu.tr/sbocak",
+      "photo": "https://avesis.gazi.edu.tr/user/image/13303"
+    },
+    {
+      "id": "a_suleyman_ozcelik",
+      "title": "Prof. Dr.",
+      "first_name": "Süleyman",
+      "last_name": "ÖZÇELİK",
+      "avesis": "https://avesis.gazi.edu.tr/sozcelik",
+      "photo": "https://avesis.gazi.edu.tr/user/image/12555"
+    },
+    {
+      "id": "a_sule_coskun_cevher",
+      "title": "Prof. Dr.",
+      "first_name": "Şule",
+      "last_name": "COŞKUN CEVHER",
+      "avesis": "https://avesis.gazi.edu.tr/sule",
+      "photo": "https://avesis.gazi.edu.tr/user/image/13385"
+    },
+    {
+      "id": "a_tarik_asar",
+      "title": "Prof. Dr.",
+      "first_name": "Tarık",
+      "last_name": "ASAR",
+      "avesis": "https://avesis.gazi.edu.tr/asar",
+      "photo": "https://avesis.gazi.edu.tr/user/image/13411"
+    },
+    {
+      "id": "a_tayfun_menlik",
+      "title": "Prof. Dr.",
+      "first_name": "Tayfun",
+      "last_name": "MENLİK",
+      "avesis": "https://avesis.gazi.edu.tr/tmenlik",
+      "photo": "https://avesis.gazi.edu.tr/user/image/13417"
+    },
+    {
+      "id": "i_asli_gultekin",
+      "first_name": "Aslı",
+      "last_name": "GÜLTEKİN",
+      "phone": "0 (312) 202 37 39",
+      "email": "asli.gultekin@gazi.edu.tr"
+    },
+    {
+      "id": "i_baris_cem_onal",
+      "first_name": "Barış Cem",
+      "last_name": "ÖNAL",
+      "phone": "0 (312) 202 37 20",
+      "email": "bariscem.onal@gazi.edu.tr"
+    },
+    {
+      "id": "i_derya_yucel",
+      "first_name": "Derya",
+      "last_name": "YÜCEL",
+      "phone": "0 (312) 202 37 22",
+      "email": "derya.yucel2@gazi.edu.tr"
+    },
+    {
+      "id": "i_didem_balaban",
+      "first_name": "Didem",
+      "last_name": "BALABAN",
+      "phone": "0 (312) 202 37 28",
+      "email": "didem.balaban@gazi.edu.tr"
+    },
+    {
+      "id": "i_dogan_kara",
+      "first_name": "Doğan",
+      "last_name": "KARA",
+      "phone": "0 (312) 202 37 19",
+      "email": "dogan.kara@gazi.edu.tr"
+    },
+    {
+      "id": "i_duygu_yurekli",
+      "first_name": "Duygu",
+      "last_name": "YÜREKLİ",
+      "phone": "0 (312) 202 37 32",
+      "email": "duygu.aktas@gazi.edu.tr"
+    },
+    {
+      "id": "i_emine_kocamemik",
+      "first_name": "Emine",
+      "last_name": "KOCAMEMİK",
+      "phone": "0 (312) 202 37 08",
+      "email": "emine.tutuncu@gazi.edu.tr"
+    },
+    {
+      "id": "i_esen_aydin",
+      "first_name": "Esen",
+      "last_name": "AYDIN",
+      "phone": "0 (312) 582 32 32",
+      "email": "esenaydin@gazi.edu.tr"
+    },
+    {
+      "id": "i_esengul_bosnak",
+      "first_name": "Esengül",
+      "last_name": "BOŞNAK",
+      "phone": "0 (312) 202 37 18",
+      "email": "esengul.turkoglu@gazi.edu.tr"
+    },
+    {
+      "id": "i_fatma_arslan",
+      "first_name": "Fatma",
+      "last_name": "ARSLAN",
+      "phone": "0 (312) 582 31 34",
+      "email": "farslan@gazi.edu.tr"
+    },
+    {
+      "id": "i_figen_asal",
+      "first_name": "Figen",
+      "last_name": "ASAL",
+      "phone": "0 (312) 202 37 09",
+      "email": "figen.isa@gazi.edu.tr"
+    },
+    {
+      "id": "i_gulsah_dogan",
+      "first_name": "Gülşah",
+      "last_name": "DOĞAN",
+      "phone": "0 (312) 582 35 32",
+      "email": "gulsahdogan@gazi.edu.tr"
+    },
+    {
+      "id": "i_gulsah_yilmaz",
+      "first_name": "Gülşah",
+      "last_name": "YILMAZ",
+      "phone": "0 (312) 582 38 10",
+      "email": "gulsah.yilmaz@gazi.edu.tr"
+    },
+    {
+      "id": "i_murat_sahin",
+      "first_name": "Murat",
+      "last_name": "ŞAHİN",
+      "phone": "0 (312) 582 36 04",
+      "email": "msahin@gazi.edu.tr"
+    },
+    {
+      "id": "i_nurgul_kose",
+      "first_name": "Nurgül",
+      "last_name": "KÖSE",
+      "phone": "0 (312) 582 33 50",
+      "email": "nurgulkose@gazi.edu.tr"
+    },
+    {
+      "id": "i_nursel_kucuk",
+      "first_name": "Nursel",
+      "last_name": "KÜÇÜK",
+      "phone": "0 (312) 582 38 31",
+      "email": "nurselkucuk@gazi.edu.tr"
+    },
+    {
+      "id": "i_ozcan_eryilmaz",
+      "first_name": "Özcan",
+      "last_name": "ERYILMAZ",
+      "phone": "0 (312) 202 87 50",
+      "email": "metalurjimalzeme@gazi.edu.tr"
+    },
+    {
+      "id": "i_sevgi_erturk",
+      "first_name": "Sevgi",
+      "last_name": "ERTÜRK",
+      "phone": "0 (312) 202 10 51",
+      "email": "fenmatematik@gazi.edu.tr"
+    },
+    {
+      "id": "i_songul_ozturk",
+      "first_name": "Songül",
+      "last_name": "ÖZTÜRK",
+      "phone": "0 (312) 582 34 32",
+      "email": "sozturk@gazi.edu.tr"
+    },
+    {
+      "id": "i_serife_omur",
+      "first_name": "Şerife",
+      "last_name": "ÖMÜR",
+      "phone": "0 (312) 582 37 04",
+      "email": "simir@gazi.edu.tr"
+    },
+    {
+      "id": "i_yildiz_koyuncu",
+      "first_name": "Yıldız",
+      "last_name": "KOYUNCU",
+      "phone": "0312 202 3730",
+      "email": "yildiz.koyuncu@gazi.edu.tr"
+    },
+    {
+      "id": "i_zulfinaz_yuksel_boga",
+      "first_name": "Zülfinaz",
+      "last_name": "YÜKSEL BOĞA",
+      "phone": "0 (312) 202 37 16",
+      "email": "zulfinaz.yuksel@gazi.edu.tr"
+    },
+    {
+      "id": "a_ihsan_kanbaz",
+      "title": "Dr. Öğr. Üyesi",
+      "first_name": "İhsan",
+      "last_name": "KANBAZ",
+      "avesis": "https://avesis.gazi.edu.tr/ihsankanbaz",
+      "photo": "https://avesis.gazi.edu.tr/user/image/11849"
+    }
+  ],
+  "departments": [
+    {
+      "id": "aiem",
+      "head_id": "a_hamza_cinar",
+      "sec_id": "i_ozcan_eryilmaz",
+      "stu_id": "i_asli_gultekin"
+    },
+    {
+      "id": "as",
+      "head_id": "a_erdal_irmak",
+      "sec_id": "i_derya_yucel",
+      "stu_id": "i_esengul_bosnak"
+    },
+    {
+      "id": "atmu",
+      "head_id": "a_gultekin_uzun",
+      "sec_id": "i_derya_yucel",
+      "stu_id": "i_zulfinaz_yuksel_boga"
+    },
+    {
+      "id": "bgm",
+      "head_id": "a_murat_dener",
+      "sec_id": "i_derya_yucel",
+      "stu_id": "i_baris_cem_onal"
+    },
+    {
+      "id": "bm_mf",
+      "head_id": "a_hacer_karacan",
+      "sec_id": "i_fatma_arslan",
+      "stu_id": "i_duygu_yurekli"
+    },
+    {
+      "id": "bm_tf",
+      "head_id": "a_ayhan_erdem",
+      "sec_id": "i_ozcan_eryilmaz",
+      "stu_id": "i_dogan_kara"
+    },
+    {
+      "id": "bio",
+      "head_id": "a_sule_coskun_cevher",
+      "sec_id": "i_sevgi_erturk",
+      "stu_id": "i_baris_cem_onal"
+    },
+    {
+      "id": "cev",
+      "head_id": "a_aysel_caglan_gunal",
+      "sec_id": "i_derya_yucel",
+      "stu_id": "i_emine_kocamemik"
+    },
+    {
+      "id": "eem_mf",
+      "head_id": "a_firat_hardalac",
+      "sec_id": "i_nurgul_kose",
+      "stu_id": "i_baris_cem_onal"
+    },
+    {
+      "id": "eem_tf",
+      "head_id": "a_nihat_ozturk",
+      "sec_id": "i_ozcan_eryilmaz",
+      "stu_id": "i_esengul_bosnak"
+    },
+    {
+      "id": "em",
+      "head_id": "a_gul_didem_batur_sir",
+      "sec_id": "i_nursel_kucuk",
+      "stu_id": "i_figen_asal"
+    },
+    {
+      "id": "ent",
+      "head_id": "a_dilek_akbulut",
+      "sec_id": "i_gulsah_yilmaz",
+      "stu_id": "i_dogan_kara"
+    },
+    {
+      "id": "etm",
+      "head_id": "a_ismail_sahin",
+      "sec_id": "i_ozcan_eryilmaz",
+      "stu_id": "i_duygu_yurekli"
+    },
+    {
+      "id": "esm",
+      "head_id": "a_tayfun_menlik",
+      "sec_id": "i_ozcan_eryilmaz",
+      "stu_id": "i_asli_gultekin"
+    },
+    {
+      "id": "fiz",
+      "head_id": "a_tarik_asar",
+      "sec_id": "i_sevgi_erturk",
+      "stu_id": "i_esengul_bosnak"
+    },
+    {
+      "id": "fot",
+      "head_id": "a_suleyman_ozcelik",
+      "sec_id": "i_derya_yucel",
+      "stu_id": "i_esengul_bosnak"
+    },
+    {
+      "id": "ilt",
+      "head_id": "a_sema_bilge_ocak",
+      "sec_id": "i_derya_yucel",
+      "stu_id": "i_esengul_bosnak"
+    },
+    {
+      "id": "im",
+      "head_id": "a_hakan_dilipak",
+      "sec_id": "i_ozcan_eryilmaz",
+      "stu_id": "i_duygu_yurekli"
+    },
+    {
+      "id": "ins_mf",
+      "head_id": "a_kerem_tastan",
+      "sec_id": "i_esen_aydin",
+      "stu_id": "i_figen_asal"
+    },
+    {
+      "id": "ins_tf",
+      "head_id": "a_salih_yazicioglu",
+      "sec_id": "i_ozcan_eryilmaz",
+      "stu_id": "i_emine_kocamemik"
+    },
+    {
+      "id": "ist",
+      "head_id": "a_mehmet_akif_bakir",
+      "sec_id": "i_sevgi_erturk",
+      "stu_id": "i_esengul_bosnak"
+    },
+    {
+      "id": "kaza",
+      "head_id": "a_sedat_surdem",
+      "sec_id": "i_derya_yucel",
+      "stu_id": "i_yildiz_koyuncu"
+    },
+    {
+      "id": "kim",
+      "head_id": "a_halit_arslan",
+      "sec_id": "i_sevgi_erturk",
+      "stu_id": "i_yildiz_koyuncu"
+    },
+    {
+      "id": "kim_muh",
+      "head_id": "a_murat_bilen",
+      "sec_id": "i_gulsah_dogan",
+      "stu_id": "i_yildiz_koyuncu"
+    },
+    {
+      "id": "mak",
+      "head_id": "a_abuzer_kadir_ozsunar",
+      "sec_id": "i_songul_ozturk",
+      "stu_id": "i_zulfinaz_yuksel_boga"
+    },
+    {
+      "id": "mat",
+      "head_id": "a_arap_duran_turkoglu",
+      "sec_id": "i_sevgi_erturk",
+      "stu_id": "i_dogan_kara"
+    },
+    {
+      "id": "mmm",
+      "head_id": "a_bulent_bostan",
+      "sec_id": "i_ozcan_eryilmaz",
+      "stu_id": "i_dogan_kara"
+    },
+    {
+      "id": "mim",
+      "head_id": "a_m_zafer_akdemir",
+      "sec_id": "i_murat_sahin",
+      "stu_id": "i_emine_kocamemik"
+    },
+    {
+      "id": "bor",
+      "head_id": "a_mehmet_burcin_piskin",
+      "sec_id": "i_derya_yucel",
+      "stu_id": "i_baris_cem_onal"
+    },
+    {
+      "id": "nuk",
+      "head_id": "a_mahmut_dogru",
+      "sec_id": "i_didem_balaban",
+      "stu_id": "i_asli_gultekin"
+    },
+    {
+      "id": "oto",
+      "head_id": "a_hamit_solmaz",
+      "sec_id": "i_ozcan_eryilmaz",
+      "stu_id": "i_figen_asal"
+    },
+    {
+      "id": "sbp",
+      "head_id": "a_ebru_vesile_ocalir",
+      "sec_id": "i_serife_omur",
+      "stu_id": "i_asli_gultekin"
+    },
+    {
+      "id": "traf",
+      "head_id": "a_kursat_yildiz",
+      "sec_id": "i_derya_yucel",
+      "stu_id": "i_figen_asal"
+    }
+  ],
+  "management": {
+    "director_id": "a_orhan_kaplan",
+    "vice_director_ids": [
+      "a_berat_cinar_acar",
+      "a_ihsan_kanbaz"
+    ]
+  }
+}
