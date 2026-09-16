@@ -2,8 +2,8 @@
   "meta": {
     "schema": "fbe_catalog_data_v2",
     "source_url": "https://raw.githubusercontent.com/ctnky/fbe-data/main/fbe-catalog-data.json",
-    "updated_at": "2026-09-16T14:59:04.669Z",
-    "version": "1.0.0"
+    "updated_at": "2026-09-16T15:05:43.853Z",
+    "version": "1.0.1"
   },
   "persons": [
     {
@@ -12,7 +12,7 @@
       "first_name": "Abuzer Kadir",
       "last_name": "ÖZSUNAR",
       "avesis": "https://avesis.gazi.edu.tr/ozsunar",
-      "photo": "https://avesis.gazi.edu.tr/user/image/10041"
+      "photo": "https://avesis.gazi.edu.tr/user/image/10038"
     },
     {
       "id": "a_alper_uzun",
@@ -28,7 +28,7 @@
       "first_name": "Arap Duran",
       "last_name": "TÜRKOĞLU",
       "avesis": "https://avesis.gazi.edu.tr/dturkoglu",
-      "photo": "https://avesis.gazi.edu.tr/user/image/10893"
+      "photo": "https://avesis.gazi.edu.tr/user/image/10192"
     },
     {
       "id": "a_ayhan_erdem",
@@ -60,7 +60,7 @@
       "first_name": "Bülent",
       "last_name": "BOSTAN",
       "avesis": "https://avesis.gazi.edu.tr/bostan",
-      "photo": "https://avesis.gazi.edu.tr/user/image/10636"
+      "photo": "https://avesis.gazi.edu.tr/user/image/10624"
     },
     {
       "id": "a_dilek_akbulut",
@@ -124,7 +124,7 @@
       "first_name": "Hakan",
       "last_name": "DİLİPAK",
       "avesis": "https://avesis.gazi.edu.tr/hdilipak",
-      "photo": "https://avesis.gazi.edu.tr/user/image/11499"
+      "photo": "https://avesis.gazi.edu.tr/user/image/11578"
     },
     {
       "id": "a_halit_arslan",
@@ -132,7 +132,7 @@
       "first_name": "Halit",
       "last_name": "ARSLAN",
       "avesis": "https://avesis.gazi.edu.tr/halit",
-      "photo": "https://avesis.gazi.edu.tr/user/image/11624"
+      "photo": "https://avesis.gazi.edu.tr/user/image/11617"
     },
     {
       "id": "a_hamit_solmaz",
@@ -164,7 +164,7 @@
       "first_name": "Kerem",
       "last_name": "TAŞTAN",
       "avesis": "https://avesis.gazi.edu.tr/ktastan",
-      "photo": "https://avesis.gazi.edu.tr/user/image/12204"
+      "photo": "https://avesis.gazi.edu.tr/user/image/11978"
     },
     {
       "id": "a_kursat_yildiz",
@@ -196,7 +196,7 @@
       "first_name": "Mehmet Akif",
       "last_name": "BAKIR",
       "avesis": "https://avesis.gazi.edu.tr/mabakir",
-      "photo": "https://avesis.gazi.edu.tr/user/image/12318"
+      "photo": "https://avesis.gazi.edu.tr/user/image/12125"
     },
     {
       "id": "a_mehmet_burcin_piskin",
@@ -212,7 +212,7 @@
       "first_name": "Murat",
       "last_name": "BİLEN",
       "avesis": "https://avesis.gazi.edu.tr/muratbilen",
-      "photo": "https://avesis.gazi.edu.tr/user/image/12384"
+      "photo": "https://avesis.gazi.edu.tr/user/image/100413"
     },
     {
       "id": "a_murat_dener",
@@ -244,7 +244,7 @@
       "first_name": "Salih",
       "last_name": "YAZICIOĞLU",
       "avesis": "https://avesis.gazi.edu.tr/syazicioglu",
-      "photo": "https://avesis.gazi.edu.tr/user/image/13214"
+      "photo": "https://avesis.gazi.edu.tr/user/image/13026"
     },
     {
       "id": "a_sedat_surdem",
@@ -252,7 +252,7 @@
       "first_name": "Sedat",
       "last_name": "SÜRDEM",
       "avesis": "https://avesis.gazi.edu.tr/sedatsurdem",
-      "photo": "https://avesis.gazi.edu.tr/user/image/13233"
+      "photo": "https://avesis.gazi.edu.tr/user/image/100281"
     },
     {
       "id": "a_sema_bilge_ocak",
@@ -260,7 +260,7 @@
       "first_name": "Sema Bilge",
       "last_name": "OCAK",
       "avesis": "https://avesis.gazi.edu.tr/sbocak",
-      "photo": "https://avesis.gazi.edu.tr/user/image/13303"
+      "photo": "https://avesis.gazi.edu.tr/user/image/13120"
     },
     {
       "id": "a_suleyman_ozcelik",
@@ -268,7 +268,7 @@
       "first_name": "Süleyman",
       "last_name": "ÖZÇELİK",
       "avesis": "https://avesis.gazi.edu.tr/sozcelik",
-      "photo": "https://avesis.gazi.edu.tr/user/image/12555"
+      "photo": "https://avesis.gazi.edu.tr/user/image/13312"
     },
     {
       "id": "a_sule_coskun_cevher",
@@ -462,7 +462,7 @@
       "first_name": "Süleyman",
       "last_name": "TEKELİ",
       "avesis": "https://avesis.gazi.edu.tr/stekeli",
-      "photo": ""
+      "photo": "https://avesis.gazi.edu.tr/user/image/13314"
     },
     {
       "id": "a_talip_kellegoz",
@@ -470,7 +470,7 @@
       "first_name": "Talip",
       "last_name": "KELLEGÖZ",
       "avesis": "https://avesis.gazi.edu.tr/tkellegoz",
-      "photo": ""
+      "photo": "https://avesis.gazi.edu.tr/user/image/13403"
     },
     {
       "id": "a_selcuk_kursat_isleyen",
@@ -478,7 +478,7 @@
       "first_name": "Selçuk Kürşat",
       "last_name": "İŞLEYEN",
       "avesis": "https://avesis.gazi.edu.tr/isleyens",
-      "photo": ""
+      "photo": "https://avesis.gazi.edu.tr/user/image/13097"
     }
   ],
   "departments": [
