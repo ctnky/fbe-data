@@ -470,244 +470,328 @@
       "id": "AEM",
       "head_id": "a_hamza_cinar",
       "sec_id": "i_ozcan_eryilmaz",
-      "stu_id": "i_asli_gultekin"
+      "stu_id": "i_asli_gultekin",
+      "name": "Adli Bilimler ve Mühendisliği",
+      "faculty": "Teknoloji Fakültesi"
     },
     {
       "id": "ASB",
       "head_id": "a_erdal_irmak",
       "sec_id": "i_derya_yucel",
-      "stu_id": "i_esengul_bosnak"
+      "stu_id": "i_esengul_bosnak",
+      "name": "Akıllı Sistemler ve Bilişim",
+      "faculty": "Teknoloji Fakültesi"
     },
     {
       "id": "ATM",
       "head_id": "a_gultekin_uzun",
       "sec_id": "i_derya_yucel",
-      "stu_id": "i_zulfinaz_yuksel_boga"
+      "stu_id": "i_zulfinaz_yuksel_boga",
+      "name": "Atatürk İlkeleri ve İnkılap Tarihi",
+      "faculty": "Enstitü"
     },
     {
       "id": "BGM",
       "head_id": "a_murat_dener",
       "sec_id": "i_derya_yucel",
-      "stu_id": "i_baris_cem_onal"
+      "stu_id": "i_baris_cem_onal",
+      "name": "Bilgisayar Mühendisliği",
+      "faculty": "Teknoloji Fakültesi"
     },
     {
       "id": "BMM",
       "head_id": "a_hacer_karacan",
       "sec_id": "i_fatma_arslan",
-      "stu_id": "i_duygu_yurekli"
+      "stu_id": "i_duygu_yurekli",
+      "name": "Biyomedikal Mühendisliği",
+      "faculty": "Mühendislik Fakültesi"
     },
     {
       "id": "BMT",
       "head_id": "a_ayhan_erdem",
       "sec_id": "i_ozcan_eryilmaz",
-      "stu_id": "i_dogan_kara"
+      "stu_id": "i_dogan_kara",
+      "name": "Biyoloji",
+      "faculty": "Fen Fakültesi"
     },
     {
       "id": "BİY",
       "head_id": "a_sule_coskun_cevher",
       "sec_id": "i_sevgi_erturk",
-      "stu_id": "i_baris_cem_onal"
+      "stu_id": "i_baris_cem_onal",
+      "name": "Biyokimya",
+      "faculty": "Fen Fakültesi"
     },
     {
       "id": "CEV",
       "head_id": "a_aysel_caglan_gunal",
       "sec_id": "i_derya_yucel",
-      "stu_id": "i_emine_kocamemik"
+      "stu_id": "i_emine_kocamemik",
+      "name": "Çevre Mühendisliği",
+      "faculty": "Mühendislik Fakültesi"
     },
     {
       "id": "EEM",
       "head_id": "a_firat_hardalac",
       "sec_id": "i_nurgul_kose",
-      "stu_id": "i_baris_cem_onal"
+      "stu_id": "i_baris_cem_onal",
+      "name": "Elektrik-Elektronik Mühendisliği",
+      "faculty": "Teknoloji Fakültesi"
     },
     {
       "id": "EET",
       "head_id": "a_nihat_ozturk",
       "sec_id": "i_ozcan_eryilmaz",
-      "stu_id": "i_esengul_bosnak"
+      "stu_id": "i_esengul_bosnak",
+      "name": "Elektrik-Elektronik Eğitimi",
+      "faculty": "Teknoloji Fakültesi"
     },
     {
       "id": "EMM",
       "head_id": "a_gul_didem_batur_sir",
       "sec_id": "i_nursel_kucuk",
-      "stu_id": "i_figen_asal"
+      "stu_id": "i_figen_asal",
+      "name": "Enerji Sistemleri Mühendisliği",
+      "faculty": "Teknoloji Fakültesi"
     },
     {
       "id": "ESM",
       "head_id": "a_tayfun_menlik",
       "sec_id": "i_ozcan_eryilmaz",
-      "stu_id": "i_asli_gultekin"
+      "stu_id": "i_asli_gultekin",
+      "name": "Endüstri Mühendisliği",
+      "faculty": "Mühendislik Fakültesi"
     },
     {
       "id": "ETM",
       "head_id": "a_ismail_sahin",
       "sec_id": "i_ozcan_eryilmaz",
-      "stu_id": "i_duygu_yurekli"
+      "stu_id": "i_duygu_yurekli",
+      "name": "Endüstriyel Tasarım Mühendisliği",
+      "faculty": "Teknoloji Fakültesi"
     },
     {
       "id": "EUT",
       "head_id": "a_dilek_akbulut",
       "sec_id": "i_gulsah_yilmaz",
-      "stu_id": "i_dogan_kara"
+      "stu_id": "i_dogan_kara",
+      "name": "Endüstriyel Tasarım",
+      "faculty": "Mimarlık Fakültesi"
     },
     {
       "id": "FİZ",
       "head_id": "a_tarik_asar",
       "sec_id": "i_sevgi_erturk",
-      "stu_id": "i_esengul_bosnak"
+      "stu_id": "i_esengul_bosnak",
+      "name": "Fizik",
+      "faculty": "Fen Fakültesi"
     },
     {
       "id": "FOT",
       "head_id": "a_suleyman_ozcelik",
       "sec_id": "i_derya_yucel",
-      "stu_id": "i_esengul_bosnak"
+      "stu_id": "i_esengul_bosnak",
+      "name": "Fotonik",
+      "faculty": "Teknoloji Fakültesi"
     },
     {
       "id": "İLT",
       "head_id": "a_sema_bilge_ocak",
       "sec_id": "i_derya_yucel",
-      "stu_id": "i_esengul_bosnak"
+      "stu_id": "i_esengul_bosnak",
+      "name": "İlaç Teknolojisi",
+      "faculty": "Fen Fakültesi"
     },
     {
       "id": "İMM",
       "head_id": "a_hakan_dilipak",
       "sec_id": "i_ozcan_eryilmaz",
-      "stu_id": "i_duygu_yurekli"
+      "stu_id": "i_duygu_yurekli",
+      "name": "İmalat Mühendisliği",
+      "faculty": "Teknoloji Fakültesi"
     },
     {
       "id": "İNM",
       "head_id": "a_kerem_tastan",
       "sec_id": "i_esen_aydin",
-      "stu_id": "i_figen_asal"
+      "stu_id": "i_figen_asal",
+      "name": "İnşaat Mühendisliği",
+      "faculty": "Mühendislik Fakültesi"
     },
     {
       "id": "İNT",
       "head_id": "a_salih_yazicioglu",
       "sec_id": "i_ozcan_eryilmaz",
-      "stu_id": "i_emine_kocamemik"
+      "stu_id": "i_emine_kocamemik",
+      "name": "İç Mimarlık",
+      "faculty": "Mimarlık Fakültesi"
     },
     {
       "id": "İST",
       "head_id": "a_mehmet_akif_bakir",
       "sec_id": "i_sevgi_erturk",
-      "stu_id": "i_esengul_bosnak"
+      "stu_id": "i_esengul_bosnak",
+      "name": "İstatistik",
+      "faculty": "Fen Fakültesi"
     },
     {
       "id": "KAZ",
       "head_id": "a_sedat_surdem",
       "sec_id": "i_derya_yucel",
-      "stu_id": "i_yildiz_koyuncu"
+      "stu_id": "i_yildiz_koyuncu",
+      "name": "Kazaların Araştırılması ve Önlenmesi",
+      "faculty": "Teknoloji Fakültesi"
     },
     {
       "id": "KİM",
       "head_id": "a_halit_arslan",
       "sec_id": "i_sevgi_erturk",
-      "stu_id": "i_yildiz_koyuncu"
+      "stu_id": "i_yildiz_koyuncu",
+      "name": "Kimya",
+      "faculty": "Fen Fakültesi"
     },
     {
       "id": "KMM",
       "head_id": "a_murat_bilen",
       "sec_id": "i_gulsah_dogan",
-      "stu_id": "i_yildiz_koyuncu"
+      "stu_id": "i_yildiz_koyuncu",
+      "name": "Kimya Mühendisliği",
+      "faculty": "Mühendislik Fakültesi"
     },
     {
       "id": "MAK",
       "head_id": "a_abuzer_kadir_ozsunar",
       "sec_id": "i_songul_ozturk",
-      "stu_id": "i_zulfinaz_yuksel_boga"
+      "stu_id": "i_zulfinaz_yuksel_boga",
+      "name": "Makine Mühendisliği",
+      "faculty": "Mühendislik Fakültesi"
     },
     {
       "id": "MAT",
       "head_id": "a_arap_duran_turkoglu",
       "sec_id": "i_sevgi_erturk",
-      "stu_id": "i_dogan_kara"
+      "stu_id": "i_dogan_kara",
+      "name": "Matematik",
+      "faculty": "Fen Fakültesi"
     },
     {
       "id": "MBT",
       "sec_id": "i_derya_yucel",
       "stu_id": "i_baris_cem_onal",
-      "head_id": "a_sedat_surdem"
+      "head_id": "a_sedat_surdem",
+      "name": "Mineraller ve Bor Teknolojileri",
+      "faculty": "Teknoloji Fakültesi"
     },
     {
       "id": "MET",
       "head_id": "a_bulent_bostan",
       "sec_id": "i_ozcan_eryilmaz",
-      "stu_id": "i_dogan_kara"
+      "stu_id": "i_dogan_kara",
+      "name": "Metalurji ve Malzeme Mühendisliği",
+      "faculty": "Mühendislik Fakültesi"
     },
     {
       "id": "MİM",
       "sec_id": "i_murat_sahin",
       "stu_id": "i_emine_kocamemik",
-      "head_id": "a_idil_aycam"
+      "head_id": "a_idil_aycam",
+      "name": "Mimarlık",
+      "faculty": "Mimarlık Fakültesi"
     },
     {
       "id": "NUB",
       "sec_id": "i_didem_balaban",
       "stu_id": "i_asli_gultekin",
-      "head_id": "a_adem_acir"
+      "head_id": "a_adem_acir",
+      "name": "Nükleer Bilimler",
+      "faculty": "Mühendislik Fakültesi"
     },
     {
       "id": "OTO",
       "head_id": "a_hamit_solmaz",
       "sec_id": "i_ozcan_eryilmaz",
-      "stu_id": "i_figen_asal"
+      "stu_id": "i_figen_asal",
+      "name": "Otomotiv Mühendisliği",
+      "faculty": "Mühendislik Fakültesi"
     },
     {
       "id": "ŞBP",
       "head_id": "a_ebru_vesile_ocalir",
       "sec_id": "i_serife_omur",
-      "stu_id": "i_asli_gultekin"
+      "stu_id": "i_asli_gultekin",
+      "name": "Şehir ve Bölge Planlama",
+      "faculty": "Mimarlık Fakültesi"
     },
     {
       "id": "TRF",
       "head_id": "a_kursat_yildiz",
       "sec_id": "i_derya_yucel",
-      "stu_id": "i_figen_asal"
+      "stu_id": "i_figen_asal",
+      "name": "Trafik Planlama ve Uygulama",
+      "faculty": "Mühendislik Fakültesi"
     },
     {
       "id": "ELE",
       "head_id": "a_nihat_ozturk",
-      "stu_id": "i_esengul_bosnak"
+      "stu_id": "i_esengul_bosnak",
+      "name": "Elektrik Eğitimi",
+      "faculty": "Teknoloji Fakültesi"
     },
     {
       "id": "ETE",
       "head_id": "a_suleyman_tekeli",
-      "stu_id": "i_dogan_kara"
+      "stu_id": "i_dogan_kara",
+      "name": "Endüstriyel Teknoloji Eğitimi",
+      "faculty": "Teknoloji Fakültesi"
     },
     {
       "id": "HAR",
       "head_id": "a_talip_kellegoz",
-      "stu_id": "i_emine_kocamemik"
+      "stu_id": "i_emine_kocamemik",
+      "name": "Harita Mühendisliği",
+      "faculty": "Mühendislik Fakültesi"
     },
     {
       "id": "MAE",
       "head_id": "a_hakan_dilipak",
-      "stu_id": "i_duygu_yurekli"
+      "stu_id": "i_duygu_yurekli",
+      "name": "Makine Eğitimi",
+      "faculty": "Teknoloji Fakültesi"
     },
     {
       "id": "MDE",
       "head_id": "a_hamza_cinar",
-      "stu_id": "i_asli_gultekin"
+      "stu_id": "i_asli_gultekin",
+      "name": "Mekatronik Mühendisliği",
+      "faculty": "Teknoloji Fakültesi"
     },
     {
       "id": "MTE",
       "head_id": "a_bulent_bostan",
-      "stu_id": "i_dogan_kara"
+      "stu_id": "i_dogan_kara",
+      "name": "Metalurji Eğitimi",
+      "faculty": "Teknoloji Fakültesi"
     },
     {
       "id": "SLH",
       "head_id": "a_abuzer_kadir_ozsunar",
-      "stu_id": "i_zulfinaz_yuksel_boga"
+      "stu_id": "i_zulfinaz_yuksel_boga",
+      "name": "Silah Sanayi Mühendisliği",
+      "faculty": "Mühendislik Fakültesi"
     },
     {
       "id": "TED",
       "head_id": "a_selcuk_kursat_isleyen",
-      "stu_id": "i_figen_asal"
+      "stu_id": "i_figen_asal",
+      "name": "Tekstil ve Giyim Endüstrisi Eğitimi",
+      "faculty": "Teknoloji Fakültesi"
     },
     {
       "id": "YPE",
       "head_id": "a_salih_yazicioglu",
-      "stu_id": "i_duygu_yurekli"
+      "stu_id": "i_duygu_yurekli",
+      "name": "Yapı Eğitimi",
+      "faculty": "Teknoloji Fakültesi"
     }
   ],
   "management": {
