@@ -1,39 +1,29 @@
 {
   "meta": {
-    "schema": "fbe_departments_v1",
-    "version": "1.1.0",
-    "updated_at": "2026-09-25T14:20:00.000Z",
+    "schema": "fbe_departments_v2",
+    "version": "2.0.0",
+    "updated_at": "2026-09-25T14:55:00.000Z",
     "source_url": "https://fbe.gazi.edu.tr/view/page/299116/ana-bilim-dallari-2",
-    "description": "Gazi Üniversitesi Fen Bilimleri Enstitüsü Ana Bilim Dalları ve Programları",
+    "description": "Gazi Üniversitesi Fen Bilimleri Enstitüsü Ana Bilim Dalları ve Program Varyantları",
+    "notes": "Türkçe + Örgün Öğretim varsayılandır; parantez içi gösterim yalnızca İngilizce veya İkinci Öğretim için kullanılır.",
     "changelog": [
-      {
-        "version": "1.0.0",
-        "date": "2026-09-25",
-        "note": "İlk sürüm — 42 ABD, kaynak: fbe-catalog-data.json ID listesi"
-      },
-      {
-        "version": "1.0.1",
-        "date": "2026-09-25",
-        "note": "Resmi FBE arşiv listesi eklendi, name ve faculty alanları eklendi"
-      },
-      {
-        "version": "1.0.2",
-        "date": "2026-09-25",
-        "note": "Yanlış isimler düzeltildi: BMM, BMT, BİY, EMM, ESM, MDE, MTE, AEM, BGM, ATM, HAR, İLT, İNT, KAZ, SLH, TED"
-      },
-      {
-        "version": "1.1.0",
-        "date": "2026-09-25",
-        "note": "Resmi program kataloğu tablosundan tam güncelleme: NUB→NKB, ŞBP→Mimarlık Fak., yeni program kodları (BDA, VBL, MTY, PSG, CBS, SBP), ambiguous_dept işaretleri eklendi"
-      }
+      { "version": "1.0.0", "date": "2026-09-25", "note": "İlk sürüm" },
+      { "version": "1.0.2", "date": "2026-09-25", "note": "Yanlış ABD isimleri düzeltildi" },
+      { "version": "1.1.0", "date": "2026-09-25", "note": "status + programs + ambiguous_departments eklendi" },
+      { "version": "2.0.0", "date": "2026-09-25", "note": "programs şeması genişletildi: type (yl/doktora/tyl) + language (tr/en) + edu_model (orgün/ikinci) eklendi. Ekran görüntüsünden tüm varyantlar işlendi." }
     ]
+  },
+  "program_type_labels": {
+    "yl":      { "tr": "Tezli Yüksek Lisans", "abbr": "YL" },
+    "doktora": { "tr": "Doktora",             "abbr": "DR" },
+    "tyl":     { "tr": "Tezsiz Yüksek Lisans","abbr": "TZ" }
   },
   "ambiguous_departments": {
     "description": "Bu bölümler birden fazla fakültede mevcut — öğrenciye fakülte sorulmalı",
     "items": [
       {
         "name": "Bilgisayar Mühendisliği",
-        "keywords": ["bilgisayar mühendisliği", "bilgisayar müh", "computer engineering"],
+        "keywords": ["bilgisayar mühendis", "bilgisayar müh", "computer eng"],
         "options": [
           { "label": "Mühendislik Fakültesi", "dept_id": "BMM" },
           { "label": "Teknoloji Fakültesi",   "dept_id": "BMT" }
@@ -41,7 +31,7 @@
       },
       {
         "name": "Elektrik-Elektronik Mühendisliği",
-        "keywords": ["elektrik elektronik", "elektrik-elektronik", "eem", "eem"],
+        "keywords": ["elektrik elektronik", "elektrik-elektronik", "electrical eng"],
         "options": [
           { "label": "Mühendislik Fakültesi", "dept_id": "EEM" },
           { "label": "Teknoloji Fakültesi",   "dept_id": "EET" }
@@ -49,7 +39,7 @@
       },
       {
         "name": "İnşaat Mühendisliği",
-        "keywords": ["inşaat mühendisliği", "inşaat müh", "civil engineering"],
+        "keywords": ["inşaat mühendis", "inşaat müh", "civil eng"],
         "options": [
           { "label": "Mühendislik Fakültesi", "dept_id": "İNM" },
           { "label": "Teknoloji Fakültesi",   "dept_id": "İNT" }
@@ -60,186 +50,298 @@
   "departments": [
     {
       "id": "BİY", "name": "Biyoloji", "faculty": "Fen Fakültesi", "status": "aktif",
-      "programs": [{ "code": "BİY", "name": "Biyoloji" }]
+      "programs": [
+        { "name": "Biyoloji", "type": "yl",      "language": "tr", "edu_model": "orgün" },
+        { "name": "Biyoloji", "type": "doktora", "language": "tr", "edu_model": "orgün" }
+      ]
     },
     {
       "id": "FİZ", "name": "Fizik", "faculty": "Fen Fakültesi", "status": "aktif",
-      "programs": [{ "code": "FİZ", "name": "Fizik" }]
+      "programs": [
+        { "name": "Fizik", "type": "yl",      "language": "tr", "edu_model": "orgün" },
+        { "name": "Fizik", "type": "doktora", "language": "tr", "edu_model": "orgün" }
+      ]
     },
     {
       "id": "İST", "name": "İstatistik", "faculty": "Fen Fakültesi", "status": "aktif",
       "programs": [
-        { "code": "İST", "name": "İstatistik" },
-        { "code": "VBL", "name": "Veri Bilimi" }
+        { "name": "İstatistik",  "type": "yl",      "language": "tr", "edu_model": "orgün" },
+        { "name": "İstatistik",  "type": "doktora", "language": "tr", "edu_model": "orgün" },
+        { "name": "Veri Bilimi", "type": "tyl",     "language": "tr", "edu_model": "orgün", "code": "VBL" }
       ]
     },
     {
       "id": "KİM", "name": "Kimya", "faculty": "Fen Fakültesi", "status": "aktif",
-      "programs": [{ "code": "KİM", "name": "Kimya" }]
+      "programs": [
+        { "name": "Kimya", "type": "yl",      "language": "tr", "edu_model": "orgün" },
+        { "name": "Kimya", "type": "doktora", "language": "tr", "edu_model": "orgün" },
+        { "name": "Kimya", "type": "tyl",     "language": "tr", "edu_model": "orgün" },
+        { "name": "Kimya (İngilizce)", "type": "doktora", "language": "en", "edu_model": "orgün" }
+      ]
     },
     {
       "id": "MAT", "name": "Matematik", "faculty": "Fen Fakültesi", "status": "aktif",
-      "programs": [{ "code": "MAT", "name": "Matematik" }]
+      "programs": [
+        { "name": "Matematik", "type": "yl",      "language": "tr", "edu_model": "orgün" },
+        { "name": "Matematik", "type": "doktora", "language": "tr", "edu_model": "orgün" }
+      ]
     },
     {
       "id": "EEM", "name": "Elektrik-Elektronik Mühendisliği (Müh. Fak.)", "faculty": "Mühendislik Fakültesi", "status": "aktif",
-      "programs": [{ "code": "EEM", "name": "Elektrik-Elektronik Mühendisliği" }]
+      "programs": [
+        { "name": "Elektrik-Elektronik Mühendisliği",             "type": "yl",      "language": "tr", "edu_model": "orgün" },
+        { "name": "Elektrik-Elektronik Mühendisliği (İngilizce)", "type": "yl",      "language": "en", "edu_model": "orgün" },
+        { "name": "Elektrik-Elektronik Mühendisliği",             "type": "doktora", "language": "tr", "edu_model": "orgün" },
+        { "name": "Elektrik-Elektronik Mühendisliği (İngilizce)", "type": "doktora", "language": "en", "edu_model": "orgün" }
+      ]
     },
     {
       "id": "EMM", "name": "Endüstri Mühendisliği", "faculty": "Mühendislik Fakültesi", "status": "aktif",
       "programs": [
-        { "code": "EMM", "name": "Endüstri Mühendisliği" },
-        { "code": "MTY", "name": "Mühendislik ve Teknoloji Yönetimi" }
+        { "name": "Endüstri Mühendisliği",             "type": "yl",      "language": "tr", "edu_model": "orgün" },
+        { "name": "Endüstri Mühendisliği",             "type": "doktora", "language": "tr", "edu_model": "orgün" },
+        { "name": "Mühendislik ve Teknoloji Yönetimi", "type": "tyl",     "language": "tr", "edu_model": "orgün", "code": "MTY" }
       ]
     },
     {
       "id": "İNM", "name": "İnşaat Mühendisliği (Müh. Fak.)", "faculty": "Mühendislik Fakültesi", "status": "aktif",
-      "programs": [{ "code": "İNM", "name": "İnşaat Mühendisliği" }]
+      "programs": [
+        { "name": "İnşaat Mühendisliği", "type": "yl",      "language": "tr", "edu_model": "orgün" },
+        { "name": "İnşaat Mühendisliği", "type": "doktora", "language": "tr", "edu_model": "orgün" }
+      ]
     },
     {
       "id": "KMM", "name": "Kimya Mühendisliği", "faculty": "Mühendislik Fakültesi", "status": "aktif",
       "programs": [
-        { "code": "KMM", "name": "Kimya Mühendisliği" },
-        { "code": "PSG", "name": "Proses Güvenliği" }
+        { "name": "Kimya Mühendisliği", "type": "yl",      "language": "tr", "edu_model": "orgün" },
+        { "name": "Kimya Mühendisliği", "type": "doktora", "language": "tr", "edu_model": "orgün" },
+        { "name": "Proses Güvenliği",   "type": "tyl",     "language": "tr", "edu_model": "orgün", "code": "PSG" }
       ]
     },
     {
       "id": "MAK", "name": "Makina Mühendisliği", "faculty": "Mühendislik Fakültesi", "status": "aktif",
-      "programs": [{ "code": "MAK", "name": "Makina Mühendisliği" }]
-    },
-    {
-      "id": "MİM", "name": "Mimarlık", "faculty": "Mimarlık Fakültesi", "status": "aktif",
-      "programs": [{ "code": "MİM", "name": "Mimarlık" }]
-    },
-    {
-      "id": "ŞBP", "name": "Şehir ve Bölge Planlama", "faculty": "Mimarlık Fakültesi", "status": "aktif",
       "programs": [
-        { "code": "CBS", "name": "Planlamada Coğrafi Bilgi Sistemleri" },
-        { "code": "SBP", "name": "Şehir ve Bölge Planlama" }
+        { "name": "Makina Mühendisliği",             "type": "yl",      "language": "tr", "edu_model": "orgün" },
+        { "name": "Makina Mühendisliği (İngilizce)", "type": "yl",      "language": "en", "edu_model": "orgün" },
+        { "name": "Makina Mühendisliği",             "type": "doktora", "language": "tr", "edu_model": "orgün" },
+        { "name": "Makina Mühendisliği (İngilizce)", "type": "doktora", "language": "en", "edu_model": "orgün" }
       ]
     },
     {
       "id": "BMM", "name": "Bilgisayar Mühendisliği (Müh. Fak.)", "faculty": "Mühendislik Fakültesi", "status": "aktif",
       "programs": [
-        { "code": "BMM", "name": "Bilgisayar Mühendisliği" },
-        { "code": "BDA", "name": "Büyük Veri Analitiği, Güvenliği ve Mahremiyeti" }
+        { "name": "Bilgisayar Mühendisliği",                             "type": "yl",      "language": "tr", "edu_model": "orgün" },
+        { "name": "Bilgisayar Mühendisliği",                             "type": "doktora", "language": "tr", "edu_model": "orgün" },
+        { "name": "Büyük Veri Analitiği, Güvenliği ve Mahremiyeti (İngilizce)", "type": "yl", "language": "en", "edu_model": "orgün", "code": "BDA" }
+      ]
+    },
+    {
+      "id": "MİM", "name": "Mimarlık", "faculty": "Mimarlık Fakültesi", "status": "aktif",
+      "programs": [
+        { "name": "Mimarlık",             "type": "yl",      "language": "tr", "edu_model": "orgün" },
+        { "name": "Mimarlık",             "type": "doktora", "language": "tr", "edu_model": "orgün" },
+        { "name": "Mimarlık (İngilizce)", "type": "doktora", "language": "en", "edu_model": "orgün" }
+      ]
+    },
+    {
+      "id": "ŞBP", "name": "Şehir ve Bölge Planlama", "faculty": "Mimarlık Fakültesi", "status": "aktif",
+      "programs": [
+        { "name": "Planlamada Coğrafi Bilgi Sistemleri", "type": "tyl",     "language": "tr", "edu_model": "orgün", "code": "CBS" },
+        { "name": "Şehir ve Bölge Planlama",             "type": "yl",      "language": "tr", "edu_model": "orgün", "code": "SBP" },
+        { "name": "Şehir ve Bölge Planlama",             "type": "tyl",     "language": "tr", "edu_model": "orgün" },
+        { "name": "Şehir ve Bölge Planlama",             "type": "doktora", "language": "tr", "edu_model": "orgün" }
       ]
     },
     {
       "id": "MDE", "name": "Mobilya ve Dekorasyon Eğitimi", "faculty": "Fen Bilimleri Enstitüsü", "status": "pasif",
-      "programs": [{ "code": "MDE", "name": "Mobilya ve Dekorasyon Eğitimi" }]
+      "programs": [
+        { "name": "Mobilya ve Dekorasyon Eğitimi (İkinci Öğretim)", "type": "tyl", "language": "tr", "edu_model": "ikinci" }
+      ]
     },
     {
       "id": "MAE", "name": "Makine Eğitimi", "faculty": "Fen Bilimleri Enstitüsü", "status": "pasif",
-      "programs": [{ "code": "MAE", "name": "Makine Eğitimi" }]
+      "programs": [
+        { "name": "Makine Eğitimi (İkinci Öğretim)", "type": "yl",      "language": "tr", "edu_model": "ikinci" },
+        { "name": "Makine Eğitimi",                  "type": "doktora", "language": "tr", "edu_model": "orgün" }
+      ]
     },
     {
       "id": "MTE", "name": "Metal Eğitimi", "faculty": "Fen Bilimleri Enstitüsü", "status": "pasif",
-      "programs": [{ "code": "MTE", "name": "Metal Eğitimi" }]
+      "programs": [
+        { "name": "Metal Eğitimi (İkinci Öğretim)", "type": "yl",      "language": "tr", "edu_model": "ikinci" },
+        { "name": "Metal Eğitimi",                  "type": "doktora", "language": "tr", "edu_model": "orgün" }
+      ]
     },
     {
       "id": "YPE", "name": "Yapı Eğitimi", "faculty": "Fen Bilimleri Enstitüsü", "status": "pasif",
-      "programs": [{ "code": "YPE", "name": "Yapı Eğitimi" }]
+      "programs": [
+        { "name": "Yapı Eğitimi", "type": "yl", "language": "tr", "edu_model": "orgün" }
+      ]
     },
     {
       "id": "ETE", "name": "Endüstriyel Teknoloji Eğitimi", "faculty": "Fen Bilimleri Enstitüsü", "status": "pasif",
-      "programs": [{ "code": "ETE", "name": "Endüstriyel Teknoloji Eğitimi" }]
+      "programs": [
+        { "name": "Endüstriyel Teknoloji Eğitimi (İkinci Öğretim)", "type": "yl", "language": "tr", "edu_model": "ikinci" }
+      ]
     },
     {
       "id": "ELE", "name": "Elektrik Eğitimi", "faculty": "Fen Bilimleri Enstitüsü", "status": "pasif",
-      "programs": [{ "code": "ELE", "name": "Elektrik Eğitimi" }]
+      "programs": [
+        { "name": "Elektrik Eğitimi", "type": "yl",      "language": "tr", "edu_model": "orgün" },
+        { "name": "Elektrik Eğitimi", "type": "doktora", "language": "tr", "edu_model": "orgün" }
+      ]
     },
     {
       "id": "KAZ", "name": "Kazaların Çevresel ve Teknik Araştırması", "faculty": "Fen Bilimleri Enstitüsü", "status": "aktif",
-      "programs": [{ "code": "KAZ", "name": "Kazaların Çevresel ve Teknik Araştırması" }]
+      "programs": [
+        { "name": "Kazaların Çevresel ve Teknik Araştırması", "type": "yl",  "language": "tr", "edu_model": "orgün" },
+        { "name": "Kazaların Çevresel ve Teknik Araştırması", "type": "tyl", "language": "tr", "edu_model": "orgün" }
+      ]
     },
     {
       "id": "TRF", "name": "Trafik Planlaması ve Uygulaması", "faculty": "Fen Bilimleri Enstitüsü", "status": "aktif",
-      "programs": [{ "code": "TRF", "name": "Trafik Planlaması ve Uygulaması" }]
+      "programs": [
+        { "name": "Trafik Planlaması ve Uygulaması", "type": "yl",  "language": "tr", "edu_model": "orgün" },
+        { "name": "Trafik Planlaması ve Uygulaması", "type": "tyl", "language": "tr", "edu_model": "orgün" }
+      ]
     },
     {
       "id": "CEV", "name": "Çevre Bilimleri", "faculty": "Fen Bilimleri Enstitüsü", "status": "aktif",
-      "programs": [{ "code": "CEV", "name": "Çevre Bilimleri" }]
+      "programs": [
+        { "name": "Çevre Bilimleri", "type": "yl",      "language": "tr", "edu_model": "orgün" },
+        { "name": "Çevre Bilimleri", "type": "doktora", "language": "tr", "edu_model": "orgün" }
+      ]
     },
     {
       "id": "İLT", "name": "İleri Teknolojiler", "faculty": "Fen Bilimleri Enstitüsü", "status": "aktif",
-      "programs": [{ "code": "İLT", "name": "İleri Teknolojiler" }]
+      "programs": [
+        { "name": "İleri Teknolojiler", "type": "tyl",     "language": "tr", "edu_model": "orgün" },
+        { "name": "İleri Teknolojiler", "type": "doktora", "language": "tr", "edu_model": "orgün" }
+      ]
     },
     {
       "id": "EET", "name": "Elektrik-Elektronik Mühendisliği (Tek. Fak.)", "faculty": "Teknoloji Fakültesi", "status": "aktif",
-      "programs": [{ "code": "EET", "name": "Elektrik-Elektronik Mühendisliği" }]
+      "programs": [
+        { "name": "Elektrik-Elektronik Mühendisliği", "type": "yl", "language": "tr", "edu_model": "orgün" }
+      ]
     },
     {
       "id": "ETM", "name": "Endüstriyel Tasarım Mühendisliği", "faculty": "Teknoloji Fakültesi", "status": "aktif",
-      "programs": [{ "code": "ETM", "name": "Endüstriyel Tasarım Mühendisliği" }]
+      "programs": [
+        { "name": "Endüstriyel Tasarım Mühendisliği", "type": "yl",      "language": "tr", "edu_model": "orgün" },
+        { "name": "Endüstriyel Tasarım Mühendisliği", "type": "doktora", "language": "tr", "edu_model": "orgün" }
+      ]
     },
     {
       "id": "İNT", "name": "İnşaat Mühendisliği (Tek. Fak.)", "faculty": "Teknoloji Fakültesi", "status": "aktif",
-      "programs": [{ "code": "İNT", "name": "İnşaat Mühendisliği" }]
+      "programs": [
+        { "name": "İnşaat Mühendisliği", "type": "yl",  "language": "tr", "edu_model": "orgün" },
+        { "name": "İnşaat Mühendisliği", "type": "tyl", "language": "tr", "edu_model": "orgün" }
+      ]
     },
     {
       "id": "BMT", "name": "Bilgisayar Mühendisliği (Tek. Fak.)", "faculty": "Teknoloji Fakültesi", "status": "aktif",
-      "programs": [{ "code": "BMT", "name": "Bilgisayar Mühendisliği" }]
+      "programs": [
+        { "name": "Bilgisayar Mühendisliği", "type": "yl", "language": "tr", "edu_model": "orgün" }
+      ]
     },
     {
       "id": "OTO", "name": "Otomotiv Mühendisliği", "faculty": "Teknoloji Fakültesi", "status": "aktif",
-      "programs": [{ "code": "OTO", "name": "Otomotiv Mühendisliği" }]
+      "programs": [
+        { "name": "Otomotiv Mühendisliği", "type": "doktora", "language": "tr", "edu_model": "orgün" }
+      ]
     },
     {
       "id": "ESM", "name": "Enerji Sistemleri Mühendisliği", "faculty": "Teknoloji Fakültesi", "status": "aktif",
-      "programs": [{ "code": "ESM", "name": "Enerji Sistemleri Mühendisliği" }]
+      "programs": [
+        { "name": "Enerji Sistemleri Mühendisliği", "type": "yl",      "language": "tr", "edu_model": "orgün" },
+        { "name": "Enerji Sistemleri Mühendisliği", "type": "doktora", "language": "tr", "edu_model": "orgün" }
+      ]
     },
     {
       "id": "İMM", "name": "İmalat Mühendisliği", "faculty": "Teknoloji Fakültesi", "status": "aktif",
-      "programs": [{ "code": "İMM", "name": "İmalat Mühendisliği" }]
+      "programs": [
+        { "name": "İmalat Mühendisliği", "type": "yl", "language": "tr", "edu_model": "orgün" }
+      ]
     },
     {
       "id": "MET", "name": "Metalurji ve Malzeme Mühendisliği", "faculty": "Teknoloji Fakültesi", "status": "aktif",
-      "programs": [{ "code": "MET", "name": "Metalurji ve Malzeme Mühendisliği" }]
+      "programs": [
+        { "name": "Metalurji ve Malzeme Mühendisliği", "type": "yl",  "language": "tr", "edu_model": "orgün" },
+        { "name": "Metalurji ve Malzeme Mühendisliği", "type": "tyl", "language": "tr", "edu_model": "orgün" }
+      ]
     },
     {
       "id": "AEM", "name": "Ağaç İşleri Endüstri Mühendisliği", "faculty": "Teknoloji Fakültesi", "status": "aktif",
-      "programs": [{ "code": "AEM", "name": "Ağaç İşleri Endüstri Mühendisliği" }]
+      "programs": [
+        { "name": "Ağaç İşleri Endüstri Mühendisliği", "type": "doktora", "language": "tr", "edu_model": "orgün" }
+      ]
     },
     {
       "id": "BGM", "name": "Bilgi Güvenliği Mühendisliği", "faculty": "Fen Bilimleri Enstitüsü", "status": "aktif",
-      "programs": [{ "code": "BGM", "name": "Bilgi Güvenliği Mühendisliği" }]
+      "programs": [
+        { "name": "Bilgi Güvenliği Mühendisliği",             "type": "yl", "language": "tr", "edu_model": "orgün" },
+        { "name": "Bilgi Güvenliği Mühendisliği (İngilizce)", "type": "yl", "language": "en", "edu_model": "orgün" }
+      ]
     },
     {
       "id": "ASB", "name": "Akıllı Şebekeler", "faculty": "Fen Bilimleri Enstitüsü", "status": "aktif",
-      "programs": [{ "code": "ASB", "name": "Akıllı Şebekeler" }]
+      "programs": [
+        { "name": "Akıllı Şebekeler",             "type": "yl", "language": "tr", "edu_model": "orgün" },
+        { "name": "Akıllı Şebekeler (İngilizce)", "type": "yl", "language": "en", "edu_model": "orgün" }
+      ]
     },
     {
       "id": "SLH", "name": "Silah Sistemleri Mühendisliği", "faculty": "Fen Bilimleri Enstitüsü", "status": "aktif",
-      "programs": [{ "code": "SLH", "name": "Silah Sistemleri Mühendisliği" }]
+      "programs": [
+        { "name": "Silah Sistemleri Mühendisliği", "type": "yl",      "language": "tr", "edu_model": "orgün" },
+        { "name": "Silah Sistemleri Mühendisliği", "type": "doktora", "language": "tr", "edu_model": "orgün" }
+      ]
     },
     {
       "id": "TED", "name": "Tedarik ve Lojistik Yönetimi", "faculty": "Fen Bilimleri Enstitüsü", "status": "pasif",
-      "programs": [{ "code": "TED", "name": "Tedarik ve Lojistik Yönetimi" }]
+      "programs": [
+        { "name": "Tedarik ve Lojistik Yönetimi", "type": "tyl",     "language": "tr", "edu_model": "orgün" },
+        { "name": "Tedarik ve Lojistik Yönetimi", "type": "doktora", "language": "tr", "edu_model": "orgün" }
+      ]
     },
     {
       "id": "HAR", "name": "Harekat Araştırması", "faculty": "Fen Bilimleri Enstitüsü", "status": "pasif",
-      "programs": [{ "code": "HAR", "name": "Harekat Araştırması" }]
+      "programs": [
+        { "name": "Harekat Araştırması", "type": "doktora", "language": "tr", "edu_model": "orgün" }
+      ]
     },
     {
       "id": "FOT", "name": "Fotonik Bilimi ve Mühendisliği", "faculty": "Fen Bilimleri Enstitüsü", "status": "aktif",
-      "programs": [{ "code": "FOT", "name": "Fotonik Bilimi ve Mühendisliği" }]
+      "programs": [
+        { "name": "Fotonik Bilimi ve Mühendisliği", "type": "yl",      "language": "tr", "edu_model": "orgün" },
+        { "name": "Fotonik Bilimi ve Mühendisliği", "type": "doktora", "language": "tr", "edu_model": "orgün" }
+      ]
     },
     {
       "id": "EUT", "name": "Endüstriyel Tasarım", "faculty": "Fen Bilimleri Enstitüsü", "status": "aktif",
-      "programs": [{ "code": "EUT", "name": "Endüstriyel Tasarım" }]
+      "programs": [
+        { "name": "Endüstriyel Tasarım", "type": "yl", "language": "tr", "edu_model": "orgün" }
+      ]
     },
     {
       "id": "NKB", "name": "Nükleer Bilimler", "faculty": "Fen Bilimleri Enstitüsü", "status": "aktif",
-      "programs": [{ "code": "NKB", "name": "Nükleer Bilimler" }]
+      "programs": [
+        { "name": "Nükleer Bilimler", "type": "yl",      "language": "tr", "edu_model": "orgün" },
+        { "name": "Nükleer Bilimler", "type": "doktora", "language": "tr", "edu_model": "orgün" }
+      ]
     },
     {
       "id": "MBT", "name": "Mineraller ve Bor Teknolojisi", "faculty": "Fen Bilimleri Enstitüsü", "status": "aktif",
-      "programs": [{ "code": "MBT", "name": "Mineraller ve Bor Teknolojisi" }]
+      "programs": [
+        { "name": "Mineraller ve Bor Teknolojisi", "type": "yl", "language": "tr", "edu_model": "orgün" }
+      ]
     },
     {
       "id": "ATM", "name": "Ayakkabı Teknolojisi Mühendisliği", "faculty": "Fen Bilimleri Enstitüsü", "status": "aktif",
-      "programs": [{ "code": "ATM", "name": "Ayakkabı Teknolojisi Mühendisliği" }]
+      "programs": [
+        { "name": "Ayakkabı Teknolojisi Mühendisliği", "type": "yl", "language": "tr", "edu_model": "orgün" }
+      ]
     }
   ]
 }
