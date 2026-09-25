@@ -1,10 +1,10 @@
 {
   "meta": {
     "schema": "fbe_departments_v1",
-    "version": "1.0.2",
-    "updated_at": "2026-09-25T13:57:00.000Z",
+    "version": "1.1.0",
+    "updated_at": "2026-09-25T14:20:00.000Z",
     "source_url": "https://fbe.gazi.edu.tr/view/page/299116/ana-bilim-dallari-2",
-    "description": "Gazi Üniversitesi Fen Bilimleri Enstitüsü Ana Bilim Dalları",
+    "description": "Gazi Üniversitesi Fen Bilimleri Enstitüsü Ana Bilim Dalları ve Programları",
     "changelog": [
       {
         "version": "1.0.0",
@@ -20,51 +20,226 @@
         "version": "1.0.2",
         "date": "2026-09-25",
         "note": "Yanlış isimler düzeltildi: BMM, BMT, BİY, EMM, ESM, MDE, MTE, AEM, BGM, ATM, HAR, İLT, İNT, KAZ, SLH, TED"
+      },
+      {
+        "version": "1.1.0",
+        "date": "2026-09-25",
+        "note": "Resmi program kataloğu tablosundan tam güncelleme: NUB→NKB, ŞBP→Mimarlık Fak., yeni program kodları (BDA, VBL, MTY, PSG, CBS, SBP), ambiguous_dept işaretleri eklendi"
+      }
+    ]
+  },
+  "ambiguous_departments": {
+    "description": "Bu bölümler birden fazla fakültede mevcut — öğrenciye fakülte sorulmalı",
+    "items": [
+      {
+        "name": "Bilgisayar Mühendisliği",
+        "keywords": ["bilgisayar mühendisliği", "bilgisayar müh", "computer engineering"],
+        "options": [
+          { "label": "Mühendislik Fakültesi", "dept_id": "BMM" },
+          { "label": "Teknoloji Fakültesi",   "dept_id": "BMT" }
+        ]
+      },
+      {
+        "name": "Elektrik-Elektronik Mühendisliği",
+        "keywords": ["elektrik elektronik", "elektrik-elektronik", "eem", "eem"],
+        "options": [
+          { "label": "Mühendislik Fakültesi", "dept_id": "EEM" },
+          { "label": "Teknoloji Fakültesi",   "dept_id": "EET" }
+        ]
+      },
+      {
+        "name": "İnşaat Mühendisliği",
+        "keywords": ["inşaat mühendisliği", "inşaat müh", "civil engineering"],
+        "options": [
+          { "label": "Mühendislik Fakültesi", "dept_id": "İNM" },
+          { "label": "Teknoloji Fakültesi",   "dept_id": "İNT" }
+        ]
       }
     ]
   },
   "departments": [
-    { "id": "AEM", "name": "Ağaç İşleri Endüstri Mühendisliği",            "faculty": "Teknoloji Fakültesi" },
-    { "id": "ASB", "name": "Akıllı Şebekeler",                              "faculty": "Teknoloji Fakültesi" },
-    { "id": "ATM", "name": "Ayakkabı Teknolojisi Mühendisliği",             "faculty": "Teknoloji Fakültesi" },
-    { "id": "BGM", "name": "Bilgi Güvenliği Mühendisliği",                  "faculty": "Teknoloji Fakültesi" },
-    { "id": "BİY", "name": "Biyoloji",                                      "faculty": "Fen Fakültesi" },
-    { "id": "BMM", "name": "Bilgisayar Mühendisliği (Müh. Fak.)",           "faculty": "Mühendislik Fakültesi" },
-    { "id": "BMT", "name": "Bilgisayar Mühendisliği (Tek. Fak.)",           "faculty": "Teknoloji Fakültesi" },
-    { "id": "CEV", "name": "Çevre Bilimleri",                               "faculty": "Mühendislik Fakültesi" },
-    { "id": "EEM", "name": "Elektrik-Elektronik Mühendisliği (Müh. Fak.)",  "faculty": "Mühendislik Fakültesi" },
-    { "id": "EET", "name": "Elektrik-Elektronik Mühendisliği (Tek. Fak.)",  "faculty": "Teknoloji Fakültesi" },
-    { "id": "ELE", "name": "Elektrik Eğitimi",                              "faculty": "Teknoloji Fakültesi" },
-    { "id": "EMM", "name": "Endüstri Mühendisliği",                         "faculty": "Mühendislik Fakültesi" },
-    { "id": "ESM", "name": "Enerji Sistemleri Mühendisliği",                "faculty": "Teknoloji Fakültesi" },
-    { "id": "ETM", "name": "Endüstriyel Tasarım Mühendisliği",              "faculty": "Teknoloji Fakültesi" },
-    { "id": "ETE", "name": "Endüstriyel Teknoloji Eğitimi",                 "faculty": "Teknoloji Fakültesi" },
-    { "id": "EUT", "name": "Endüstriyel Tasarım",                           "faculty": "Mimarlık Fakültesi" },
-    { "id": "FİZ", "name": "Fizik",                                         "faculty": "Fen Fakültesi" },
-    { "id": "FOT", "name": "Fotonik Bilimi ve Mühendisliği",                "faculty": "Teknoloji Fakültesi" },
-    { "id": "HAR", "name": "Harekat Araştırması",                           "faculty": "Mühendislik Fakültesi" },
-    { "id": "İLT", "name": "İleri Teknolojiler",                            "faculty": "Teknoloji Fakültesi" },
-    { "id": "İMM", "name": "İmalat Mühendisliği",                           "faculty": "Teknoloji Fakültesi" },
-    { "id": "İNM", "name": "İnşaat Mühendisliği (Müh. Fak.)",               "faculty": "Mühendislik Fakültesi" },
-    { "id": "İNT", "name": "İnşaat Mühendisliği (Tek. Fak.)",               "faculty": "Teknoloji Fakültesi" },
-    { "id": "İST", "name": "İstatistik",                                    "faculty": "Fen Fakültesi" },
-    { "id": "KAZ", "name": "Kazaların Çevresel ve Teknik Araştırması",      "faculty": "Mühendislik Fakültesi" },
-    { "id": "KİM", "name": "Kimya",                                         "faculty": "Fen Fakültesi" },
-    { "id": "KMM", "name": "Kimya Mühendisliği",                            "faculty": "Mühendislik Fakültesi" },
-    { "id": "MAE", "name": "Makine Eğitimi",                                "faculty": "Teknoloji Fakültesi" },
-    { "id": "MAK", "name": "Makina Mühendisliği",                           "faculty": "Mühendislik Fakültesi" },
-    { "id": "MAT", "name": "Matematik",                                     "faculty": "Fen Fakültesi" },
-    { "id": "MBT", "name": "Mineraller ve Bor Teknolojisi",                 "faculty": "Teknoloji Fakültesi" },
-    { "id": "MDE", "name": "Mobilya ve Dekorasyon Eğitimi",                 "faculty": "Teknoloji Fakültesi" },
-    { "id": "MET", "name": "Metalurji ve Malzeme Mühendisliği",             "faculty": "Mühendislik Fakültesi" },
-    { "id": "MİM", "name": "Mimarlık",                                      "faculty": "Mimarlık Fakültesi" },
-    { "id": "MTE", "name": "Metal Eğitimi",                                 "faculty": "Teknoloji Fakültesi" },
-    { "id": "NUB", "name": "Nükleer Bilimler",                              "faculty": "Mühendislik Fakültesi" },
-    { "id": "OTO", "name": "Otomotiv Mühendisliği",                         "faculty": "Mühendislik Fakültesi" },
-    { "id": "SLH", "name": "Silah Sistemleri Mühendisliği",                 "faculty": "Mühendislik Fakültesi" },
-    { "id": "ŞBP", "name": "Şehir ve Bölge Planlama",                       "faculty": "Mimarlık Fakültesi" },
-    { "id": "TED", "name": "Tedarik ve Lojistik Yönetimi",                  "faculty": "Mühendislik Fakültesi" },
-    { "id": "TRF", "name": "Trafik Planlaması ve Uygulaması",               "faculty": "Mühendislik Fakültesi" },
-    { "id": "YPE", "name": "Yapı Eğitimi",                                  "faculty": "Teknoloji Fakültesi" }
+    {
+      "id": "BİY", "name": "Biyoloji", "faculty": "Fen Fakültesi", "status": "aktif",
+      "programs": [{ "code": "BİY", "name": "Biyoloji" }]
+    },
+    {
+      "id": "FİZ", "name": "Fizik", "faculty": "Fen Fakültesi", "status": "aktif",
+      "programs": [{ "code": "FİZ", "name": "Fizik" }]
+    },
+    {
+      "id": "İST", "name": "İstatistik", "faculty": "Fen Fakültesi", "status": "aktif",
+      "programs": [
+        { "code": "İST", "name": "İstatistik" },
+        { "code": "VBL", "name": "Veri Bilimi" }
+      ]
+    },
+    {
+      "id": "KİM", "name": "Kimya", "faculty": "Fen Fakültesi", "status": "aktif",
+      "programs": [{ "code": "KİM", "name": "Kimya" }]
+    },
+    {
+      "id": "MAT", "name": "Matematik", "faculty": "Fen Fakültesi", "status": "aktif",
+      "programs": [{ "code": "MAT", "name": "Matematik" }]
+    },
+    {
+      "id": "EEM", "name": "Elektrik-Elektronik Mühendisliği (Müh. Fak.)", "faculty": "Mühendislik Fakültesi", "status": "aktif",
+      "programs": [{ "code": "EEM", "name": "Elektrik-Elektronik Mühendisliği" }]
+    },
+    {
+      "id": "EMM", "name": "Endüstri Mühendisliği", "faculty": "Mühendislik Fakültesi", "status": "aktif",
+      "programs": [
+        { "code": "EMM", "name": "Endüstri Mühendisliği" },
+        { "code": "MTY", "name": "Mühendislik ve Teknoloji Yönetimi" }
+      ]
+    },
+    {
+      "id": "İNM", "name": "İnşaat Mühendisliği (Müh. Fak.)", "faculty": "Mühendislik Fakültesi", "status": "aktif",
+      "programs": [{ "code": "İNM", "name": "İnşaat Mühendisliği" }]
+    },
+    {
+      "id": "KMM", "name": "Kimya Mühendisliği", "faculty": "Mühendislik Fakültesi", "status": "aktif",
+      "programs": [
+        { "code": "KMM", "name": "Kimya Mühendisliği" },
+        { "code": "PSG", "name": "Proses Güvenliği" }
+      ]
+    },
+    {
+      "id": "MAK", "name": "Makina Mühendisliği", "faculty": "Mühendislik Fakültesi", "status": "aktif",
+      "programs": [{ "code": "MAK", "name": "Makina Mühendisliği" }]
+    },
+    {
+      "id": "MİM", "name": "Mimarlık", "faculty": "Mimarlık Fakültesi", "status": "aktif",
+      "programs": [{ "code": "MİM", "name": "Mimarlık" }]
+    },
+    {
+      "id": "ŞBP", "name": "Şehir ve Bölge Planlama", "faculty": "Mimarlık Fakültesi", "status": "aktif",
+      "programs": [
+        { "code": "CBS", "name": "Planlamada Coğrafi Bilgi Sistemleri" },
+        { "code": "SBP", "name": "Şehir ve Bölge Planlama" }
+      ]
+    },
+    {
+      "id": "BMM", "name": "Bilgisayar Mühendisliği (Müh. Fak.)", "faculty": "Mühendislik Fakültesi", "status": "aktif",
+      "programs": [
+        { "code": "BMM", "name": "Bilgisayar Mühendisliği" },
+        { "code": "BDA", "name": "Büyük Veri Analitiği, Güvenliği ve Mahremiyeti" }
+      ]
+    },
+    {
+      "id": "MDE", "name": "Mobilya ve Dekorasyon Eğitimi", "faculty": "Fen Bilimleri Enstitüsü", "status": "pasif",
+      "programs": [{ "code": "MDE", "name": "Mobilya ve Dekorasyon Eğitimi" }]
+    },
+    {
+      "id": "MAE", "name": "Makine Eğitimi", "faculty": "Fen Bilimleri Enstitüsü", "status": "pasif",
+      "programs": [{ "code": "MAE", "name": "Makine Eğitimi" }]
+    },
+    {
+      "id": "MTE", "name": "Metal Eğitimi", "faculty": "Fen Bilimleri Enstitüsü", "status": "pasif",
+      "programs": [{ "code": "MTE", "name": "Metal Eğitimi" }]
+    },
+    {
+      "id": "YPE", "name": "Yapı Eğitimi", "faculty": "Fen Bilimleri Enstitüsü", "status": "pasif",
+      "programs": [{ "code": "YPE", "name": "Yapı Eğitimi" }]
+    },
+    {
+      "id": "ETE", "name": "Endüstriyel Teknoloji Eğitimi", "faculty": "Fen Bilimleri Enstitüsü", "status": "pasif",
+      "programs": [{ "code": "ETE", "name": "Endüstriyel Teknoloji Eğitimi" }]
+    },
+    {
+      "id": "ELE", "name": "Elektrik Eğitimi", "faculty": "Fen Bilimleri Enstitüsü", "status": "pasif",
+      "programs": [{ "code": "ELE", "name": "Elektrik Eğitimi" }]
+    },
+    {
+      "id": "KAZ", "name": "Kazaların Çevresel ve Teknik Araştırması", "faculty": "Fen Bilimleri Enstitüsü", "status": "aktif",
+      "programs": [{ "code": "KAZ", "name": "Kazaların Çevresel ve Teknik Araştırması" }]
+    },
+    {
+      "id": "TRF", "name": "Trafik Planlaması ve Uygulaması", "faculty": "Fen Bilimleri Enstitüsü", "status": "aktif",
+      "programs": [{ "code": "TRF", "name": "Trafik Planlaması ve Uygulaması" }]
+    },
+    {
+      "id": "CEV", "name": "Çevre Bilimleri", "faculty": "Fen Bilimleri Enstitüsü", "status": "aktif",
+      "programs": [{ "code": "CEV", "name": "Çevre Bilimleri" }]
+    },
+    {
+      "id": "İLT", "name": "İleri Teknolojiler", "faculty": "Fen Bilimleri Enstitüsü", "status": "aktif",
+      "programs": [{ "code": "İLT", "name": "İleri Teknolojiler" }]
+    },
+    {
+      "id": "EET", "name": "Elektrik-Elektronik Mühendisliği (Tek. Fak.)", "faculty": "Teknoloji Fakültesi", "status": "aktif",
+      "programs": [{ "code": "EET", "name": "Elektrik-Elektronik Mühendisliği" }]
+    },
+    {
+      "id": "ETM", "name": "Endüstriyel Tasarım Mühendisliği", "faculty": "Teknoloji Fakültesi", "status": "aktif",
+      "programs": [{ "code": "ETM", "name": "Endüstriyel Tasarım Mühendisliği" }]
+    },
+    {
+      "id": "İNT", "name": "İnşaat Mühendisliği (Tek. Fak.)", "faculty": "Teknoloji Fakültesi", "status": "aktif",
+      "programs": [{ "code": "İNT", "name": "İnşaat Mühendisliği" }]
+    },
+    {
+      "id": "BMT", "name": "Bilgisayar Mühendisliği (Tek. Fak.)", "faculty": "Teknoloji Fakültesi", "status": "aktif",
+      "programs": [{ "code": "BMT", "name": "Bilgisayar Mühendisliği" }]
+    },
+    {
+      "id": "OTO", "name": "Otomotiv Mühendisliği", "faculty": "Teknoloji Fakültesi", "status": "aktif",
+      "programs": [{ "code": "OTO", "name": "Otomotiv Mühendisliği" }]
+    },
+    {
+      "id": "ESM", "name": "Enerji Sistemleri Mühendisliği", "faculty": "Teknoloji Fakültesi", "status": "aktif",
+      "programs": [{ "code": "ESM", "name": "Enerji Sistemleri Mühendisliği" }]
+    },
+    {
+      "id": "İMM", "name": "İmalat Mühendisliği", "faculty": "Teknoloji Fakültesi", "status": "aktif",
+      "programs": [{ "code": "İMM", "name": "İmalat Mühendisliği" }]
+    },
+    {
+      "id": "MET", "name": "Metalurji ve Malzeme Mühendisliği", "faculty": "Teknoloji Fakültesi", "status": "aktif",
+      "programs": [{ "code": "MET", "name": "Metalurji ve Malzeme Mühendisliği" }]
+    },
+    {
+      "id": "AEM", "name": "Ağaç İşleri Endüstri Mühendisliği", "faculty": "Teknoloji Fakültesi", "status": "aktif",
+      "programs": [{ "code": "AEM", "name": "Ağaç İşleri Endüstri Mühendisliği" }]
+    },
+    {
+      "id": "BGM", "name": "Bilgi Güvenliği Mühendisliği", "faculty": "Fen Bilimleri Enstitüsü", "status": "aktif",
+      "programs": [{ "code": "BGM", "name": "Bilgi Güvenliği Mühendisliği" }]
+    },
+    {
+      "id": "ASB", "name": "Akıllı Şebekeler", "faculty": "Fen Bilimleri Enstitüsü", "status": "aktif",
+      "programs": [{ "code": "ASB", "name": "Akıllı Şebekeler" }]
+    },
+    {
+      "id": "SLH", "name": "Silah Sistemleri Mühendisliği", "faculty": "Fen Bilimleri Enstitüsü", "status": "aktif",
+      "programs": [{ "code": "SLH", "name": "Silah Sistemleri Mühendisliği" }]
+    },
+    {
+      "id": "TED", "name": "Tedarik ve Lojistik Yönetimi", "faculty": "Fen Bilimleri Enstitüsü", "status": "pasif",
+      "programs": [{ "code": "TED", "name": "Tedarik ve Lojistik Yönetimi" }]
+    },
+    {
+      "id": "HAR", "name": "Harekat Araştırması", "faculty": "Fen Bilimleri Enstitüsü", "status": "pasif",
+      "programs": [{ "code": "HAR", "name": "Harekat Araştırması" }]
+    },
+    {
+      "id": "FOT", "name": "Fotonik Bilimi ve Mühendisliği", "faculty": "Fen Bilimleri Enstitüsü", "status": "aktif",
+      "programs": [{ "code": "FOT", "name": "Fotonik Bilimi ve Mühendisliği" }]
+    },
+    {
+      "id": "EUT", "name": "Endüstriyel Tasarım", "faculty": "Fen Bilimleri Enstitüsü", "status": "aktif",
+      "programs": [{ "code": "EUT", "name": "Endüstriyel Tasarım" }]
+    },
+    {
+      "id": "NKB", "name": "Nükleer Bilimler", "faculty": "Fen Bilimleri Enstitüsü", "status": "aktif",
+      "programs": [{ "code": "NKB", "name": "Nükleer Bilimler" }]
+    },
+    {
+      "id": "MBT", "name": "Mineraller ve Bor Teknolojisi", "faculty": "Fen Bilimleri Enstitüsü", "status": "aktif",
+      "programs": [{ "code": "MBT", "name": "Mineraller ve Bor Teknolojisi" }]
+    },
+    {
+      "id": "ATM", "name": "Ayakkabı Teknolojisi Mühendisliği", "faculty": "Fen Bilimleri Enstitüsü", "status": "aktif",
+      "programs": [{ "code": "ATM", "name": "Ayakkabı Teknolojisi Mühendisliği" }]
+    }
   ]
 }
