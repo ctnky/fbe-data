@@ -1,9 +1,27 @@
 {
   "meta": {
     "schema": "fbe_departments_v1",
+    "version": "1.0.2",
+    "updated_at": "2026-09-25T13:57:00.000Z",
     "source_url": "https://fbe.gazi.edu.tr/view/page/299116/ana-bilim-dallari-2",
-    "updated_at": "2026-09-25",
-    "description": "Gazi Üniversitesi Fen Bilimleri Enstitüsü Ana Bilim Dalları — Resmi arşiv listesinden alınmıştır"
+    "description": "Gazi Üniversitesi Fen Bilimleri Enstitüsü Ana Bilim Dalları",
+    "changelog": [
+      {
+        "version": "1.0.0",
+        "date": "2026-09-25",
+        "note": "İlk sürüm — 42 ABD, kaynak: fbe-catalog-data.json ID listesi"
+      },
+      {
+        "version": "1.0.1",
+        "date": "2026-09-25",
+        "note": "Resmi FBE arşiv listesi eklendi, name ve faculty alanları eklendi"
+      },
+      {
+        "version": "1.0.2",
+        "date": "2026-09-25",
+        "note": "Yanlış isimler düzeltildi: BMM, BMT, BİY, EMM, ESM, MDE, MTE, AEM, BGM, ATM, HAR, İLT, İNT, KAZ, SLH, TED"
+      }
+    ]
   },
   "departments": [
     { "id": "AEM", "name": "Ağaç İşleri Endüstri Mühendisliği",            "faculty": "Teknoloji Fakültesi" },
