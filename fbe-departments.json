@@ -1,7 +1,7 @@
 {
   "meta": {
     "schema": "fbe_departments_v2",
-    "version": "2.1.0",
+    "version": "2.2.1",
     "updated_at": "2026-09-30",
     "source_url": "https://fbe.gazi.edu.tr/view/page/299116/ana-bilim-dallari-2",
     "description": "Gazi Üniversitesi Fen Bilimleri Enstitüsü Ana Bilim Dalları ve Program Varyantları",
@@ -27,7 +27,8 @@
         "date": "2026-09-25",
         "note": "programs şeması genişletildi: type (yl/doktora/tyl) + language (tr/en) + edu_model (orgün/ikinci) eklendi. Ekran görüntüsünden tüm varyantlar işlendi."
       }
-    ]
+    ],
+    "last_updated": "2026-09-30"
   },
   "program_type_labels": {
     "ty": {
@@ -163,7 +164,7 @@
         },
         {
           "name": "Veri Bilimi",
-          "type": "tz",
+          "type": "ty",
           "language": "tr",
           "edu_model": "orgün",
           "code": "VBL"
@@ -421,7 +422,7 @@
       "programs": [
         {
           "name": "Planlamada Coğrafi Bilgi Sistemleri",
-          "type": "tz",
+          "type": "ty",
           "language": "tr",
           "edu_model": "orgün",
           "code": "CBS"
@@ -432,12 +433,6 @@
           "language": "tr",
           "edu_model": "orgün",
           "code": "SBP"
-        },
-        {
-          "name": "Şehir ve Bölge Planlama",
-          "type": "ty",
-          "language": "tr",
-          "edu_model": "orgün"
         },
         {
           "name": "Şehir ve Bölge Planlama",
@@ -557,13 +552,13 @@
       "programs": [
         {
           "name": "Kazaların Çevresel ve Teknik Araştırması",
-          "type": "tz",
+          "type": "ty",
           "language": "tr",
           "edu_model": "orgün"
         },
         {
           "name": "Kazaların Çevresel ve Teknik Araştırması",
-          "type": "tz",
+          "type": "dr",
           "language": "tr",
           "edu_model": "orgün"
         }
@@ -577,13 +572,13 @@
       "programs": [
         {
           "name": "Trafik Planlaması ve Uygulaması",
-          "type": "tz",
+          "type": "ty",
           "language": "tr",
           "edu_model": "orgün"
         },
         {
           "name": "Trafik Planlaması ve Uygulaması",
-          "type": "tz",
+          "type": "dr",
           "language": "tr",
           "edu_model": "orgün"
         }

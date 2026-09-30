@@ -3,7 +3,8 @@
     "schema": "fbe_catalog_data",
     "source_url": "https://raw.githubusercontent.com/ctnky/fbe-data/main/fbe-catalog-data.json",
     "updated_at": "2026-09-30",
-    "version": "1.1.0"
+    "version": "2.2.1",
+    "last_updated": "2026-09-30"
   },
   "persons": [
     {
@@ -13,12 +14,8 @@
       "last_name": "ÖZSUNAR",
       "avesis": "https://avesis.gazi.edu.tr/ozsunar",
       "photo": "https://avesis.gazi.edu.tr/user/image/10038",
-      "gender": "e",
-      "person_type": "academic",
-      "honorific": "Abuzer Kadir Hoca",
-      "cinsiyet": "erkek",
-      "tur": "akademik",
-      "hitap": "Abuzer Kadir Hoca"
+      "gender": "m",
+      "person_type": "academic"
     },
     {
       "id": "a_arap_duran_turkoglu",
@@ -27,12 +24,8 @@
       "last_name": "TÜRKOĞLU",
       "avesis": "https://avesis.gazi.edu.tr/dturkoglu",
       "photo": "https://avesis.gazi.edu.tr/user/image/10192",
-      "gender": "e",
-      "person_type": "academic",
-      "honorific": "Arap Duran Hoca",
-      "cinsiyet": "erkek",
-      "tur": "akademik",
-      "hitap": "Arap Duran Hoca"
+      "gender": "m",
+      "person_type": "academic"
     },
     {
       "id": "a_ayhan_erdem",
@@ -41,12 +34,8 @@
       "last_name": "ERDEM",
       "avesis": "https://avesis.gazi.edu.tr/ayerdem",
       "photo": "https://avesis.gazi.edu.tr/user/image/12792",
-      "gender": "e",
-      "person_type": "academic",
-      "honorific": "Ayhan Hoca",
-      "cinsiyet": "erkek",
-      "tur": "akademik",
-      "hitap": "Ayhan Hoca"
+      "gender": "m",
+      "person_type": "academic"
     },
     {
       "id": "a_aysel_caglan_gunal",
@@ -55,12 +44,8 @@
       "last_name": "GÜNAL",
       "avesis": "https://avesis.gazi.edu.tr/caglangunal",
       "photo": "https://avesis.gazi.edu.tr/user/image/10321",
-      "gender": "k",
-      "person_type": "academic",
-      "honorific": "Aysel Çağlan Hoca",
-      "cinsiyet": "kadın",
-      "tur": "akademik",
-      "hitap": "Aysel Çağlan Hoca"
+      "gender": "f",
+      "person_type": "academic"
     },
     {
       "id": "a_berat_cinar_acar",
@@ -69,12 +54,8 @@
       "last_name": "ÇINAR ACAR",
       "avesis": "https://avesis.gazi.edu.tr/beratcinar",
       "photo": "https://avesis.gazi.edu.tr/user/image/100243",
-      "gender": "k",
-      "person_type": "academic",
-      "honorific": "Berat Hoca",
-      "cinsiyet": "kadın",
-      "tur": "akademik",
-      "hitap": "Berat Hoca"
+      "gender": "f",
+      "person_type": "academic"
     },
     {
       "id": "a_bulent_bostan",
@@ -83,12 +64,8 @@
       "last_name": "BOSTAN",
       "avesis": "https://avesis.gazi.edu.tr/bostan",
       "photo": "https://avesis.gazi.edu.tr/user/image/10624",
-      "gender": "e",
-      "person_type": "academic",
-      "honorific": "Bülent Hoca",
-      "cinsiyet": "erkek",
-      "tur": "akademik",
-      "hitap": "Bülent Hoca"
+      "gender": "m",
+      "person_type": "academic"
     },
     {
       "id": "a_dilek_akbulut",
@@ -97,12 +74,8 @@
       "last_name": "AKBULUT",
       "avesis": "https://avesis.gazi.edu.tr/dilekakbulut",
       "photo": "https://avesis.gazi.edu.tr/user/image/10852",
-      "gender": "k",
-      "person_type": "academic",
-      "honorific": "Dilek Hoca",
-      "cinsiyet": "kadın",
-      "tur": "akademik",
-      "hitap": "Dilek Hoca"
+      "gender": "f",
+      "person_type": "academic"
     },
     {
       "id": "a_ebru_vesile_ocalir",
@@ -111,12 +84,8 @@
       "last_name": "ÖCALIR",
       "avesis": "https://avesis.gazi.edu.tr/ebruocalir",
       "photo": "https://avesis.gazi.edu.tr/user/image/10920",
-      "gender": "k",
-      "person_type": "academic",
-      "honorific": "Ebru Vesile Hoca",
-      "cinsiyet": "kadın",
-      "tur": "akademik",
-      "hitap": "Ebru Vesile Hoca"
+      "gender": "f",
+      "person_type": "academic"
     },
     {
       "id": "a_erdal_irmak",
@@ -125,12 +94,8 @@
       "last_name": "IRMAK",
       "avesis": "https://avesis.gazi.edu.tr/erdal",
       "photo": "https://avesis.gazi.edu.tr/user/image/11102",
-      "gender": "e",
-      "person_type": "academic",
-      "honorific": "Erdal Hoca",
-      "cinsiyet": "erkek",
-      "tur": "akademik",
-      "hitap": "Erdal Hoca"
+      "gender": "m",
+      "person_type": "academic"
     },
     {
       "id": "a_firat_hardalac",
@@ -139,12 +104,8 @@
       "last_name": "HARDALAÇ",
       "avesis": "https://avesis.gazi.edu.tr/firat",
       "photo": "https://avesis.gazi.edu.tr/user/image/11346",
-      "gender": "e",
-      "person_type": "academic",
-      "honorific": "Fırat Hoca",
-      "cinsiyet": "erkek",
-      "tur": "akademik",
-      "hitap": "Fırat Hoca"
+      "gender": "m",
+      "person_type": "academic"
     },
     {
       "id": "a_gul_didem_batur_sir",
@@ -153,12 +114,8 @@
       "last_name": "BATUR SİR",
       "avesis": "https://avesis.gazi.edu.tr/dbatur",
       "photo": "https://avesis.gazi.edu.tr/user/image/11485",
-      "gender": "k",
-      "person_type": "academic",
-      "honorific": "Gül Didem Hoca",
-      "cinsiyet": "kadın",
-      "tur": "akademik",
-      "hitap": "Gül Didem Hoca"
+      "gender": "f",
+      "person_type": "academic"
     },
     {
       "id": "a_gultekin_uzun",
@@ -167,12 +124,8 @@
       "last_name": "UZUN",
       "avesis": "https://avesis.gazi.edu.tr/uzun.gultekin",
       "photo": "https://avesis.gazi.edu.tr/user/image/11532",
-      "gender": "e",
-      "person_type": "academic",
-      "honorific": "Gültekin Hoca",
-      "cinsiyet": "erkek",
-      "tur": "akademik",
-      "hitap": "Gültekin Hoca"
+      "gender": "m",
+      "person_type": "academic"
     },
     {
       "id": "a_hacer_karacan",
@@ -181,12 +134,8 @@
       "last_name": "KARACAN",
       "avesis": "https://avesis.gazi.edu.tr/hkaracan",
       "photo": "https://avesis.gazi.edu.tr/user/image/11556",
-      "gender": "k",
-      "person_type": "academic",
-      "honorific": "Hacer Hoca",
-      "cinsiyet": "kadın",
-      "tur": "akademik",
-      "hitap": "Hacer Hoca"
+      "gender": "f",
+      "person_type": "academic"
     },
     {
       "id": "a_hakan_dilipak",
@@ -195,12 +144,8 @@
       "last_name": "DİLİPAK",
       "avesis": "https://avesis.gazi.edu.tr/hdilipak",
       "photo": "https://avesis.gazi.edu.tr/user/image/11578",
-      "gender": "e",
-      "person_type": "academic",
-      "honorific": "Hakan Hoca",
-      "cinsiyet": "erkek",
-      "tur": "akademik",
-      "hitap": "Hakan Hoca"
+      "gender": "m",
+      "person_type": "academic"
     },
     {
       "id": "a_halit_arslan",
@@ -209,12 +154,8 @@
       "last_name": "ARSLAN",
       "avesis": "https://avesis.gazi.edu.tr/halit",
       "photo": "https://avesis.gazi.edu.tr/user/image/11617",
-      "gender": "e",
-      "person_type": "academic",
-      "honorific": "Halit Hoca",
-      "cinsiyet": "erkek",
-      "tur": "akademik",
-      "hitap": "Halit Hoca"
+      "gender": "m",
+      "person_type": "academic"
     },
     {
       "id": "a_hamit_solmaz",
@@ -223,12 +164,8 @@
       "last_name": "SOLMAZ",
       "avesis": "https://avesis.gazi.edu.tr/hsolmaz",
       "photo": "https://avesis.gazi.edu.tr/user/image/11630",
-      "gender": "e",
-      "person_type": "academic",
-      "honorific": "Hamit Hoca",
-      "cinsiyet": "erkek",
-      "tur": "akademik",
-      "hitap": "Hamit Hoca"
+      "gender": "m",
+      "person_type": "academic"
     },
     {
       "id": "a_hamza_cinar",
@@ -237,12 +174,8 @@
       "last_name": "ÇINAR",
       "avesis": "https://avesis.gazi.edu.tr/hamzacinar",
       "photo": "https://avesis.gazi.edu.tr/user/image/11632",
-      "gender": "e",
-      "person_type": "academic",
-      "honorific": "Hamza Hoca",
-      "cinsiyet": "erkek",
-      "tur": "akademik",
-      "hitap": "Hamza Hoca"
+      "gender": "m",
+      "person_type": "academic"
     },
     {
       "id": "a_ismail_sahin",
@@ -251,12 +184,8 @@
       "last_name": "ŞAHİN",
       "avesis": "https://avesis.gazi.edu.tr/isahin",
       "photo": "https://avesis.gazi.edu.tr/user/image/11925",
-      "gender": "e",
-      "person_type": "academic",
-      "honorific": "İsmail Hoca",
-      "cinsiyet": "erkek",
-      "tur": "akademik",
-      "hitap": "İsmail Hoca"
+      "gender": "m",
+      "person_type": "academic"
     },
     {
       "id": "a_kerem_tastan",
@@ -265,12 +194,8 @@
       "last_name": "TAŞTAN",
       "avesis": "https://avesis.gazi.edu.tr/ktastan",
       "photo": "https://avesis.gazi.edu.tr/user/image/11978",
-      "gender": "e",
-      "person_type": "academic",
-      "honorific": "Kerem Hoca",
-      "cinsiyet": "erkek",
-      "tur": "akademik",
-      "hitap": "Kerem Hoca"
+      "gender": "m",
+      "person_type": "academic"
     },
     {
       "id": "a_kursat_yildiz",
@@ -279,12 +204,8 @@
       "last_name": "YILDIZ",
       "avesis": "https://avesis.gazi.edu.tr/kursaty",
       "photo": "https://avesis.gazi.edu.tr/user/image/12016",
-      "gender": "e",
-      "person_type": "academic",
-      "honorific": "Kürşat Hoca",
-      "cinsiyet": "erkek",
-      "tur": "akademik",
-      "hitap": "Kürşat Hoca"
+      "gender": "m",
+      "person_type": "academic"
     },
     {
       "id": "a_mehmet_akif_bakir",
@@ -293,12 +214,8 @@
       "last_name": "BAKIR",
       "avesis": "https://avesis.gazi.edu.tr/mabakir",
       "photo": "https://avesis.gazi.edu.tr/user/image/12125",
-      "gender": "e",
-      "person_type": "academic",
-      "honorific": "Mehmet Akif Hoca",
-      "cinsiyet": "erkek",
-      "tur": "akademik",
-      "hitap": "Mehmet Akif Hoca"
+      "gender": "m",
+      "person_type": "academic"
     },
     {
       "id": "a_murat_bilen",
@@ -307,12 +224,8 @@
       "last_name": "BİLEN",
       "avesis": "https://avesis.gazi.edu.tr/muratbilen",
       "photo": "https://avesis.gazi.edu.tr/user/image/100413",
-      "gender": "e",
-      "person_type": "academic",
-      "honorific": "Murat Hoca",
-      "cinsiyet": "erkek",
-      "tur": "akademik",
-      "hitap": "Murat Hoca"
+      "gender": "m",
+      "person_type": "academic"
     },
     {
       "id": "a_murat_dener",
@@ -321,12 +234,8 @@
       "last_name": "DENER",
       "avesis": "https://avesis.gazi.edu.tr/muratdener",
       "photo": "https://avesis.gazi.edu.tr/user/image/12397",
-      "gender": "e",
-      "person_type": "academic",
-      "honorific": "Murat Hoca",
-      "cinsiyet": "erkek",
-      "tur": "akademik",
-      "hitap": "Murat Hoca"
+      "gender": "m",
+      "person_type": "academic"
     },
     {
       "id": "a_nihat_ozturk",
@@ -335,12 +244,8 @@
       "last_name": "ÖZTÜRK",
       "avesis": "https://avesis.gazi.edu.tr/ozturk",
       "photo": "https://avesis.gazi.edu.tr/user/image/12641",
-      "gender": "e",
-      "person_type": "academic",
-      "honorific": "Nihat Hoca",
-      "cinsiyet": "erkek",
-      "tur": "akademik",
-      "hitap": "Nihat Hoca"
+      "gender": "m",
+      "person_type": "academic"
     },
     {
       "id": "a_orhan_kaplan",
@@ -349,12 +254,8 @@
       "last_name": "KAPLAN",
       "avesis": "https://avesis.gazi.edu.tr/okaplan",
       "photo": "https://avesis.gazi.edu.tr/user/image/12774",
-      "gender": "e",
-      "person_type": "academic",
-      "honorific": "Orhan Hoca",
-      "cinsiyet": "erkek",
-      "tur": "akademik",
-      "hitap": "Orhan Hoca"
+      "gender": "m",
+      "person_type": "academic"
     },
     {
       "id": "a_salih_yazicioglu",
@@ -363,12 +264,8 @@
       "last_name": "YAZICIOĞLU",
       "avesis": "https://avesis.gazi.edu.tr/syazicioglu",
       "photo": "https://avesis.gazi.edu.tr/user/image/13026",
-      "gender": "e",
-      "person_type": "academic",
-      "honorific": "Salih Hoca",
-      "cinsiyet": "erkek",
-      "tur": "akademik",
-      "hitap": "Salih Hoca"
+      "gender": "m",
+      "person_type": "academic"
     },
     {
       "id": "a_sedat_surdem",
@@ -377,12 +274,8 @@
       "last_name": "SÜRDEM",
       "avesis": "https://avesis.gazi.edu.tr/sedatsurdem",
       "photo": "https://avesis.gazi.edu.tr/user/image/100281",
-      "gender": "e",
-      "person_type": "academic",
-      "honorific": "Sedat Hoca",
-      "cinsiyet": "erkek",
-      "tur": "akademik",
-      "hitap": "Sedat Hoca"
+      "gender": "m",
+      "person_type": "academic"
     },
     {
       "id": "a_sema_bilge_ocak",
@@ -391,12 +284,8 @@
       "last_name": "OCAK",
       "avesis": "https://avesis.gazi.edu.tr/sbocak",
       "photo": "https://avesis.gazi.edu.tr/user/image/13120",
-      "gender": "k",
-      "person_type": "academic",
-      "honorific": "Sema Bilge Hoca",
-      "cinsiyet": "kadın",
-      "tur": "akademik",
-      "hitap": "Sema Bilge Hoca"
+      "gender": "f",
+      "person_type": "academic"
     },
     {
       "id": "a_suleyman_ozcelik",
@@ -405,12 +294,8 @@
       "last_name": "ÖZÇELİK",
       "avesis": "https://avesis.gazi.edu.tr/sozcelik",
       "photo": "https://avesis.gazi.edu.tr/user/image/13312",
-      "gender": "e",
-      "person_type": "academic",
-      "honorific": "Süleyman Hoca",
-      "cinsiyet": "erkek",
-      "tur": "akademik",
-      "hitap": "Süleyman Hoca"
+      "gender": "m",
+      "person_type": "academic"
     },
     {
       "id": "a_sule_coskun_cevher",
@@ -419,12 +304,8 @@
       "last_name": "COŞKUN CEVHER",
       "avesis": "https://avesis.gazi.edu.tr/sule",
       "photo": "https://avesis.gazi.edu.tr/user/image/13385",
-      "gender": "k",
-      "person_type": "academic",
-      "honorific": "Şule Hoca",
-      "cinsiyet": "kadın",
-      "tur": "akademik",
-      "hitap": "Şule Hoca"
+      "gender": "f",
+      "person_type": "academic"
     },
     {
       "id": "a_tarik_asar",
@@ -433,12 +314,8 @@
       "last_name": "ASAR",
       "avesis": "https://avesis.gazi.edu.tr/asar",
       "photo": "https://avesis.gazi.edu.tr/user/image/13411",
-      "gender": "e",
-      "person_type": "academic",
-      "honorific": "Tarık Hoca",
-      "cinsiyet": "erkek",
-      "tur": "akademik",
-      "hitap": "Tarık Hoca"
+      "gender": "m",
+      "person_type": "academic"
     },
     {
       "id": "a_tayfun_menlik",
@@ -447,12 +324,8 @@
       "last_name": "MENLİK",
       "avesis": "https://avesis.gazi.edu.tr/tmenlik",
       "photo": "https://avesis.gazi.edu.tr/user/image/13417",
-      "gender": "e",
-      "person_type": "academic",
-      "honorific": "Tayfun Hoca",
-      "cinsiyet": "erkek",
-      "tur": "akademik",
-      "hitap": "Tayfun Hoca"
+      "gender": "m",
+      "person_type": "academic"
     },
     {
       "id": "i_asli_gultekin",
@@ -460,12 +333,8 @@
       "last_name": "GÜLTEKİN",
       "phone": "0 (312) 202 37 39",
       "email": "asli.gultekin@gazi.edu.tr",
-      "gender": "k",
-      "person_type": "administrative",
-      "honorific": "Aslı Hanım",
-      "cinsiyet": "kadın",
-      "tur": "idari",
-      "hitap": "Aslı Hanım"
+      "gender": "f",
+      "person_type": "administrative"
     },
     {
       "id": "i_baris_cem_onal",
@@ -473,12 +342,8 @@
       "last_name": "ÖNAL",
       "phone": "0 (312) 202 37 20",
       "email": "bariscem.onal@gazi.edu.tr",
-      "gender": "e",
-      "person_type": "administrative",
-      "honorific": "Barış Cem Bey",
-      "cinsiyet": "erkek",
-      "tur": "idari",
-      "hitap": "Barış Cem Bey"
+      "gender": "m",
+      "person_type": "administrative"
     },
     {
       "id": "i_derya_yucel",
@@ -486,12 +351,8 @@
       "last_name": "YÜCEL",
       "phone": "0 (312) 202 37 22",
       "email": "derya.yucel2@gazi.edu.tr",
-      "gender": "k",
-      "person_type": "administrative",
-      "honorific": "Derya Hanım",
-      "cinsiyet": "kadın",
-      "tur": "idari",
-      "hitap": "Derya Hanım"
+      "gender": "f",
+      "person_type": "administrative"
     },
     {
       "id": "i_didem_balaban",
@@ -499,12 +360,8 @@
       "last_name": "BALABAN",
       "phone": "0 (312) 202 37 28",
       "email": "didem.balaban@gazi.edu.tr",
-      "gender": "k",
-      "person_type": "administrative",
-      "honorific": "Didem Hanım",
-      "cinsiyet": "kadın",
-      "tur": "idari",
-      "hitap": "Didem Hanım"
+      "gender": "f",
+      "person_type": "administrative"
     },
     {
       "id": "i_dogan_kara",
@@ -512,12 +369,8 @@
       "last_name": "KARA",
       "phone": "0 (312) 202 37 19",
       "email": "dogan.kara@gazi.edu.tr",
-      "gender": "e",
-      "person_type": "administrative",
-      "honorific": "Doğan Bey",
-      "cinsiyet": "erkek",
-      "tur": "idari",
-      "hitap": "Doğan Bey"
+      "gender": "m",
+      "person_type": "administrative"
     },
     {
       "id": "i_duygu_yurekli",
@@ -525,12 +378,8 @@
       "last_name": "YÜREKLİ",
       "phone": "0 (312) 202 37 32",
       "email": "duygu.aktas@gazi.edu.tr",
-      "gender": "k",
-      "person_type": "administrative",
-      "honorific": "Duygu Hanım",
-      "cinsiyet": "kadın",
-      "tur": "idari",
-      "hitap": "Duygu Hanım"
+      "gender": "f",
+      "person_type": "administrative"
     },
     {
       "id": "i_emine_kocamemik",
@@ -538,12 +387,8 @@
       "last_name": "KOCAMEMİK",
       "phone": "0 (312) 202 37 08",
       "email": "emine.tutuncu@gazi.edu.tr",
-      "gender": "k",
-      "person_type": "administrative",
-      "honorific": "Emine Hanım",
-      "cinsiyet": "kadın",
-      "tur": "idari",
-      "hitap": "Emine Hanım"
+      "gender": "f",
+      "person_type": "administrative"
     },
     {
       "id": "i_esen_aydin",
@@ -551,12 +396,8 @@
       "last_name": "AYDIN",
       "phone": "0 (312) 582 32 32",
       "email": "esenaydin@gazi.edu.tr",
-      "gender": "k",
-      "person_type": "administrative",
-      "honorific": "Esen Hanım",
-      "cinsiyet": "kadın",
-      "tur": "idari",
-      "hitap": "Esen Hanım"
+      "gender": "f",
+      "person_type": "administrative"
     },
     {
       "id": "i_esengul_bosnak",
@@ -564,12 +405,8 @@
       "last_name": "BOŞNAK",
       "phone": "0 (312) 202 37 18",
       "email": "esengul.turkoglu@gazi.edu.tr",
-      "gender": "k",
-      "person_type": "administrative",
-      "honorific": "Esengül Hanım",
-      "cinsiyet": "kadın",
-      "tur": "idari",
-      "hitap": "Esengül Hanım"
+      "gender": "f",
+      "person_type": "administrative"
     },
     {
       "id": "i_fatma_arslan",
@@ -577,12 +414,8 @@
       "last_name": "ARSLAN",
       "phone": "0 (312) 582 31 34",
       "email": "farslan@gazi.edu.tr",
-      "gender": "k",
-      "person_type": "administrative",
-      "honorific": "Fatma Hanım",
-      "cinsiyet": "kadın",
-      "tur": "idari",
-      "hitap": "Fatma Hanım"
+      "gender": "f",
+      "person_type": "administrative"
     },
     {
       "id": "i_figen_asal",
@@ -590,12 +423,8 @@
       "last_name": "ASAL",
       "phone": "0 (312) 202 37 09",
       "email": "figen.isa@gazi.edu.tr",
-      "gender": "k",
-      "person_type": "administrative",
-      "honorific": "Figen Hanım",
-      "cinsiyet": "kadın",
-      "tur": "idari",
-      "hitap": "Figen Hanım"
+      "gender": "f",
+      "person_type": "administrative"
     },
     {
       "id": "i_gulsah_dogan",
@@ -603,12 +432,8 @@
       "last_name": "DOĞAN",
       "phone": "0 (312) 582 35 32",
       "email": "gulsahdogan@gazi.edu.tr",
-      "gender": "k",
-      "person_type": "administrative",
-      "honorific": "Gülşah Hanım",
-      "cinsiyet": "kadın",
-      "tur": "idari",
-      "hitap": "Gülşah Hanım"
+      "gender": "f",
+      "person_type": "administrative"
     },
     {
       "id": "i_gulsah_yilmaz",
@@ -616,12 +441,8 @@
       "last_name": "YILMAZ",
       "phone": "0 (312) 582 38 10",
       "email": "gulsah.yilmaz@gazi.edu.tr",
-      "gender": "k",
-      "person_type": "administrative",
-      "honorific": "Gülşah Hanım",
-      "cinsiyet": "kadın",
-      "tur": "idari",
-      "hitap": "Gülşah Hanım"
+      "gender": "f",
+      "person_type": "administrative"
     },
     {
       "id": "i_murat_sahin",
@@ -629,12 +450,8 @@
       "last_name": "ŞAHİN",
       "phone": "0 (312) 582 36 04",
       "email": "msahin@gazi.edu.tr",
-      "gender": "e",
-      "person_type": "administrative",
-      "honorific": "Murat Bey",
-      "cinsiyet": "erkek",
-      "tur": "idari",
-      "hitap": "Murat Bey"
+      "gender": "m",
+      "person_type": "administrative"
     },
     {
       "id": "i_nurgul_kose",
@@ -642,12 +459,8 @@
       "last_name": "KÖSE",
       "phone": "0 (312) 582 33 50",
       "email": "nurgulkose@gazi.edu.tr",
-      "gender": "k",
-      "person_type": "administrative",
-      "honorific": "Nurgül Hanım",
-      "cinsiyet": "kadın",
-      "tur": "idari",
-      "hitap": "Nurgül Hanım"
+      "gender": "f",
+      "person_type": "administrative"
     },
     {
       "id": "i_nursel_kucuk",
@@ -655,12 +468,8 @@
       "last_name": "KÜÇÜK",
       "phone": "0 (312) 582 38 31",
       "email": "nurselkucuk@gazi.edu.tr",
-      "gender": "k",
-      "person_type": "administrative",
-      "honorific": "Nursel Hanım",
-      "cinsiyet": "kadın",
-      "tur": "idari",
-      "hitap": "Nursel Hanım"
+      "gender": "f",
+      "person_type": "administrative"
     },
     {
       "id": "i_ozcan_eryilmaz",
@@ -668,12 +477,8 @@
       "last_name": "ERYILMAZ",
       "phone": "0 (312) 202 87 50",
       "email": "metalurjimalzeme@gazi.edu.tr",
-      "gender": "e",
-      "person_type": "administrative",
-      "honorific": "Özcan Bey",
-      "cinsiyet": "erkek",
-      "tur": "idari",
-      "hitap": "Özcan Bey"
+      "gender": "m",
+      "person_type": "administrative"
     },
     {
       "id": "i_sevgi_erturk",
@@ -681,12 +486,8 @@
       "last_name": "ERTÜRK",
       "phone": "0 (312) 202 10 51",
       "email": "fenmatematik@gazi.edu.tr",
-      "gender": "k",
-      "person_type": "administrative",
-      "honorific": "Sevgi Hanım",
-      "cinsiyet": "kadın",
-      "tur": "idari",
-      "hitap": "Sevgi Hanım"
+      "gender": "f",
+      "person_type": "administrative"
     },
     {
       "id": "i_songul_ozturk",
@@ -694,12 +495,8 @@
       "last_name": "ÖZTÜRK",
       "phone": "0 (312) 582 34 32",
       "email": "sozturk@gazi.edu.tr",
-      "gender": "k",
-      "person_type": "administrative",
-      "honorific": "Songül Hanım",
-      "cinsiyet": "kadın",
-      "tur": "idari",
-      "hitap": "Songül Hanım"
+      "gender": "f",
+      "person_type": "administrative"
     },
     {
       "id": "i_serife_omur",
@@ -707,12 +504,8 @@
       "last_name": "ÖMÜR",
       "phone": "0 (312) 582 37 04",
       "email": "simir@gazi.edu.tr",
-      "gender": "k",
-      "person_type": "administrative",
-      "honorific": "Şerife Hanım",
-      "cinsiyet": "kadın",
-      "tur": "idari",
-      "hitap": "Şerife Hanım"
+      "gender": "f",
+      "person_type": "administrative"
     },
     {
       "id": "i_yildiz_koyuncu",
@@ -720,12 +513,8 @@
       "last_name": "KOYUNCU",
       "phone": "0312 202 3730",
       "email": "yildiz.koyuncu@gazi.edu.tr",
-      "gender": "k",
-      "person_type": "administrative",
-      "honorific": "Yıldız Hanım",
-      "cinsiyet": "kadın",
-      "tur": "idari",
-      "hitap": "Yıldız Hanım"
+      "gender": "f",
+      "person_type": "administrative"
     },
     {
       "id": "i_zulfinaz_yuksel_boga",
@@ -733,12 +522,8 @@
       "last_name": "YÜKSEL BOĞA",
       "phone": "0 (312) 202 37 16",
       "email": "zulfinaz.yuksel@gazi.edu.tr",
-      "gender": "k",
-      "person_type": "administrative",
-      "honorific": "Zülfinaz Hanım",
-      "cinsiyet": "kadın",
-      "tur": "idari",
-      "hitap": "Zülfinaz Hanım"
+      "gender": "f",
+      "person_type": "administrative"
     },
     {
       "id": "a_ihsan_kanbaz",
@@ -747,12 +532,8 @@
       "last_name": "KANBAZ",
       "avesis": "https://avesis.gazi.edu.tr/ihsankanbaz",
       "photo": "https://avesis.gazi.edu.tr/user/image/11849",
-      "gender": "e",
-      "person_type": "academic",
-      "honorific": "İhsan Hoca",
-      "cinsiyet": "erkek",
-      "tur": "akademik",
-      "hitap": "İhsan Hoca"
+      "gender": "m",
+      "person_type": "academic"
     },
     {
       "id": "a_suleyman_tekeli",
@@ -761,12 +542,8 @@
       "last_name": "TEKELİ",
       "avesis": "https://avesis.gazi.edu.tr/stekeli",
       "photo": "https://avesis.gazi.edu.tr/user/image/13314",
-      "gender": "e",
-      "person_type": "academic",
-      "honorific": "Süleyman Hoca",
-      "cinsiyet": "erkek",
-      "tur": "akademik",
-      "hitap": "Süleyman Hoca"
+      "gender": "m",
+      "person_type": "academic"
     },
     {
       "id": "a_talip_kellegoz",
@@ -775,12 +552,8 @@
       "last_name": "KELLEGÖZ",
       "avesis": "https://avesis.gazi.edu.tr/tkellegoz",
       "photo": "https://avesis.gazi.edu.tr/user/image/13403",
-      "gender": "e",
-      "person_type": "academic",
-      "honorific": "Talip Hoca",
-      "cinsiyet": "erkek",
-      "tur": "akademik",
-      "hitap": "Talip Hoca"
+      "gender": "m",
+      "person_type": "academic"
     },
     {
       "id": "a_selcuk_kursat_isleyen",
@@ -789,12 +562,8 @@
       "last_name": "İŞLEYEN",
       "avesis": "https://avesis.gazi.edu.tr/isleyens",
       "photo": "https://avesis.gazi.edu.tr/user/image/13097",
-      "gender": "e",
-      "person_type": "academic",
-      "honorific": "Selçuk Kürşat Hoca",
-      "cinsiyet": "erkek",
-      "tur": "akademik",
-      "hitap": "Selçuk Kürşat Hoca"
+      "gender": "m",
+      "person_type": "academic"
     },
     {
       "id": "a_idil_aycam",
@@ -803,12 +572,8 @@
       "last_name": "AYÇAM",
       "avesis": "https://avesis.gazi.edu.tr/iaycam",
       "photo": "https://avesis.gazi.edu.tr/user/image/11843",
-      "gender": "k",
-      "person_type": "academic",
-      "honorific": "İdil Hoca",
-      "cinsiyet": "kadın",
-      "tur": "akademik",
-      "hitap": "İdil Hoca"
+      "gender": "f",
+      "person_type": "academic"
     },
     {
       "id": "a_adem_acir",
@@ -817,77 +582,8 @@
       "last_name": "ACIR",
       "avesis": "https://avesis.gazi.edu.tr/adema",
       "photo": "https://avesis.gazi.edu.tr/user/image/10041",
-      "gender": "e",
-      "person_type": "academic",
-      "honorific": "Adem Hoca",
-      "cinsiyet": "erkek",
-      "tur": "akademik",
-      "hitap": "Adem Hoca"
-    },
-    {
-      "id": "i_emine_kocamemik",
-      "first_name": "Emine",
-      "last_name": "KOCAMEMİK",
-      "phone": "0 (312) 202 37 08",
-      "email": "emine.tutuncu@gazi.edu.tr",
-      "gender": "k",
-      "person_type": "administrative",
-      "honorific": "Emine Hanım",
-      "cinsiyet": "kadın",
-      "tur": "idari",
-      "hitap": "Emine Hanım"
-    },
-    {
-      "id": "a_hakan_dilipak",
-      "first_name": "Hakan",
-      "last_name": "DİLİPAK",
-      "title": "Prof. Dr.",
-      "avesis": "https://avesis.gazi.edu.tr/hdilipak",
-      "gender": "e",
-      "person_type": "academic",
-      "honorific": "Hakan Hoca",
-      "cinsiyet": "erkek",
-      "tur": "akademik",
-      "hitap": "Hakan Hoca"
-    },
-    {
-      "id": "i_asli_gultekin",
-      "first_name": "Aslı",
-      "last_name": "GÜLTEKİN",
-      "phone": "0 (312) 202 37 39",
-      "email": "asli.gultekin@gazi.edu.tr",
-      "gender": "k",
-      "person_type": "administrative",
-      "honorific": "Aslı Hanım",
-      "cinsiyet": "kadın",
-      "tur": "idari",
-      "hitap": "Aslı Hanım"
-    },
-    {
-      "id": "i_zulfinaz_yuksel_boga",
-      "first_name": "Zülfinaz YÜKSEL",
-      "last_name": "BOĞA",
-      "phone": "0 (312) 202 37 16",
-      "email": "zulfinaz.yuksel@gazi.edu.tr",
-      "gender": "k",
-      "person_type": "administrative",
-      "honorific": "Zülfinaz YÜKSEL Hanım",
-      "cinsiyet": "kadın",
-      "tur": "idari",
-      "hitap": "Zülfinaz YÜKSEL Hanım"
-    },
-    {
-      "id": "a_selcuk_isleyen",
-      "first_name": "Selçuk Kürşat",
-      "last_name": "İŞLEYEN",
-      "title": "Prof. Dr.",
-      "avesis": "https://avesis.gazi.edu.tr/isleyens",
-      "gender": "e",
-      "person_type": "academic",
-      "honorific": "Selçuk Kürşat Hoca",
-      "cinsiyet": "erkek",
-      "tur": "akademik",
-      "hitap": "Selçuk Kürşat Hoca"
+      "gender": "m",
+      "person_type": "academic"
     }
   ],
   "departments": [
@@ -1133,7 +829,7 @@
     },
     {
       "id": "tly_fbe",
-      "head_id": "a_selcuk_isleyen",
+      "head_id": "a_selcuk_kursat_isleyen",
       "sec_id": null,
       "stu_id": "i_figen_asal"
     },
