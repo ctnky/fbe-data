@@ -594,6 +594,123 @@
       "email": "fenbil@gazi.edu.tr",
       "gender": "f",
       "person_type": "administrative"
+    },
+    {
+      "id": "i_kudret_ekici",
+      "title": "Memur",
+      "first_name": "Kudret",
+      "last_name": "EKİCİ",
+      "phone": "",
+      "email": "kudret.ekici@gazi.edu.tr",
+      "gender": "m",
+      "person_type": "administrative",
+      "unit": "YÖK ve Tez İşlemleri",
+      "responsibilities": [
+        "YÖK - Tez Yüklemeleri",
+        "YÖKSİS Eski Mezun İşlemleri",
+        "Kısıtlı Tezler - CD Kontrol"
+      ]
+    },
+    {
+      "id": "i_gokce_cihan_cetinkaya",
+      "title": "Programcı",
+      "first_name": "Gökçe Cihan",
+      "last_name": "ÇETİNKAYA",
+      "phone": "",
+      "email": "gokcecihan.cetinkaya@gazi.edu.tr",
+      "gender": "m",
+      "person_type": "administrative",
+      "honorific": "Cihan Bey",
+      "unit": "Bilişim ve Yazılım Geliştirme",
+      "responsibilities": [
+        "Enstitü Web Sitesi",
+        "Sosyal Medya",
+        "Yapay Zeka - Yazılım Geliştirme"
+      ]
+    },
+    {
+      "id": "i_seyda_gulizar_karayel",
+      "title": "V.H.K.İ.",
+      "first_name": "Şeyda Gülizar",
+      "last_name": "KARAYEL",
+      "phone": "0 (312) 202 37 27",
+      "email": "seyda.karayel@gazi.edu.tr",
+      "gender": "f",
+      "person_type": "administrative",
+      "unit": "Yönetim Kurulu Yazışmaları",
+      "responsibilities": [
+        "Yönetim Kurulu Yazışmaları"
+      ]
+    },
+    {
+      "id": "i_zeyno_gazioglu",
+      "title": "Bilgisayar İşletmeni",
+      "first_name": "Zeyno",
+      "last_name": "GAZİOĞLU",
+      "phone": "0 (312) 202 37 33",
+      "email": "zeyno.gazioglu@gazi.edu.tr",
+      "gender": "f",
+      "person_type": "administrative",
+      "unit": "Yönetim Kurulu Yazışmaları",
+      "responsibilities": [
+        "Yönetim Kurulu Yazışmaları"
+      ]
+    },
+    {
+      "id": "i_erkan_yazir",
+      "title": "Bilgisayar İşletmeni",
+      "first_name": "Erkan",
+      "last_name": "YAZIR",
+      "phone": "0 (312) 202 37 24",
+      "email": "erkan.yazir@gazi.edu.tr",
+      "gender": "m",
+      "person_type": "administrative",
+      "unit": "Satın Alma ve Haberleşme",
+      "responsibilities": [
+        "Satın Alma ve Haberleşme"
+      ]
+    },
+    {
+      "id": "i_adem_ozen",
+      "title": "Bilgisayar İşletmeni",
+      "first_name": "Adem",
+      "last_name": "ÖZEN",
+      "phone": "0 (312) 202 37 37",
+      "email": "adem.ozen@gazi.edu.tr",
+      "gender": "m",
+      "person_type": "administrative",
+      "unit": "Satın Alma ve Haberleşme",
+      "responsibilities": [
+        "Satın Alma ve Haberleşme"
+      ]
+    },
+    {
+      "id": "i_kezban_alkul",
+      "title": "Şef",
+      "first_name": "Kezban",
+      "last_name": "ALKUL",
+      "phone": "0 (312) 202 37 14",
+      "email": "kezban.pekasil@gazi.edu.tr",
+      "gender": "f",
+      "person_type": "administrative",
+      "unit": "Personel Hizmetleri ve Muhasebe",
+      "responsibilities": [
+        "Personel Hizmetleri ve Muhasebe"
+      ]
+    },
+    {
+      "id": "i_nursen_zengin",
+      "title": "Şef",
+      "first_name": "Nurşen",
+      "last_name": "ZENGİN",
+      "phone": "0 (312) 202 37 12",
+      "email": "nursen.zengin@gazi.edu.tr",
+      "gender": "f",
+      "person_type": "administrative",
+      "unit": "Personel Hizmetleri ve Muhasebe",
+      "responsibilities": [
+        "Personel Hizmetleri ve Muhasebe"
+      ]
     }
   ],
   "departments": [
@@ -858,5 +975,45 @@
     ],
     "secretary_id": "i_hulya_yahsi",
     "executive_secretary_id": "i_didem_balaban"
-  }
+  },
+  "administrative_units": [
+    {
+      "id": "yok_tez",
+      "name": "YÖK ve Tez İşlemleri",
+      "person_ids": [
+        "i_kudret_ekici"
+      ]
+    },
+    {
+      "id": "bilisim_yazilim",
+      "name": "Bilişim ve Yazılım Geliştirme",
+      "person_ids": [
+        "i_gokce_cihan_cetinkaya"
+      ]
+    },
+    {
+      "id": "yonetim_kurulu_yazismalari",
+      "name": "Yönetim Kurulu Yazışmaları",
+      "person_ids": [
+        "i_seyda_gulizar_karayel",
+        "i_zeyno_gazioglu"
+      ]
+    },
+    {
+      "id": "satin_alma_haberlesme",
+      "name": "Satın Alma ve Haberleşme",
+      "person_ids": [
+        "i_erkan_yazir",
+        "i_adem_ozen"
+      ]
+    },
+    {
+      "id": "personel_muhasebe",
+      "name": "Personel Hizmetleri ve Muhasebe",
+      "person_ids": [
+        "i_kezban_alkul",
+        "i_nursen_zengin"
+      ]
+    }
+  ]
 }
