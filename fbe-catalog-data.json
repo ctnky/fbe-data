@@ -584,6 +584,16 @@
       "photo": "https://avesis.gazi.edu.tr/user/image/10041",
       "gender": "m",
       "person_type": "academic"
+    },
+    {
+      "id": "i_hulya_yahsi",
+      "title": "",
+      "first_name": "Hülya",
+      "last_name": "YAHŞİ",
+      "phone": "0 (312) 202 37 01",
+      "email": "fenbil@gazi.edu.tr",
+      "gender": "f",
+      "person_type": "administrative"
     }
   ],
   "departments": [
@@ -845,6 +855,8 @@
     "vice_director_ids": [
       "a_berat_cinar_acar",
       "a_ihsan_kanbaz"
-    ]
+    ],
+    "secretary_id": "i_hulya_yahsi",
+    "executive_secretary_id": "i_didem_balaban"
   }
 }
