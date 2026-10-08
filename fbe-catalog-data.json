@@ -1,7 +1,7 @@
 {
   "meta": {
     "schema": "fbe_catalog_data",
-    "source_url": "https://raw.githubusercontent.com/ctnky/fbe-data/main/fbe-catalog-data.json",
+    "source_url": "https://raw.githubusercontent.com/fenbil/fbe-data/main/fbe-catalog-data.json",
     "updated_at": "2026-09-30",
     "version": "2.2.1",
     "last_updated": "2026-09-30"
