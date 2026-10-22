@@ -2,8 +2,8 @@
   "meta": {
     "schema": "fbe_catalog_data",
     "source_url": "https://raw.githubusercontent.com/ctnky/fbe-data/main/fbe-catalog-data.json",
-    "updated_at": "2026-10-12",
-    "version": "1.0.6"
+    "updated_at": "2026-10-22",
+    "version": "1.0.7"
   },
   "persons": [
     {
@@ -44,7 +44,7 @@
       "first_name": "Berat",
       "last_name": "ÇINAR ACAR",
       "avesis": "https://avesis.gazi.edu.tr/beratcinar",
-      "photo": "https://avesis.gazi.edu.tr/user/image/100243"
+      "photo": "https://webupload.gazi.edu.tr/upload/52/2026/10/19/ad96e7cc-0c00-4149-a7e3-057391c5e754-b-fixed.png"
     },
     {
       "id": "a_bulent_bostan",
@@ -204,7 +204,7 @@
       "first_name": "Orhan",
       "last_name": "KAPLAN",
       "avesis": "https://avesis.gazi.edu.tr/okaplan",
-      "photo": "https://avesis.gazi.edu.tr/user/image/12774"
+      "photo": "https://webupload.gazi.edu.tr/upload/52/2026/10/16/a4746bfe-edaf-4139-a1a1-77cbf6cdf301-o-fixed.png"
     },
     {
       "id": "a_salih_yazicioglu",
@@ -422,7 +422,7 @@
       "first_name": "İhsan",
       "last_name": "KANBAZ",
       "avesis": "https://avesis.gazi.edu.tr/ihsankanbaz",
-      "photo": "https://avesis.gazi.edu.tr/user/image/11849"
+      "photo": "https://webupload.gazi.edu.tr/upload/52/2026/10/16/7d2a4578-79b0-49be-9766-091b65637f5e-i-fixed.png"
     },
     {
       "id": "a_suleyman_tekeli",
@@ -506,6 +506,24 @@
       "last_name": "SÖĞÜTLÜ",
       "avesis": "https://avesis.gazi.edu.tr/cevdet",
       "photo": "https://avesis.gazi.edu.tr/user/image/10724"
+    },
+    {
+      "id": "a_oktay_yildiz",
+      "title": "Prof. Dr.",
+      "first_name": "Oktay",
+      "last_name": "YILDIZ",
+      "avesis": "https://avesis.gazi.edu.tr/oktayyildiz",
+      "photo": "https://webupload.gazi.edu.tr/upload/52/2026/10/14/2c201704-11d7-400b-8227-f8d757d60243-whatsapp-image-2026-10-14-at-100228.jpeg"
+    },
+    {
+      "id": "i_hulya_yahsi",
+      "title": "",
+      "first_name": "Hülya",
+      "last_name": "YAHŞİ",
+      "role": "Enstitü Sekreteri",
+      "email": "hulyayahsi@gazi.edu.tr",
+      "phone": "+90 312 202 37 01",
+      "photo": "https://webupload.gazi.edu.tr/upload/52/2026/10/16/05e34d29-9ab2-4043-8256-b926dc1b6220-h-fixed2.jpeg"
     }
   ],
   "departments": [
@@ -767,6 +785,12 @@
     "vice_director_ids": [
       "a_berat_cinar_acar",
       "a_ihsan_kanbaz"
+    ],
+    "secretary_id": "i_hulya_yahsi",
+    "executive_board_member_ids": [
+      "a_bulent_bostan",
+      "a_oktay_yildiz",
+      "a_tarik_asar"
     ]
   }
 }
