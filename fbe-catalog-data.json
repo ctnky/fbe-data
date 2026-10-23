@@ -2,8 +2,8 @@
   "meta": {
     "schema": "fbe_catalog_data",
     "source_url": "https://raw.githubusercontent.com/ctnky/fbe-data/main/fbe-catalog-data.json",
-    "updated_at": "2026-10-22",
-    "version": "1.0.7"
+    "updated_at": "2026-10-23",
+    "version": "1.0.9"
   },
   "persons": [
     {
@@ -512,7 +512,7 @@
       "title": "Prof. Dr.",
       "first_name": "Oktay",
       "last_name": "YILDIZ",
-      "avesis": "https://avesis.gazi.edu.tr/oktayyildiz",
+      "avesis": "https://avesis.gazi.edu.tr/oyildiz",
       "photo": "https://webupload.gazi.edu.tr/upload/52/2026/10/14/2c201704-11d7-400b-8227-f8d757d60243-whatsapp-image-2026-10-14-at-100228.jpeg"
     },
     {
