@@ -2,8 +2,8 @@
   "meta": {
     "schema": "fbe_catalog_data",
     "source_url": "https://raw.githubusercontent.com/ctnky/fbe-data/main/fbe-catalog-data.json",
-    "updated_at": "2026-10-23",
-    "version": "1.0.9"
+    "updated_at": "2026-10-27",
+    "version": "1.0.10"
   },
   "persons": [
     {
@@ -524,13 +524,77 @@
       "email": "hulyayahsi@gazi.edu.tr",
       "phone": "+90 312 202 37 01",
       "photo": "https://webupload.gazi.edu.tr/upload/52/2026/10/16/05e34d29-9ab2-4043-8256-b926dc1b6220-h-fixed2.jpeg"
+    },
+    {
+      "id": "a_umit_atila",
+      "title": "Prof. Dr.",
+      "first_name": "Ümit",
+      "last_name": "ATİLA",
+      "avesis": "https://avesis.gazi.edu.tr/umitatila",
+      "photo": "https://avesis.gazi.edu.tr/user/image/100079"
+    },
+    {
+      "id": "i_yasemin_karci",
+      "first_name": "Yasemin",
+      "last_name": "KARCI",
+      "phone": "0 (312) 202 88 20",
+      "email": "yasemin.karci@gazi.edu.tr"
+    },
+    {
+      "id": "i_zerrin_mit",
+      "first_name": "Zerrin",
+      "last_name": "MİT",
+      "phone": "0 (312) 202 85 60",
+      "email": "zerrin.mit@gazi.edu.tr"
+    },
+    {
+      "id": "i_veysel_gun",
+      "first_name": "Veysel",
+      "last_name": "GÜN",
+      "phone": "0 (312) 202 85 34",
+      "email": "veysel.gun@gazi.edu.tr"
+    },
+    {
+      "id": "i_kerim_okdem",
+      "first_name": "Kerim",
+      "last_name": "ÖKDEM",
+      "phone": "0 (312) 202 86 59",
+      "email": "tasarim@gazi.edu.tr"
+    },
+    {
+      "id": "i_zeynep_meral_varlier",
+      "first_name": "Zeynep Meral",
+      "last_name": "VARLIER",
+      "phone": "0 (312) 202 89 50",
+      "email": "zeynep.meral@gazi.edu.tr"
+    },
+    {
+      "id": "i_niyazi_capacioglu",
+      "first_name": "Niyazi",
+      "last_name": "ÇAPACIOĞLU",
+      "phone": "0 (312) 202 86 00",
+      "email": "niyazi.capacioglu@gazi.edu.tr"
+    },
+    {
+      "id": "i_sibel_erturk",
+      "first_name": "Sibel",
+      "last_name": "ERTÜRK",
+      "phone": "0 (312) 202 88 60",
+      "email": "sibel.akin@gazi.edu.tr"
+    },
+    {
+      "id": "i_ceylan_atmaca",
+      "first_name": "Ceylan",
+      "last_name": "ATMACA",
+      "phone": "0 (312) 202 87 20",
+      "email": "ceylan.atmaca@gazi.edu.tr"
     }
   ],
   "departments": [
     {
       "id": "AEM",
       "head_id": "a_cevdet_sogutlu",
-      "sec_id": "i_ozcan_eryilmaz",
+      "sec_id": "i_yasemin_karci",
       "stu_id": "i_asli_gultekin"
     },
     {
@@ -542,7 +606,7 @@
     {
       "id": "ATM",
       "head_id": "a_gultekin_uzun",
-      "sec_id": "i_derya_yucel",
+      "sec_id": "i_didem_balaban",
       "stu_id": "i_zulfinaz_yuksel_boga"
     },
     {
@@ -553,14 +617,14 @@
     },
     {
       "id": "BMM",
-      "head_id": "a_hacer_karacan",
+      "head_id": "a_umit_atila",
       "sec_id": "i_fatma_arslan",
       "stu_id": "i_duygu_yurekli"
     },
     {
       "id": "BMT",
       "head_id": "a_ayhan_erdem",
-      "sec_id": "i_ozcan_eryilmaz",
+      "sec_id": "i_zerrin_mit",
       "stu_id": "i_dogan_kara"
     },
     {
@@ -584,7 +648,7 @@
     {
       "id": "EET",
       "head_id": "a_nihat_ozturk",
-      "sec_id": "i_ozcan_eryilmaz",
+      "sec_id": "i_veysel_gun",
       "stu_id": "i_esengul_bosnak"
     },
     {
@@ -596,13 +660,13 @@
     {
       "id": "ESM",
       "head_id": "a_tayfun_menlik",
-      "sec_id": "i_ozcan_eryilmaz",
+      "sec_id": "i_zeynep_meral_varlier",
       "stu_id": "i_asli_gultekin"
     },
     {
       "id": "ETM",
       "head_id": "a_ismail_sahin",
-      "sec_id": "i_ozcan_eryilmaz",
+      "sec_id": "i_kerim_okdem",
       "stu_id": "i_duygu_yurekli"
     },
     {
@@ -632,7 +696,7 @@
     {
       "id": "İMM",
       "head_id": "a_hakan_dilipak",
-      "sec_id": "i_ozcan_eryilmaz",
+      "sec_id": "i_niyazi_capacioglu",
       "stu_id": "i_duygu_yurekli"
     },
     {
@@ -644,7 +708,7 @@
     {
       "id": "İNT",
       "head_id": "a_salih_yazicioglu",
-      "sec_id": "i_ozcan_eryilmaz",
+      "sec_id": "i_sibel_erturk",
       "stu_id": "i_emine_kocamemik"
     },
     {
@@ -710,7 +774,7 @@
     {
       "id": "OTO",
       "head_id": "a_hamit_solmaz",
-      "sec_id": "i_ozcan_eryilmaz",
+      "sec_id": "i_ceylan_atmaca",
       "stu_id": "i_figen_asal"
     },
     {

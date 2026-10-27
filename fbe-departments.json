@@ -1,8 +1,8 @@
 {
   "meta": {
     "schema": "fbe_departments_v3",
-    "version": "3.0.1",
-    "updated_at": "2026-10-08",
+    "version": "3.7.2",
+    "updated_at": "2026-10-27",
     "changelog": [
       {
         "version": "1.0.0",
@@ -38,6 +38,76 @@
         "version": "3.0.1",
         "date": "2026-10-08",
         "note": "Department duty assignment and metadata corrections applied."
+      },
+      {
+        "version": "3.1.0",
+        "date": "2026-10-22",
+        "note": "program.mode: 'io' degeri 'ikinci' (Ikinci Ogretim) olarak duzeltildi. Gecerli mode degerleri: orgun | ikinci."
+      },
+      {
+        "version": "3.2.0",
+        "date": "2026-10-22",
+        "note": "dsp ve psf fakülte kayıtlarına description_tr / description_en alanları eklendi. psf name_tr 'Öğrenci Alımı Olmayan Ana Bilim Dalları' -> 'Pasif Ana Bilim Dalları' olarak güncellendi."
+      },
+      {
+        "version": "3.2.1",
+        "date": "2026-10-22",
+        "note": "psf name_tr resmi adi 'Ogrenci Alimi Olmayan Ana Bilim Dallari' olarak duzeltildi. 'Pasif Ana Bilim Dallari' alias_tr alanina tasindi."
+      },
+      {
+        "version": "3.3.0",
+        "date": "2026-10-22",
+        "note": "Alan adlari yeniden adlandirildi: symbol_2 -> symbol (2 karakterli gorsel sembol), code_3 -> archive_code (3 karakterli arsiv kodu). Gereksiz code_2 ve symbol_3 alanlari kaldirildi. obs_code (sayisal OBS kodu) degismedi."
+      },
+      {
+        "version": "3.4.0",
+        "date": "2026-10-22",
+        "note": "Program name_tr ve name_en alanlarından fakülte kısaltmaları kaldırıldı ((M.F.), (T.F.) vb.). Program isimleri artık sade; fakülte bilgisi yalnızca department.name_tr içinde parantezle gösterilir. Program id yapısı: {archive_code}-{type}[-en][-io]."
+      },
+      {
+        "version": "3.5.0",
+        "date": "2026-10-22",
+        "note": "symbol ve archive_code fbe-gercek-periyodik-tablo.html ile senkronize edildi. Sembol: ilk harf buyuk kalan kucuk. Arsiv kodu: 3 harf tamamen kucuk. Program archive_code'lari dogrulanmis ve guncellenmistir."
+      },
+      {
+        "version": "3.6.0",
+        "date": "2026-10-22",
+        "note": "Programlara obs_code alani eklendi. ABD ile ayni isimli TR YL programlari icin '01', TR DR programlari icin '04' atandi. Diger programlarin obs_code'u null (sonradan doldurulacak)."
+      },
+      {
+        "version": "3.6.1",
+        "date": "2026-10-22",
+        "note": "Program obs_code'lari tamamlandi: esm-yl-en=21, asb-yl/dr-en=01/04, eem-yl-en=21, eem-dr-en=24, TR tezsiz ayni isimli=07, cbs-yl/vbl-yl/bva-yl-en/psg-tz/mty-tz-io=11."
+      },
+      {
+        "version": "3.6.2",
+        "date": "2026-10-22",
+        "note": "Kalan EN programlara obs_code eklendi: YL-EN=21, DR-EN=24. Tum programlarin obs_code alani tamamlandi."
+      },
+      {
+        "version": "3.6.3",
+        "date": "2026-10-22",
+        "note": "Program archive_code duzeltmeleri: bmm-yl bva->bmm (hatalı parse), cev-yl/dr/tz cbs->cev (Cevre Bilimleri kodu cev), vbl-yl vrb->vbl (Veri Bilimi kodu vbl)."
+      },
+      {
+        "version": "3.6.4",
+        "date": "2026-10-22",
+        "note": "Fakulte symbol ve archive_code alanlari kucuk harfe donusturuldu (hepsi lowercase)."
+      },
+      {
+        "version": "3.7.0",
+        "date": "2026-10-22",
+        "note": "Program mode degerleri guncellendi: orgun -> or, ikinci -> io."
+      },
+      {
+        "version": "3.7.1",
+        "date": "2026-10-22",
+        "note": "obs_code alanlari her zaman 2 karakter olacak sekilde sifir dolgu (zero-pad) uygulandi."
+      },
+      {
+        "version": "3.7.2",
+        "date": "2026-10-22",
+        "note": "Fakultelerden symbol alani kaldirildi. Sadece archive_code (3 harfli, kucuk) kalir."
       }
     ]
   },
@@ -46,43 +116,55 @@
       "id": "muh",
       "name_tr": "Mühendislik Fakültesi",
       "name_en": "Faculty of Engineering",
-      "color": "#2855A7",
-      "website_url": "https://mf.gazi.edu.tr"
+      "color": "#1F5C9E",
+      "website_url": "https://mf.gazi.edu.tr",
+      "archive_code": "muh"
     },
     {
       "id": "tek",
       "name_tr": "Teknoloji Fakültesi",
       "name_en": "Faculty of Technology",
-      "color": "#287A5B",
-      "website_url": "https://tf.gazi.edu.tr"
+      "color": "#1A7A6A",
+      "website_url": "https://tf.gazi.edu.tr",
+      "archive_code": "tek"
     },
     {
       "id": "fen",
       "name_tr": "Fen Fakültesi",
       "name_en": "Faculty of Science",
-      "color": "#7656A6",
-      "website_url": "https://fen.gazi.edu.tr"
+      "color": "#4A3D8F",
+      "website_url": "https://fen.gazi.edu.tr",
+      "archive_code": "fen"
     },
     {
       "id": "mim",
       "name_tr": "Mimarlık Fakültesi",
       "name_en": "Faculty of Architecture",
-      "color": "#B86732",
-      "website_url": "https://mim.gazi.edu.tr"
+      "color": "#B5740A",
+      "website_url": "https://mim.gazi.edu.tr",
+      "archive_code": "mim"
     },
     {
       "id": "dsp",
       "name_tr": "Disiplinlerarası Ana Bilim Dalları",
-      "name_en": "Interdisciplinary Academic Departments",
-      "color": "#A94452",
-      "website_url": "https://fbe.gazi.edu.tr"
+      "name_en": "Interdisciplinary Graduate Programs",
+      "color": "#A0304A",
+      "website_url": "https://fbe.gazi.edu.tr",
+      "description_tr": "Fen Bilimleri Enstitüsü bünyesinde açılmış olup herhangi bir fakülteye doğrudan bağlı olmayan ana bilim dallarıdır. Birden fazla disiplini kapsayan lisansüstü programlar sunmak amacıyla enstitü çatısı altında organize edilmiştir.",
+      "description_en": "Academic departments established under the Graduate School of Natural and Applied Sciences that are not directly affiliated with any single faculty. They offer interdisciplinary graduate programs organized under the umbrella of the graduate school itself.",
+      "archive_code": "dis"
     },
     {
       "id": "psf",
       "name_tr": "Öğrenci Alımı Olmayan Ana Bilim Dalları",
       "name_en": "Departments without Student Admission",
-      "color": "#5A6B82",
-      "website_url": "https://fbe.gazi.edu.tr"
+      "color": "#5C6D7E",
+      "website_url": "https://fbe.gazi.edu.tr",
+      "description_tr": "Artık yeni öğrenci kabul etmeyen ana bilim dallarıdır. Bağlı oldukları fakültelerin kapatılması veya ana bilim dalının kendisinin kapatılması nedeniyle pasif statüye alınmıştır. Kayıtları; mevcut öğrencilerin mezuniyet, ilişik kesme ve benzeri idari işlemlerinin yürütülebilmesi amacıyla enstitü sisteminde tutulmaya devam etmektedir.",
+      "description_en": "Departments that no longer accept new students. They have been made passive due to the closure of their affiliated faculty or the department itself. Records are retained in the institute system solely to process administrative transactions—such as graduation or disenrollment—for students whose records still exist.",
+      "alias_tr": "Pasif Ana Bilim Dalları",
+      "alias_en": "Passive Departments",
+      "archive_code": "pas"
     }
   ],
   "departments": [
@@ -94,9 +176,13 @@
       "status": "active",
       "linked_id": null,
       "website_url": "https://tf-aiem.gazi.edu.tr",
-      "head_id": "p_hamza_cinar",
-      "secretary_id": "p_ozcan_eryilmaz",
-      "student_affairs_id": "p_asli_gultekin"
+      "head_id": "p_cevdet_sogutlu",
+      "secretary_id": "p_yasemin_karci",
+      "student_affairs_id": "p_asli_gultekin",
+      "tanitim": "Ağaçişleri Endüstri Mühendisliği Ana Bilim Dalı, 2012 yılından itibaren Teknoloji Fakültesi bünyesinde lisansüstü eğitim faaliyetlerini sürdürmektedir. Ana Bilim Dalında ahşap esaslı kompozit malzemeler, mobilya konstrüksiyonu, ahşap koruma teknolojileri, yüzey işlemleri ve üretim planlama alanlarında araştırmalar yürütülmektedir. Bünyesinde tezli yüksek lisans ve doktora programları yer almaktadır.",
+      "obs_code": 38,
+      "symbol": "Ai",
+      "archive_code": "aem"
     },
     {
       "id": "asb",
@@ -108,7 +194,11 @@
       "website_url": "https://fbe-as.gazi.edu.tr",
       "head_id": "p_erdal_irmak",
       "secretary_id": "p_derya_yucel",
-      "student_affairs_id": "p_esengul_bosnak"
+      "student_affairs_id": "p_esengul_bosnak",
+      "tanitim": "Akıllı Şebekeler Ana Bilim Dalı, 2013 yılından itibaren lisansüstü eğitim faaliyetlerini sürdüren disiplinlerarası bir birimdir. Ana Bilim Dalında yenilenebilir enerji entegrasyonu, güç sistemleri analizi, enerji depolama, güç elektroniği ve akıllı şebeke haberleşme sistemleri alanlarında araştırmalar yürütülmektedir. Bünyesinde İngilizce tezli yüksek lisans ve doktora programları yer almaktadır.",
+      "obs_code": 50,
+      "symbol": "As",
+      "archive_code": "asb"
     },
     {
       "id": "atm",
@@ -119,8 +209,12 @@
       "linked_id": null,
       "website_url": "https://fbe-atmu.gazi.edu.tr",
       "head_id": "p_gultekin_uzun",
-      "secretary_id": "p_derya_yucel",
-      "student_affairs_id": "p_zulfinaz_yuksel_boga"
+      "secretary_id": "p_didem_balaban",
+      "student_affairs_id": "p_zulfinaz_yuksel_boga",
+      "tanitim": "Ayakkabı Teknolojisi Mühendisliği Ana Bilim Dalı, 2023 yılından itibaren lisansüstü eğitim faaliyetlerini sürdüren disiplinlerarası bir birimdir. Ana Bilim Dalında ayak biyomekaniği, ayakkabı tasarımı, saraciye üretim teknolojileri, polimerik malzemeler ve kalıp modelleme alanlarında araştırmalar yürütülmektedir. Bünyesinde tezli yüksek lisans programı yer almaktadır.",
+      "obs_code": 66,
+      "symbol": "At",
+      "archive_code": "atm"
     },
     {
       "id": "bgm",
@@ -132,7 +226,11 @@
       "website_url": "https://fbe-infosec.gazi.edu.tr",
       "head_id": "p_murat_dener",
       "secretary_id": "p_derya_yucel",
-      "student_affairs_id": "p_baris_cem_onal"
+      "student_affairs_id": "p_baris_cem_onal",
+      "tanitim": "Bilgi Güvenliği Mühendisliği Ana Bilim Dalı, 2014 yılından itibaren lisansüstü eğitim faaliyetlerini sürdüren disiplinlerarası bir birimdir. Ana Bilim Dalında kriptografi, siber saldırı tespit sistemleri, ağ güvenliği, büyük veri mahremiyeti ve risk yönetimi alanlarında araştırmalar yürütülmektedir. Bünyesinde tezli yüksek lisans ve doktora programları yer almaktadır.",
+      "obs_code": 39,
+      "symbol": "Bg",
+      "archive_code": "bgm"
     },
     {
       "id": "bmm",
@@ -142,9 +240,13 @@
       "status": "active",
       "linked_id": null,
       "website_url": "https://mf-bm.gazi.edu.tr",
-      "head_id": "p_hacer_karacan",
+      "head_id": "p_umit_atila",
       "secretary_id": "p_fatma_arslan",
-      "student_affairs_id": "p_duygu_yurekli"
+      "student_affairs_id": "p_duygu_yurekli",
+      "tanitim": "Bilgisayar Mühendisliği Ana Bilim Dalı, 2012 yılından itibaren Mühendislik Fakültesi bünyesinde lisansüstü eğitim faaliyetlerini sürdürmektedir. Ana Bilim Dalında yazılım mühendisliği, yapay zekâ, bilgisayar ağları, görüntü işleme, siber güvenlik ve büyük veri analitiği alanlarında araştırmalar yürütülmektedir. Bünyesinde tezli yüksek lisans ve doktora programları yer almaktadır.",
+      "obs_code": 29,
+      "symbol": "Bm",
+      "archive_code": "bmm"
     },
     {
       "id": "bmt",
@@ -155,8 +257,12 @@
       "linked_id": null,
       "website_url": "https://tf-bm.gazi.edu.tr",
       "head_id": "p_ayhan_erdem",
-      "secretary_id": "p_ozcan_eryilmaz",
-      "student_affairs_id": "p_dogan_kara"
+      "secretary_id": "p_zerrin_mit",
+      "student_affairs_id": "p_dogan_kara",
+      "tanitim": "Bilgisayar Mühendisliği Ana Bilim Dalı, 2002 yılından itibaren Teknoloji Fakültesi bünyesinde lisansüstü eğitim faaliyetlerini sürdürmektedir. Ana Bilim Dalında gömülü sistemler, sektörel yazılım geliştirme, bilgisayar donanımı, ağ protokolleri ve yapay zekâ uygulamaları alanlarında araştırmalar yürütülmektedir. Bünyesinde tezli yüksek lisans ve doktora programları yer almaktadır.",
+      "obs_code": 33,
+      "symbol": "Bm",
+      "archive_code": "bmt"
     },
     {
       "id": "biy",
@@ -168,7 +274,11 @@
       "website_url": "https://biyoloji.gazi.edu.tr",
       "head_id": "p_sule_coskun_cevher",
       "secretary_id": "p_sevgi_erturk",
-      "student_affairs_id": "p_baris_cem_onal"
+      "student_affairs_id": "p_baris_cem_onal",
+      "tanitim": "Biyoloji Ana Bilim Dalı, 1982 yılından itibaren Fen Fakültesi bünyesinde lisansüstü eğitim faaliyetlerini sürdürmektedir. Ana Bilim Dalında botanik, zooloji, hidrobiyoloji, ekoloji, moleküler biyoloji, hücre biyolojisi ve biyoteknoloji alanlarında kuramsal ve deneysel araştırmalar yürütülmektedir. Bünyesinde tezli yüksek lisans ve doktora programları yer almaktadır.",
+      "obs_code": "01",
+      "symbol": "By",
+      "archive_code": "biy"
     },
     {
       "id": "cev",
@@ -180,7 +290,11 @@
       "website_url": "https://fbe-cevre.gazi.edu.tr",
       "head_id": "p_aysel_caglan_gunal",
       "secretary_id": "p_derya_yucel",
-      "student_affairs_id": "p_emine_kocamemik"
+      "student_affairs_id": "p_emine_kocamemik",
+      "tanitim": "Çevre Bilimleri Ana Bilim Dalı, 1997 yılından itibaren lisansüstü eğitim faaliyetlerini sürdüren disiplinlerarası bir birimdir. Ana Bilim Dalında su ve atıksu yönetimi, hava ve toprak kirliliği kontrolü, çevresel etki değerlendirmesi ve çevre kimyası alanlarında araştırmalar yürütülmektedir. Bünyesinde tezli ve tezsiz yüksek lisans ile doktora programları yer almaktadır.",
+      "obs_code": 25,
+      "symbol": "Cb",
+      "archive_code": "cev"
     },
     {
       "id": "eem",
@@ -192,7 +306,11 @@
       "website_url": "https://mf-eem.gazi.edu.tr",
       "head_id": "p_firat_hardalac",
       "secretary_id": "p_nurgul_kose",
-      "student_affairs_id": "p_baris_cem_onal"
+      "student_affairs_id": "p_baris_cem_onal",
+      "tanitim": "Elektrik-Elektronik Mühendisliği Ana Bilim Dalı, 2012 yılından itibaren Mühendislik Fakültesi bünyesinde lisansüstü eğitim faaliyetlerini sürdürmektedir. Ana Bilim Dalında güç sistemleri, kontrol sistemleri, sinyal ve görüntü işleme, telekomünikasyon, elektromanyetik alanlar ve yenilenebilir enerji alanlarında araştırmalar yürütülmektedir. Bünyesinde Türkçe ve İngilizce tezli yüksek lisans ile doktora programları yer almaktadır.",
+      "obs_code": "06",
+      "symbol": "Ee",
+      "archive_code": "eem"
     },
     {
       "id": "eet",
@@ -203,8 +321,12 @@
       "linked_id": null,
       "website_url": "https://tf-eem.gazi.edu.tr",
       "head_id": "p_nihat_ozturk",
-      "secretary_id": "p_ozcan_eryilmaz",
-      "student_affairs_id": "p_esengul_bosnak"
+      "secretary_id": "p_veysel_gun",
+      "student_affairs_id": "p_esengul_bosnak",
+      "tanitim": "Elektrik-Elektronik Mühendisliği Ana Bilim Dalı, 1982 yılından itibaren Teknoloji Fakültesi bünyesinde lisansüstü eğitim faaliyetlerini sürdürmektedir. Ana Bilim Dalında güç elektroniği, elektrik enerjisi iletim ve dağıtımı, elektrik makinaları, endüstriyel otomasyon ve gömülü haberleşme sistemleri alanlarında araştırmalar yürütülmektedir. Bünyesinde tezli yüksek lisans ve doktora programları yer almaktadır.",
+      "obs_code": 30,
+      "symbol": "Ee",
+      "archive_code": "eet"
     },
     {
       "id": "emm",
@@ -216,7 +338,11 @@
       "website_url": "https://mf-em.gazi.edu.tr",
       "head_id": "p_gul_didem_batur_sir",
       "secretary_id": "p_nursel_kucuk",
-      "student_affairs_id": "p_figen_asal"
+      "student_affairs_id": "p_figen_asal",
+      "tanitim": "Endüstri Mühendisliği Ana Bilim Dalı, 1977 yılından itibaren Mühendislik Fakültesi bünyesinde lisansüstü eğitim faaliyetlerini sürdürmektedir. Ana Bilim Dalında yöneylem araştırması, matematiksel modelleme, stokastik süreçler, üretim çizelgeleme, istatistiksel kalite kontrol ve teknoloji yönetimi alanlarında araştırmalar yürütülmektedir. Bünyesinde tezli ve tezsiz yüksek lisans ile doktora programları yer almaktadır.",
+      "obs_code": "07",
+      "symbol": "Em",
+      "archive_code": "emm"
     },
     {
       "id": "ent",
@@ -228,7 +354,11 @@
       "website_url": "https://mim-eut.gazi.edu.tr",
       "head_id": "p_dilek_akbulut",
       "secretary_id": "p_gulsah_yilmaz",
-      "student_affairs_id": "p_dogan_kara"
+      "student_affairs_id": "p_dogan_kara",
+      "tanitim": "Endüstriyel Tasarım Ana Bilim Dalı, 2012 yılından itibaren Mimarlık Fakültesi bünyesinde lisansüstü eğitim faaliyetlerini sürdürmektedir. Ana Bilim Dalında ürün tasarım yöntemleri, kullanıcı deneyimi, ergonomi, tasarım yönetimi, sürdürülebilir tasarım ve malzeme seçimi alanlarında araştırmalar yürütülmektedir. Bünyesinde tezli yüksek lisans ve doktora programları yer almaktadır.",
+      "obs_code": 62,
+      "symbol": "En",
+      "archive_code": "ent"
     },
     {
       "id": "etm",
@@ -239,8 +369,12 @@
       "linked_id": null,
       "website_url": "https://tf-etm.gazi.edu.tr",
       "head_id": "p_ismail_sahin",
-      "secretary_id": "p_ozcan_eryilmaz",
-      "student_affairs_id": "p_duygu_yurekli"
+      "secretary_id": "p_kerim_okdem",
+      "student_affairs_id": "p_duygu_yurekli",
+      "tanitim": "Endüstriyel Tasarım Mühendisliği Ana Bilim Dalı, 2013 yılından itibaren Teknoloji Fakültesi bünyesinde lisansüstü eğitim faaliyetlerini sürdürmektedir. Ana Bilim Dalında bilgisayar destekli tasarım (CAD/CAE), ürün modelleme, ergonomik makine tasarımı, kinematik analiz ve imalat yöntemleri alanlarında araştırmalar yürütülmektedir. Bünyesinde tezli yüksek lisans ve doktora programları yer almaktadır.",
+      "obs_code": 31,
+      "symbol": "Tm",
+      "archive_code": "etm"
     },
     {
       "id": "esm",
@@ -251,8 +385,12 @@
       "linked_id": null,
       "website_url": "https://tf-esm.gazi.edu.tr",
       "head_id": "p_tayfun_menlik",
-      "secretary_id": "p_ozcan_eryilmaz",
-      "student_affairs_id": "p_asli_gultekin"
+      "secretary_id": "p_zeynep_meral_varlier",
+      "student_affairs_id": "p_asli_gultekin",
+      "tanitim": "Enerji Sistemleri Mühendisliği Ana Bilim Dalı, 2012 yılından itibaren Teknoloji Fakültesi bünyesinde lisansüstü eğitim faaliyetlerini sürdürmektedir. Ana Bilim Dalında ileri termodinamik, güneş ve rüzgâr enerjisi, biyokütle, yakıt pilleri, enerji depolama ve verimlilik alanlarında araştırmalar yürütülmektedir. Bünyesinde Türkçe ve İngilizce tezli yüksek lisans ile doktora programları yer almaktadır.",
+      "obs_code": 35,
+      "symbol": "Es",
+      "archive_code": "esm"
     },
     {
       "id": "fiz",
@@ -264,7 +402,11 @@
       "website_url": "https://fizik.gazi.edu.tr",
       "head_id": "p_tarik_asar",
       "secretary_id": "p_sevgi_erturk",
-      "student_affairs_id": "p_esengul_bosnak"
+      "student_affairs_id": "p_esengul_bosnak",
+      "tanitim": "Fizik Ana Bilim Dalı, 1982 yılından itibaren Fen Fakültesi bünyesinde lisansüstü eğitim faaliyetlerini sürdürmektedir. Ana Bilim Dalında atom ve molekül fiziği, katıhal fiziği, nükleer fizik, yüksek enerji fiziği, dedektör sistemleri ve kuramsal fizik alanlarında araştırmalar yürütülmektedir. Bünyesinde tezli yüksek lisans ve doktora programları yer almaktadır.",
+      "obs_code": "02",
+      "symbol": "Fz",
+      "archive_code": "fiz"
     },
     {
       "id": "fot",
@@ -276,7 +418,11 @@
       "website_url": "https://ubf-fotonik.gazi.edu.tr",
       "head_id": "p_suleyman_ozcelik",
       "secretary_id": "p_derya_yucel",
-      "student_affairs_id": "p_esengul_bosnak"
+      "student_affairs_id": "p_esengul_bosnak",
+      "tanitim": "Fotonik Bilimi ve Mühendisliği Ana Bilim Dalı, 2020 yılından itibaren lisansüstü eğitim faaliyetlerini sürdüren disiplinlerarası bir birimdir. Ana Bilim Dalında lazer sistemleri, optik haberleşme, yarıiletken teknolojileri, foton dedektörleri ve foton-madde etkileşimi alanlarında araştırmalar yürütülmektedir. Bünyesinde tezli yüksek lisans ve doktora programları yer almaktadır.",
+      "obs_code": 61,
+      "symbol": "Fb",
+      "archive_code": "fot"
     },
     {
       "id": "ilt",
@@ -288,7 +434,11 @@
       "website_url": "https://fbe-ileriteknolojiler.gazi.edu.tr",
       "head_id": "p_sema_bilge_ocak",
       "secretary_id": "p_derya_yucel",
-      "student_affairs_id": "p_esengul_bosnak"
+      "student_affairs_id": "p_esengul_bosnak",
+      "tanitim": "İleri Teknolojiler Ana Bilim Dalı, 2003 yılından itibaren lisansüstü eğitim faaliyetlerini sürdüren disiplinlerarası bir birimdir. Ana Bilim Dalında nanomalzemeler, fonksiyonel hibrit yapılar, moleküler modelleme, yoğunluk fonksiyoneli teorisi ve ileri malzeme karakterizasyonu alanlarında araştırmalar yürütülmektedir. Bünyesinde tezli yüksek lisans ve doktora programları yer almaktadır.",
+      "obs_code": 28,
+      "symbol": "It",
+      "archive_code": "ilt"
     },
     {
       "id": "imm",
@@ -299,8 +449,12 @@
       "linked_id": null,
       "website_url": "https://tf-imalat.gazi.edu.tr",
       "head_id": "p_hakan_dilipak",
-      "secretary_id": "p_ozcan_eryilmaz",
-      "student_affairs_id": "p_duygu_yurekli"
+      "secretary_id": "p_niyazi_capacioglu",
+      "student_affairs_id": "p_duygu_yurekli",
+      "tanitim": "İmalat Mühendisliği Ana Bilim Dalı, 2012 yılından itibaren Teknoloji Fakültesi bünyesinde lisansüstü eğitim faaliyetlerini sürdürmektedir. Ana Bilim Dalında talaşlı ve talaşsız imalat mekaniği, katmanlı üretim, CAD/CAM sistemleri, kalıp tasarımı ve üretim süreçleri modelleesi alanlarında araştırmalar yürütülmektedir. Bünyesinde tezli ve tezsiz yüksek lisans ile doktora programları yer almaktadır.",
+      "obs_code": 36,
+      "symbol": "Im",
+      "archive_code": "imm"
     },
     {
       "id": "inm",
@@ -312,7 +466,11 @@
       "website_url": "https://mf-im.gazi.edu.tr",
       "head_id": "p_kerem_tastan",
       "secretary_id": "p_esen_aydin",
-      "student_affairs_id": "p_figen_asal"
+      "student_affairs_id": "p_figen_asal",
+      "tanitim": "İnşaat Mühendisliği Ana Bilim Dalı, 2010 yılından itibaren Mühendislik Fakültesi bünyesinde lisansüstü eğitim faaliyetlerini sürdürmektedir. Ana Bilim Dalında yapı mekaniği, deprem mühendisliği, geoteknik, hidrolik ve su kaynakları, ulaştırma ile inşaat malzemeleri alanlarında araştırmalar yürütülmektedir. Bünyesinde tezli yüksek lisans ve doktora programları yer almaktadır.",
+      "obs_code": "08",
+      "symbol": "In",
+      "archive_code": "inm"
     },
     {
       "id": "int",
@@ -323,8 +481,12 @@
       "linked_id": null,
       "website_url": "https://tf-insaat.gazi.edu.tr",
       "head_id": "p_salih_yazicioglu",
-      "secretary_id": "p_ozcan_eryilmaz",
-      "student_affairs_id": "p_emine_kocamemik"
+      "secretary_id": "p_sibel_erturk",
+      "student_affairs_id": "p_emine_kocamemik",
+      "tanitim": "İnşaat Mühendisliği Ana Bilim Dalı, 1982 yılından itibaren Teknoloji Fakültesi bünyesinde lisansüstü eğitim faaliyetlerini sürdürmektedir. Ana Bilim Dalında betonarme ve çelik yapılar, geoteknik mühendisliği, kıyı ve liman yapıları, hidrolik akımlar ve ulaştırma altyapıları alanlarında uygulamalı araştırmalar yürütülmektedir. Bünyesinde tezli yüksek lisans ve doktora programları yer almaktadır.",
+      "obs_code": 32,
+      "symbol": "In",
+      "archive_code": "int"
     },
     {
       "id": "ist",
@@ -336,7 +498,11 @@
       "website_url": "https://istatistik.gazi.edu.tr",
       "head_id": "p_mehmet_akif_bakir",
       "secretary_id": "p_sevgi_erturk",
-      "student_affairs_id": "p_esengul_bosnak"
+      "student_affairs_id": "p_esengul_bosnak",
+      "tanitim": "İstatistik Ana Bilim Dalı, 1978 yılından itibaren Fen Fakültesi bünyesinde lisansüstü eğitim faaliyetlerini sürdürmektedir. Ana Bilim Dalında olasılık teorisi, matematiksel istatistik, çok değişkenli analiz, regresyon modelleri, zaman serileri, örnekleme yöntemleri ve veri analitiği alanlarında araştırmalar yürütülmektedir. Bünyesinde tezli yüksek lisans ve doktora programları yer almaktadır.",
+      "obs_code": "03",
+      "symbol": "St",
+      "archive_code": "ist"
     },
     {
       "id": "kaz",
@@ -348,7 +514,11 @@
       "website_url": "https://fbe-kazalar.gazi.edu.tr",
       "head_id": "p_sedat_surdem",
       "secretary_id": "p_derya_yucel",
-      "student_affairs_id": "p_yildiz_koyuncu"
+      "student_affairs_id": "p_yildiz_koyuncu",
+      "tanitim": "Kazaların Çevresel ve Teknik Araştırması Ana Bilim Dalı, 1984 yılından itibaren lisansüstü eğitim faaliyetlerini sürdüren disiplinlerarası bir birimdir. Ana Bilim Dalında iş sağlığı ve güvenliği sistemleri, kaza kök neden analizi, risk değerlendirme yöntemleri, ergonomi ve kaza modellemeleri alanlarında araştırmalar yürütülmektedir. Bünyesinde tezli ve tezsiz yüksek lisans ile doktora programları yer almaktadır.",
+      "obs_code": 22,
+      "symbol": "Kz",
+      "archive_code": "kaz"
     },
     {
       "id": "kim",
@@ -360,7 +530,11 @@
       "website_url": "https://kimya.gazi.edu.tr",
       "head_id": "p_halit_arslan",
       "secretary_id": "p_sevgi_erturk",
-      "student_affairs_id": "p_yildiz_koyuncu"
+      "student_affairs_id": "p_yildiz_koyuncu",
+      "tanitim": "Kimya Ana Bilim Dalı, 1982 yılından itibaren Fen Fakültesi bünyesinde lisansüstü eğitim faaliyetlerini sürdürmektedir. Ana Bilim Dalında analitik kimya, anorganik kimya, biyokimya, fizikokimya ve organik kimya alanlarında deneysel ve kuramsal araştırmalar yürütülmektedir. Bünyesinde Türkçe ve İngilizce tezli yüksek lisans ile doktora programları yer almaktadır.",
+      "obs_code": "04",
+      "symbol": "Ky",
+      "archive_code": "kim"
     },
     {
       "id": "kmm",
@@ -372,7 +546,11 @@
       "website_url": "https://mf-km.gazi.edu.tr",
       "head_id": "p_murat_bilen",
       "secretary_id": "p_gulsah_dogan",
-      "student_affairs_id": "p_yildiz_koyuncu"
+      "student_affairs_id": "p_yildiz_koyuncu",
+      "tanitim": "Kimya Mühendisliği Ana Bilim Dalı, 1968 yılından itibaren Mühendislik Fakültesi bünyesinde lisansüstü eğitim faaliyetlerini sürdürmektedir. Ana Bilim Dalında taşınım olayları, reaksiyon kinetiği, proses simülasyonu, ayırma işlemleri, arıtma teknolojileri ve proses güvenliği alanlarında araştırmalar yürütülmektedir. Bünyesinde tezli ve tezsiz yüksek lisans ile doktora programları yer almaktadır.",
+      "obs_code": "09",
+      "symbol": "Km",
+      "archive_code": "kmm"
     },
     {
       "id": "mak",
@@ -384,7 +562,11 @@
       "website_url": "https://mf-mm.gazi.edu.tr",
       "head_id": "p_abuzer_kadir_ozsunar",
       "secretary_id": "p_songul_ozturk",
-      "student_affairs_id": "p_zulfinaz_yuksel_boga"
+      "student_affairs_id": "p_zulfinaz_yuksel_boga",
+      "tanitim": "Makina Mühendisliği Ana Bilim Dalı, 1966 yılından itibaren Mühendislik Fakültesi bünyesinde lisansüstü eğitim faaliyetlerini sürdürmektedir. Ana Bilim Dalında akışkanlar mekaniği, termodinamik, ısı transferi, katı cisimler mekaniği, dinamik ve kontrol ile imalat sistemleri alanlarında araştırmalar yürütülmektedir. Bünyesinde Türkçe ve İngilizce tezli yüksek lisans ile doktora programları yer almaktadır.",
+      "obs_code": 10,
+      "symbol": "Mm",
+      "archive_code": "mak"
     },
     {
       "id": "mat",
@@ -396,7 +578,11 @@
       "website_url": "https://matematik.gazi.edu.tr",
       "head_id": "p_arap_duran_turkoglu",
       "secretary_id": "p_sevgi_erturk",
-      "student_affairs_id": "p_dogan_kara"
+      "student_affairs_id": "p_dogan_kara",
+      "tanitim": "Matematik Ana Bilim Dalı, 1982 yılından itibaren Fen Fakültesi bünyesinde lisansüstü eğitim faaliyetlerini sürdürmektedir. Ana Bilim Dalında cebir ve sayılar teorisi, geometri, topoloji, analiz ve fonksiyonlar teorisi ile uygulamalı matematik alanlarında kuramsal araştırmalar yürütülmektedir. Bünyesinde tezli yüksek lisans ve doktora programları yer almaktadır.",
+      "obs_code": "05",
+      "symbol": "Mt",
+      "archive_code": "mat"
     },
     {
       "id": "met",
@@ -408,7 +594,11 @@
       "website_url": "https://tf-metalurji.gazi.edu.tr",
       "head_id": "p_bulent_bostan",
       "secretary_id": "p_ozcan_eryilmaz",
-      "student_affairs_id": "p_dogan_kara"
+      "student_affairs_id": "p_dogan_kara",
+      "tanitim": "Metalurji ve Malzeme Mühendisliği Ana Bilim Dalı, 2010 yılından itibaren Teknoloji Fakültesi bünyesinde lisansüstü eğitim faaliyetlerini sürdürmektedir. Ana Bilim Dalında demir-çelik metalurjisi, döküm teknolojileri, alaşım tasarımı, ısıl işlemler, kompozit malzemeler ve yüzey modifikasyonu alanlarında araştırmalar yürütülmektedir. Bünyesinde tezli ve tezsiz yüksek lisans ile doktora programları yer almaktadır.",
+      "obs_code": 37,
+      "symbol": "Mz",
+      "archive_code": "met"
     },
     {
       "id": "mim",
@@ -420,7 +610,11 @@
       "website_url": "https://mim-mim.gazi.edu.tr",
       "head_id": "p_idil_aycam",
       "secretary_id": "p_murat_sahin",
-      "student_affairs_id": "p_emine_kocamemik"
+      "student_affairs_id": "p_emine_kocamemik",
+      "tanitim": "Mimarlık Ana Bilim Dalı, 1982 yılından itibaren Mimarlık Fakültesi bünyesinde lisansüstü eğitim faaliyetlerini sürdürmektedir. Ana Bilim Dalında mimari tasarım kuramları, yapı teknolojileri, bina fiziği, restorasyon ve koruma ile kentsel çevre tasarımı alanlarında araştırmalar yürütülmektedir. Bünyesinde Türkçe ve İngilizce tezli yüksek lisans ile doktora programları yer almaktadır.",
+      "obs_code": 11,
+      "symbol": "Mi",
+      "archive_code": "mim"
     },
     {
       "id": "mbt",
@@ -432,7 +626,11 @@
       "website_url": "https://fbe-bor.gazi.edu.tr",
       "head_id": "p_sedat_surdem",
       "secretary_id": "p_derya_yucel",
-      "student_affairs_id": "p_baris_cem_onal"
+      "student_affairs_id": "p_baris_cem_onal",
+      "tanitim": "Mineraller ve Bor Teknolojisi Ana Bilim Dalı, 2023 yılından itibaren lisansüstü eğitim faaliyetlerini sürdüren disiplinlerarası bir birimdir. Ana Bilim Dalında bor cevherlerinin zenginleştirilmesi, bor kimyası, termokimyasal borlama yöntemleri ve bor atıklarının değerlendirilmesi alanlarında araştırmalar yürütülmektedir. Bünyesinde tezli yüksek lisans programı yer almaktadır.",
+      "obs_code": 65,
+      "symbol": "Mb",
+      "archive_code": "mbt"
     },
     {
       "id": "nub",
@@ -444,7 +642,11 @@
       "website_url": "https://fbe-nukleer.gazi.edu.tr",
       "head_id": "p_adem_acir",
       "secretary_id": "p_didem_balaban",
-      "student_affairs_id": "p_asli_gultekin"
+      "student_affairs_id": "p_asli_gultekin",
+      "tanitim": "Nükleer Bilimler Ana Bilim Dalı, 2022 yılından itibaren lisansüstü eğitim faaliyetlerini sürdüren disiplinlerarası bir birimdir. Ana Bilim Dalında nükleer radyasyon ölçümü, dedektör sistemleri, radyasyondan korunma, nükleer yakıt teknolojisi ve radyasyon zırhlama modellemeleri alanlarında araştırmalar yürütülmektedir. Bünyesinde tezli yüksek lisans programı yer almaktadır.",
+      "obs_code": 64,
+      "symbol": "Nb",
+      "archive_code": "nub"
     },
     {
       "id": "oto",
@@ -455,8 +657,12 @@
       "linked_id": null,
       "website_url": "https://tf-otomotiv.gazi.edu.tr",
       "head_id": "p_hamit_solmaz",
-      "secretary_id": "p_ozcan_eryilmaz",
-      "student_affairs_id": "p_figen_asal"
+      "secretary_id": "p_ceylan_atmaca",
+      "student_affairs_id": "p_figen_asal",
+      "tanitim": "Otomotiv Mühendisliği Ana Bilim Dalı, 2010 yılından itibaren Teknoloji Fakültesi bünyesinde lisansüstü eğitim faaliyetlerini sürdürmektedir. Ana Bilim Dalında taşıt dinamiği, içten yanmalı motorlar, elektrikli ve hibrit taşıt mimarileri, batarya yönetim sistemleri ve güç aktarma organları alanlarında araştırmalar yürütülmektedir. Bünyesinde tezli yüksek lisans ve doktora programları yer almaktadır.",
+      "obs_code": 34,
+      "symbol": "Om",
+      "archive_code": "oto"
     },
     {
       "id": "sbp",
@@ -468,7 +674,11 @@
       "website_url": "https://mim-sbp.gazi.edu.tr",
       "head_id": "p_ebru_vesile_ocalir",
       "secretary_id": "p_serife_omur",
-      "student_affairs_id": "p_asli_gultekin"
+      "student_affairs_id": "p_asli_gultekin",
+      "tanitim": "Şehir ve Bölge Planlama Ana Bilim Dalı, 1983 yılından itibaren Mimarlık Fakültesi bünyesinde lisansüstü eğitim faaliyetlerini sürdürmektedir. Ana Bilim Dalında kentsel ve bölgesel planlama, kentsel dönüşüm, coğrafi bilgi sistemleri, mekânsal analizler ve yerel yönetim politikaları alanlarında araştırmalar yürütülmektedir. Bünyesinde tezli yüksek lisans ve doktora programları yer almaktadır.",
+      "obs_code": 12,
+      "symbol": "Sb",
+      "archive_code": "sbp"
     },
     {
       "id": "trf",
@@ -480,7 +690,11 @@
       "website_url": "https://fbe-trafik.gazi.edu.tr",
       "head_id": "p_kursat_yildiz",
       "secretary_id": "p_derya_yucel",
-      "student_affairs_id": "p_figen_asal"
+      "student_affairs_id": "p_figen_asal",
+      "tanitim": "Trafik Planlaması ve Uygulaması Ana Bilim Dalı, 1993 yılından itibaren lisansüstü eğitim faaliyetlerini sürdüren disiplinlerarası bir birimdir. Ana Bilim Dalında kentiçi ulaşım planlaması, trafik güvenliği ve denetimi, seyahat talep modellemesi, demiryolu taşımacılığı ve lojistik sistemler alanlarında araştırmalar yürütülmektedir. Bünyesinde tezli yüksek lisans programı yer almaktadır.",
+      "obs_code": 23,
+      "symbol": "Tr",
+      "archive_code": "trf"
     },
     {
       "id": "ele",
@@ -492,7 +706,10 @@
       "website_url": null,
       "head_id": "p_nihat_ozturk",
       "secretary_id": null,
-      "student_affairs_id": "p_esengul_bosnak"
+      "student_affairs_id": "p_esengul_bosnak",
+      "obs_code": 21,
+      "symbol": "El",
+      "archive_code": "ele"
     },
     {
       "id": "ete",
@@ -504,7 +721,10 @@
       "website_url": null,
       "head_id": "p_suleyman_tekeli",
       "secretary_id": null,
-      "student_affairs_id": "p_dogan_kara"
+      "student_affairs_id": "p_dogan_kara",
+      "obs_code": 20,
+      "symbol": "Et",
+      "archive_code": "ete"
     },
     {
       "id": "har",
@@ -516,7 +736,10 @@
       "website_url": null,
       "head_id": "p_talip_kellegoz",
       "secretary_id": null,
-      "student_affairs_id": "p_emine_kocamemik"
+      "student_affairs_id": "p_emine_kocamemik",
+      "obs_code": 59,
+      "symbol": "Ha",
+      "archive_code": "har"
     },
     {
       "id": "mke",
@@ -528,7 +751,10 @@
       "website_url": null,
       "head_id": "p_hakan_dilipak",
       "secretary_id": null,
-      "student_affairs_id": "p_duygu_yurekli"
+      "student_affairs_id": "p_duygu_yurekli",
+      "obs_code": 15,
+      "symbol": "Me",
+      "archive_code": "mke"
     },
     {
       "id": "mte",
@@ -540,7 +766,10 @@
       "website_url": null,
       "head_id": "p_bulent_bostan",
       "secretary_id": null,
-      "student_affairs_id": "p_dogan_kara"
+      "student_affairs_id": "p_dogan_kara",
+      "obs_code": 16,
+      "symbol": "Ml",
+      "archive_code": "mte"
     },
     {
       "id": "mde",
@@ -552,7 +781,10 @@
       "website_url": null,
       "head_id": "p_hamza_cinar",
       "secretary_id": null,
-      "student_affairs_id": "p_asli_gultekin"
+      "student_affairs_id": "p_asli_gultekin",
+      "obs_code": 13,
+      "symbol": "Md",
+      "archive_code": "mde"
     },
     {
       "id": "ssm",
@@ -564,7 +796,10 @@
       "website_url": null,
       "head_id": "p_abuzer_kadir_ozsunar",
       "secretary_id": null,
-      "student_affairs_id": "p_zulfinaz_yuksel_boga"
+      "student_affairs_id": "p_zulfinaz_yuksel_boga",
+      "obs_code": 57,
+      "symbol": "Ss",
+      "archive_code": "ssm"
     },
     {
       "id": "ted",
@@ -576,7 +811,10 @@
       "website_url": null,
       "head_id": "p_selcuk_kursat_isleyen",
       "secretary_id": null,
-      "student_affairs_id": "p_figen_asal"
+      "student_affairs_id": "p_figen_asal",
+      "obs_code": 58,
+      "symbol": "Td",
+      "archive_code": "ted"
     },
     {
       "id": "ype",
@@ -588,7 +826,10 @@
       "website_url": null,
       "head_id": "p_salih_yazicioglu",
       "secretary_id": null,
-      "student_affairs_id": "p_duygu_yurekli"
+      "student_affairs_id": "p_duygu_yurekli",
+      "obs_code": 17,
+      "symbol": "Ye",
+      "archive_code": "ype"
     }
   ],
   "programs": [
@@ -600,9 +841,10 @@
       "name_en": "Wood Products Industrial Engineering",
       "type": "yl",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=833838477",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=833838477"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=833838477",
+      "obs_code": "01"
     },
     {
       "id": "aem-dr",
@@ -612,9 +854,10 @@
       "name_en": "Wood Products Industrial Engineering",
       "type": "dr",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=8338381001",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=8338381001"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=8338381001",
+      "obs_code": "04"
     },
     {
       "id": "asb-yl-en",
@@ -624,9 +867,10 @@
       "name_en": "Smart Grids",
       "type": "yl",
       "language": "en",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=835050338",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=835050338"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=835050338",
+      "obs_code": "01"
     },
     {
       "id": "asb-dr-en",
@@ -636,9 +880,10 @@
       "name_en": "Smart Grids",
       "type": "dr",
       "language": "en",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=835050859",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=835050859"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=835050859",
+      "obs_code": "04"
     },
     {
       "id": "atm-yl",
@@ -648,9 +893,10 @@
       "name_en": "Footwear Technology Engineering",
       "type": "yl",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=8664642495",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=8664642495"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=8664642495",
+      "obs_code": "01"
     },
     {
       "id": "bgm-yl",
@@ -660,9 +906,10 @@
       "name_en": "Information Security Engineering",
       "type": "yl",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=833939239",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=833939239"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=833939239",
+      "obs_code": "01"
     },
     {
       "id": "bgm-dr",
@@ -672,33 +919,36 @@
       "name_en": "Information Security Engineering",
       "type": "dr",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=833939218",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=833939218"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=833939218",
+      "obs_code": "04"
     },
     {
       "id": "bmm-yl",
       "archive_code": "bmm",
       "department_id": "bmm",
-      "name_tr": "Bilgisayar Mühendisliği (M.F.)",
-      "name_en": "Computer Engineering (Fac. of Eng.)",
+      "name_tr": "Bilgisayar Mühendisliği",
+      "name_en": "Computer Engineering",
       "type": "yl",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=832929987",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=832929987"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=832929987",
+      "obs_code": "01"
     },
     {
       "id": "bmm-dr",
       "archive_code": "bmm",
       "department_id": "bmm",
-      "name_tr": "Bilgisayar Mühendisliği (M.F.)",
-      "name_en": "Computer Engineering (Fac. of Eng.)",
+      "name_tr": "Bilgisayar Mühendisliği",
+      "name_en": "Computer Engineering",
       "type": "dr",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=832929988",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=832929988"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=832929988",
+      "obs_code": "04"
     },
     {
       "id": "bva-yl-en",
@@ -708,33 +958,36 @@
       "name_en": "Big Data Analytics, Security and Privacy",
       "type": "yl",
       "language": "en",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=8664641063",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=8664641063"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=8664641063",
+      "obs_code": "11"
     },
     {
       "id": "bmt-yl",
       "archive_code": "bmt",
       "department_id": "bmt",
-      "name_tr": "Bilgisayar Mühendisliği (T.F.)",
-      "name_en": "Computer Engineering (Fac. of Tech.)",
+      "name_tr": "Bilgisayar Mühendisliği",
+      "name_en": "Computer Engineering",
       "type": "yl",
       "language": "tr",
-      "mode": "orgun",
-      "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=832929987",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=832929987"
+      "mode": "or",
+      "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=833333217",
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=833333217",
+      "obs_code": "01"
     },
     {
       "id": "bmt-dr",
       "archive_code": "bmt",
       "department_id": "bmt",
-      "name_tr": "Bilgisayar Mühendisliği (T.F.)",
-      "name_en": "Computer Engineering (Fac. of Tech.)",
+      "name_tr": "Bilgisayar Mühendisliği",
+      "name_en": "Computer Engineering",
       "type": "dr",
       "language": "tr",
-      "mode": "orgun",
-      "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=832929988",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=832929988"
+      "mode": "or",
+      "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=833333105",
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=833333105",
+      "obs_code": "04"
     },
     {
       "id": "biy-yl",
@@ -744,9 +997,10 @@
       "name_en": "Biology",
       "type": "yl",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=830101849",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=830101849"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=830101849",
+      "obs_code": "01"
     },
     {
       "id": "biy-dr",
@@ -756,9 +1010,10 @@
       "name_en": "Biology",
       "type": "dr",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=83010193",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=83010193"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=83010193",
+      "obs_code": "04"
     },
     {
       "id": "cev-yl",
@@ -768,9 +1023,10 @@
       "name_en": "Environmental Sciences",
       "type": "yl",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=832525821",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=832525821"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=832525821",
+      "obs_code": "01"
     },
     {
       "id": "cev-dr",
@@ -780,9 +1036,10 @@
       "name_en": "Environmental Sciences",
       "type": "dr",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=832525567",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=832525567"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=832525567",
+      "obs_code": "04"
     },
     {
       "id": "cev-tz",
@@ -792,81 +1049,88 @@
       "name_en": "Environmental Sciences",
       "type": "tz",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=832525188",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=832525188"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=832525188",
+      "obs_code": "07"
     },
     {
       "id": "eem-yl",
       "archive_code": "eem",
       "department_id": "eem",
-      "name_tr": "Elektrik-Elektronik Mühendisliği (M.F.)",
-      "name_en": "Electrical-Electronic Engineering (Fac. of Eng.)",
+      "name_tr": "Elektrik-Elektronik Mühendisliği",
+      "name_en": "Electrical-Electronic Engineering",
       "type": "yl",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=830606531",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=830606531"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=830606531",
+      "obs_code": "01"
     },
     {
       "id": "eem-yl-en",
       "archive_code": "eem",
       "department_id": "eem",
-      "name_tr": "Elektrik-Elektronik Mühendisliği (M.F.)",
-      "name_en": "Electrical-Electronic Engineering (Fac. of Eng.)",
+      "name_tr": "Elektrik-Elektronik Mühendisliği",
+      "name_en": "Electrical-Electronic Engineering",
       "type": "yl",
       "language": "en",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=8664641719",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=8664641719"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=8664641719",
+      "obs_code": "21"
     },
     {
       "id": "eem-dr",
       "archive_code": "eem",
       "department_id": "eem",
-      "name_tr": "Elektrik-Elektronik Mühendisliği (M.F.)",
-      "name_en": "Electrical-Electronic Engineering (Fac. of Eng.)",
+      "name_tr": "Elektrik-Elektronik Mühendisliği",
+      "name_en": "Electrical-Electronic Engineering",
       "type": "dr",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=830606663",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=830606663"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=830606663",
+      "obs_code": "04"
     },
     {
       "id": "eem-dr-en",
       "archive_code": "eem",
       "department_id": "eem",
-      "name_tr": "Elektrik-Elektronik Mühendisliği (M.F.)",
-      "name_en": "Electrical-Electronic Engineering (Fac. of Eng.)",
+      "name_tr": "Elektrik-Elektronik Mühendisliği",
+      "name_en": "Electrical-Electronic Engineering",
       "type": "dr",
       "language": "en",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=8664641720",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=8664641720"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=8664641720",
+      "obs_code": "24"
     },
     {
       "id": "eet-yl",
       "archive_code": "eet",
       "department_id": "eet",
-      "name_tr": "Elektrik-Elektronik Mühendisliği (T.F.)",
-      "name_en": "Electrical-Electronic Engineering (Fac. of Tech.)",
+      "name_tr": "Elektrik-Elektronik Mühendisliği",
+      "name_en": "Electrical-Electronic Engineering",
       "type": "yl",
       "language": "tr",
-      "mode": "orgun",
-      "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=830606531",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=830606531"
+      "mode": "or",
+      "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=833030344",
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=833030344",
+      "obs_code": "01"
     },
     {
       "id": "eet-dr",
       "archive_code": "eet",
       "department_id": "eet",
-      "name_tr": "Elektrik-Elektronik Mühendisliği (T.F.)",
-      "name_en": "Electrical-Electronic Engineering (Fac. of Tech.)",
+      "name_tr": "Elektrik-Elektronik Mühendisliği",
+      "name_en": "Electrical-Electronic Engineering",
       "type": "dr",
       "language": "tr",
-      "mode": "orgun",
-      "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=830606663",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=830606663"
+      "mode": "or",
+      "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=833030345",
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=833030345",
+      "obs_code": "04"
     },
     {
       "id": "emm-yl",
@@ -876,9 +1140,10 @@
       "name_en": "Industrial Engineering",
       "type": "yl",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=830707277",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=830707277"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=830707277",
+      "obs_code": "01"
     },
     {
       "id": "emm-dr",
@@ -888,9 +1153,10 @@
       "name_en": "Industrial Engineering",
       "type": "dr",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=830707648",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=830707648"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=830707648",
+      "obs_code": "04"
     },
     {
       "id": "mty-tz-io",
@@ -902,7 +1168,8 @@
       "language": "tr",
       "mode": "io",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=8664641064",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=8664641064"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=8664641064",
+      "obs_code": "11"
     },
     {
       "id": "ent-yl",
@@ -912,9 +1179,10 @@
       "name_en": "Industrial Design",
       "type": "yl",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=8664641229",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=8664641229"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=8664641229",
+      "obs_code": "01"
     },
     {
       "id": "ent-dr",
@@ -924,9 +1192,10 @@
       "name_en": "Industrial Design",
       "type": "dr",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=8664641230",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=8664641230"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=8664641230",
+      "obs_code": "04"
     },
     {
       "id": "etm-yl",
@@ -936,9 +1205,10 @@
       "name_en": "Industrial Design Engineering",
       "type": "yl",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=833131737",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=833131737"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=833131737",
+      "obs_code": "01"
     },
     {
       "id": "etm-dr",
@@ -948,9 +1218,10 @@
       "name_en": "Industrial Design Engineering",
       "type": "dr",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=833131348",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=833131348"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=833131348",
+      "obs_code": "04"
     },
     {
       "id": "esm-yl",
@@ -960,9 +1231,10 @@
       "name_en": "Energy Systems Engineering",
       "type": "yl",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=833535602",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=833535602"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=833535602",
+      "obs_code": "01"
     },
     {
       "id": "esm-yl-en",
@@ -972,9 +1244,10 @@
       "name_en": "Energy Systems Engineering",
       "type": "yl",
       "language": "en",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": null,
-      "info_url_en": null
+      "info_url_en": null,
+      "obs_code": "21"
     },
     {
       "id": "esm-dr",
@@ -984,9 +1257,10 @@
       "name_en": "Energy Systems Engineering",
       "type": "dr",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=833535341",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=833535341"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=833535341",
+      "obs_code": "04"
     },
     {
       "id": "fiz-yl",
@@ -996,9 +1270,10 @@
       "name_en": "Physics",
       "type": "yl",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=83020287",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=83020287"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=83020287",
+      "obs_code": "01"
     },
     {
       "id": "fiz-dr",
@@ -1008,9 +1283,10 @@
       "name_en": "Physics",
       "type": "dr",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=830202973",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=830202973"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=830202973",
+      "obs_code": "04"
     },
     {
       "id": "fot-yl",
@@ -1020,9 +1296,10 @@
       "name_en": "Photonic Science and Engineering",
       "type": "yl",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=8664641186",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=8664641186"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=8664641186",
+      "obs_code": "01"
     },
     {
       "id": "fot-dr",
@@ -1032,9 +1309,10 @@
       "name_en": "Photonic Science and Engineering",
       "type": "dr",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=8664641187",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=8664641187"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=8664641187",
+      "obs_code": "04"
     },
     {
       "id": "ilt-yl",
@@ -1044,9 +1322,10 @@
       "name_en": "Advanced Technologies",
       "type": "yl",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=832828869",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=832828869"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=832828869",
+      "obs_code": "01"
     },
     {
       "id": "ilt-dr",
@@ -1056,9 +1335,10 @@
       "name_en": "Advanced Technologies",
       "type": "dr",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=832828238",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=832828238"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=832828238",
+      "obs_code": "04"
     },
     {
       "id": "imm-yl",
@@ -1068,9 +1348,10 @@
       "name_en": "Manufacturing Engineering",
       "type": "yl",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=833636346",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=833636346"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=833636346",
+      "obs_code": "01"
     },
     {
       "id": "imm-dr",
@@ -1080,9 +1361,10 @@
       "name_en": "Manufacturing Engineering",
       "type": "dr",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=833636226",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=833636226"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=833636226",
+      "obs_code": "04"
     },
     {
       "id": "imm-tz",
@@ -1092,57 +1374,62 @@
       "name_en": "Manufacturing Engineering",
       "type": "tz",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=833636108",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=833636108"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=833636108",
+      "obs_code": "07"
     },
     {
       "id": "inm-yl",
       "archive_code": "inm",
       "department_id": "inm",
-      "name_tr": "İnşaat Mühendisliği (M.F.)",
-      "name_en": "Civil Engineering (Fac. of Eng.)",
+      "name_tr": "İnşaat Mühendisliği",
+      "name_en": "Civil Engineering",
       "type": "yl",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=830808324",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=830808324"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=830808324",
+      "obs_code": "01"
     },
     {
       "id": "inm-dr",
       "archive_code": "inm",
       "department_id": "inm",
-      "name_tr": "İnşaat Mühendisliği (M.F.)",
-      "name_en": "Civil Engineering (Fac. of Eng.)",
+      "name_tr": "İnşaat Mühendisliği",
+      "name_en": "Civil Engineering",
       "type": "dr",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=830808975",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=830808975"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=830808975",
+      "obs_code": "04"
     },
     {
       "id": "int-yl",
       "archive_code": "int",
       "department_id": "int",
-      "name_tr": "İnşaat Mühendisliği (T.F.)",
-      "name_en": "Civil Engineering (Fac. of Tech.)",
+      "name_tr": "İnşaat Mühendisliği",
+      "name_en": "Civil Engineering",
       "type": "yl",
       "language": "tr",
-      "mode": "orgun",
-      "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=830808324",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=830808324"
+      "mode": "or",
+      "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=833232738",
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=833232738",
+      "obs_code": "01"
     },
     {
       "id": "int-dr",
       "archive_code": "int",
       "department_id": "int",
-      "name_tr": "İnşaat Mühendisliği (T.F.)",
-      "name_en": "Civil Engineering (Fac. of Tech.)",
+      "name_tr": "İnşaat Mühendisliği",
+      "name_en": "Civil Engineering",
       "type": "dr",
       "language": "tr",
-      "mode": "orgun",
-      "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=830808975",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=830808975"
+      "mode": "or",
+      "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=833232233",
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=833232233",
+      "obs_code": "04"
     },
     {
       "id": "ist-yl",
@@ -1152,9 +1439,10 @@
       "name_en": "Statistics",
       "type": "yl",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=830303327",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=830303327"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=830303327",
+      "obs_code": "01"
     },
     {
       "id": "ist-dr",
@@ -1164,9 +1452,10 @@
       "name_en": "Statistics",
       "type": "dr",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=830303591",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=830303591"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=830303591",
+      "obs_code": "04"
     },
     {
       "id": "vbl-yl",
@@ -1176,9 +1465,10 @@
       "name_en": "Data Science",
       "type": "yl",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=8664641062",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=8664641062"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=8664641062",
+      "obs_code": "11"
     },
     {
       "id": "kaz-yl",
@@ -1188,9 +1478,10 @@
       "name_en": "Environmental and Technical Research of Accidents",
       "type": "yl",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=832222600",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=832222600"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=832222600",
+      "obs_code": "01"
     },
     {
       "id": "kaz-dr",
@@ -1200,9 +1491,10 @@
       "name_en": "Environmental and Technical Research of Accidents",
       "type": "dr",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=832222989",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=832222989"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=832222989",
+      "obs_code": "04"
     },
     {
       "id": "kaz-tz",
@@ -1212,9 +1504,10 @@
       "name_en": "Environmental and Technical Research of Accidents",
       "type": "tz",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=832222101",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=832222101"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=832222101",
+      "obs_code": "07"
     },
     {
       "id": "kim-yl",
@@ -1224,9 +1517,10 @@
       "name_en": "Chemistry",
       "type": "yl",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=830404583",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=830404583"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=830404583",
+      "obs_code": "01"
     },
     {
       "id": "kim-yl-en",
@@ -1236,9 +1530,10 @@
       "name_en": "Chemistry",
       "type": "yl",
       "language": "en",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=8664641037",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=8664641037"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=8664641037",
+      "obs_code": "21"
     },
     {
       "id": "kim-dr",
@@ -1248,9 +1543,10 @@
       "name_en": "Chemistry",
       "type": "dr",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=830404323",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=830404323"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=830404323",
+      "obs_code": "04"
     },
     {
       "id": "kim-dr-en",
@@ -1260,9 +1556,10 @@
       "name_en": "Chemistry",
       "type": "dr",
       "language": "en",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=8664641036",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=8664641036"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=8664641036",
+      "obs_code": "24"
     },
     {
       "id": "kmm-yl",
@@ -1272,9 +1569,10 @@
       "name_en": "Chemical Engineering",
       "type": "yl",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=830909974",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=830909974"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=830909974",
+      "obs_code": "01"
     },
     {
       "id": "kmm-dr",
@@ -1284,9 +1582,10 @@
       "name_en": "Chemical Engineering",
       "type": "dr",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=830909203",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=830909203"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=830909203",
+      "obs_code": "04"
     },
     {
       "id": "psg-tz",
@@ -1296,9 +1595,10 @@
       "name_en": "Process Safety",
       "type": "tz",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=8664641065",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=8664641065"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=8664641065",
+      "obs_code": "11"
     },
     {
       "id": "mak-yl",
@@ -1308,9 +1608,10 @@
       "name_en": "Mechanical Engineering",
       "type": "yl",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=831010714",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=831010714"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=831010714",
+      "obs_code": "01"
     },
     {
       "id": "mak-yl-en",
@@ -1320,9 +1621,10 @@
       "name_en": "Mechanical Engineering",
       "type": "yl",
       "language": "en",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=8664641721",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=8664641721"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=8664641721",
+      "obs_code": "21"
     },
     {
       "id": "mak-dr",
@@ -1332,9 +1634,10 @@
       "name_en": "Mechanical Engineering",
       "type": "dr",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=831010204",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=831010204"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=831010204",
+      "obs_code": "04"
     },
     {
       "id": "mak-dr-en",
@@ -1344,9 +1647,10 @@
       "name_en": "Mechanical Engineering",
       "type": "dr",
       "language": "en",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=8664641722",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=8664641722"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=8664641722",
+      "obs_code": "24"
     },
     {
       "id": "mat-yl",
@@ -1356,9 +1660,10 @@
       "name_en": "Mathematics",
       "type": "yl",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=83050589",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=83050589"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=83050589",
+      "obs_code": "01"
     },
     {
       "id": "mat-dr",
@@ -1368,9 +1673,10 @@
       "name_en": "Mathematics",
       "type": "dr",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=830505713",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=830505713"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=830505713",
+      "obs_code": "04"
     },
     {
       "id": "met-yl",
@@ -1380,9 +1686,10 @@
       "name_en": "Metallurgical and Materials Engineering",
       "type": "yl",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=8337371000",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=8337371000"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=8337371000",
+      "obs_code": "01"
     },
     {
       "id": "met-dr",
@@ -1392,9 +1699,10 @@
       "name_en": "Metallurgical and Materials Engineering",
       "type": "dr",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=833737349",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=833737349"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=833737349",
+      "obs_code": "04"
     },
     {
       "id": "met-tz",
@@ -1404,9 +1712,10 @@
       "name_en": "Metallurgical and Materials Engineering",
       "type": "tz",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=833737113",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=833737113"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=833737113",
+      "obs_code": "07"
     },
     {
       "id": "mim-yl",
@@ -1416,9 +1725,10 @@
       "name_en": "Architecture",
       "type": "yl",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=831111584",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=831111584"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=831111584",
+      "obs_code": "01"
     },
     {
       "id": "mim-yl-en",
@@ -1428,9 +1738,10 @@
       "name_en": "Architecture",
       "type": "yl",
       "language": "en",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=8664641717",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=8664641717"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=8664641717",
+      "obs_code": "21"
     },
     {
       "id": "mim-dr",
@@ -1440,9 +1751,10 @@
       "name_en": "Architecture",
       "type": "dr",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=831111205",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=831111205"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=831111205",
+      "obs_code": "04"
     },
     {
       "id": "mim-dr-en",
@@ -1452,9 +1764,10 @@
       "name_en": "Architecture",
       "type": "dr",
       "language": "en",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=8664641718",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=8664641718"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=8664641718",
+      "obs_code": "24"
     },
     {
       "id": "mbt-yl",
@@ -1464,9 +1777,10 @@
       "name_en": "Minerals and Boron Technology",
       "type": "yl",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=8664642193",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=8664642193"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=8664642193",
+      "obs_code": "01"
     },
     {
       "id": "nub-yl",
@@ -1476,9 +1790,10 @@
       "name_en": "Nuclear Sciences",
       "type": "yl",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=8664641723",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=8664641723"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=8664641723",
+      "obs_code": "01"
     },
     {
       "id": "oto-yl",
@@ -1488,9 +1803,10 @@
       "name_en": "Automotive Engineering",
       "type": "yl",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=833434729",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=833434729"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=833434729",
+      "obs_code": "01"
     },
     {
       "id": "oto-dr",
@@ -1500,9 +1816,10 @@
       "name_en": "Automotive Engineering",
       "type": "dr",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=833434464",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=833434464"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=833434464",
+      "obs_code": "04"
     },
     {
       "id": "cbs-yl",
@@ -1512,9 +1829,10 @@
       "name_en": "Geographical Information Systems in Planning",
       "type": "yl",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=8664641444",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=8664641444"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=8664641444",
+      "obs_code": "11"
     },
     {
       "id": "sbp-yl",
@@ -1524,9 +1842,10 @@
       "name_en": "City and Regional Planning",
       "type": "yl",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=831212520",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=831212520"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=831212520",
+      "obs_code": "01"
     },
     {
       "id": "sbp-yl-en",
@@ -1536,9 +1855,10 @@
       "name_en": "City and Regional Planning",
       "type": "yl",
       "language": "en",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=8664641040",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=8664641040"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=8664641040",
+      "obs_code": "21"
     },
     {
       "id": "sbp-dr",
@@ -1548,9 +1868,10 @@
       "name_en": "City and Regional Planning",
       "type": "dr",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=831212916",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=831212916"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=831212916",
+      "obs_code": "04"
     },
     {
       "id": "sbp-dr-en",
@@ -1560,9 +1881,10 @@
       "name_en": "City and Regional Planning",
       "type": "dr",
       "language": "en",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=8664641039",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=8664641039"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=8664641039",
+      "obs_code": "24"
     },
     {
       "id": "trf-yl",
@@ -1572,9 +1894,10 @@
       "name_en": "Traffic Planning and Implementation",
       "type": "yl",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=83&curSunit=832323725",
-      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=832323725"
+      "info_url_en": "https://obs.gazi.edu.tr/oibs/bologna/index.aspx?lang=en&curOp=showPac&curUnit=83&curSunit=832323725",
+      "obs_code": "01"
     },
     {
       "id": "ele-yl",
@@ -1584,9 +1907,10 @@
       "name_en": "Electrics Education",
       "type": "yl",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": null,
-      "info_url_en": null
+      "info_url_en": null,
+      "obs_code": "01"
     },
     {
       "id": "ele-dr",
@@ -1596,9 +1920,10 @@
       "name_en": "Electrics Education",
       "type": "dr",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": null,
-      "info_url_en": null
+      "info_url_en": null,
+      "obs_code": "04"
     },
     {
       "id": "ele-tz",
@@ -1608,9 +1933,10 @@
       "name_en": "Electrics Education",
       "type": "tz",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": null,
-      "info_url_en": null
+      "info_url_en": null,
+      "obs_code": "07"
     },
     {
       "id": "ete-yl",
@@ -1620,9 +1946,10 @@
       "name_en": "Industrial Technology Education",
       "type": "yl",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": null,
-      "info_url_en": null
+      "info_url_en": null,
+      "obs_code": "01"
     },
     {
       "id": "ete-dr",
@@ -1632,9 +1959,10 @@
       "name_en": "Industrial Technology Education",
       "type": "dr",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": null,
-      "info_url_en": null
+      "info_url_en": null,
+      "obs_code": "04"
     },
     {
       "id": "ete-tz",
@@ -1644,9 +1972,10 @@
       "name_en": "Industrial Technology Education",
       "type": "tz",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": null,
-      "info_url_en": null
+      "info_url_en": null,
+      "obs_code": "07"
     },
     {
       "id": "har-yl",
@@ -1656,9 +1985,10 @@
       "name_en": "Operations Research",
       "type": "yl",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": null,
-      "info_url_en": null
+      "info_url_en": null,
+      "obs_code": "01"
     },
     {
       "id": "har-dr",
@@ -1668,9 +1998,10 @@
       "name_en": "Operations Research",
       "type": "dr",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": null,
-      "info_url_en": null
+      "info_url_en": null,
+      "obs_code": "04"
     },
     {
       "id": "mke-yl",
@@ -1680,9 +2011,10 @@
       "name_en": "Machinery Education",
       "type": "yl",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": null,
-      "info_url_en": null
+      "info_url_en": null,
+      "obs_code": "01"
     },
     {
       "id": "mke-dr",
@@ -1692,9 +2024,10 @@
       "name_en": "Machinery Education",
       "type": "dr",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": null,
-      "info_url_en": null
+      "info_url_en": null,
+      "obs_code": "04"
     },
     {
       "id": "mke-tz",
@@ -1704,9 +2037,10 @@
       "name_en": "Machinery Education",
       "type": "tz",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": null,
-      "info_url_en": null
+      "info_url_en": null,
+      "obs_code": "07"
     },
     {
       "id": "mte-yl",
@@ -1716,9 +2050,10 @@
       "name_en": "Metal Education",
       "type": "yl",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": null,
-      "info_url_en": null
+      "info_url_en": null,
+      "obs_code": "01"
     },
     {
       "id": "mte-dr",
@@ -1728,9 +2063,10 @@
       "name_en": "Metal Education",
       "type": "dr",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": null,
-      "info_url_en": null
+      "info_url_en": null,
+      "obs_code": "04"
     },
     {
       "id": "mte-tz",
@@ -1740,9 +2076,10 @@
       "name_en": "Metal Education",
       "type": "tz",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": null,
-      "info_url_en": null
+      "info_url_en": null,
+      "obs_code": "07"
     },
     {
       "id": "mde-yl",
@@ -1752,9 +2089,10 @@
       "name_en": "Furniture and Decoration Education",
       "type": "yl",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": null,
-      "info_url_en": null
+      "info_url_en": null,
+      "obs_code": "01"
     },
     {
       "id": "mde-dr",
@@ -1764,9 +2102,10 @@
       "name_en": "Furniture and Decoration Education",
       "type": "dr",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": null,
-      "info_url_en": null
+      "info_url_en": null,
+      "obs_code": "04"
     },
     {
       "id": "mde-tz",
@@ -1776,9 +2115,10 @@
       "name_en": "Furniture and Decoration Education",
       "type": "tz",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": null,
-      "info_url_en": null
+      "info_url_en": null,
+      "obs_code": "07"
     },
     {
       "id": "ssm-yl",
@@ -1788,9 +2128,10 @@
       "name_en": "Weapon Systems Engineering",
       "type": "yl",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": null,
-      "info_url_en": null
+      "info_url_en": null,
+      "obs_code": "01"
     },
     {
       "id": "ted-yl",
@@ -1800,9 +2141,10 @@
       "name_en": "Supply and Logistics Management",
       "type": "yl",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": null,
-      "info_url_en": null
+      "info_url_en": null,
+      "obs_code": "01"
     },
     {
       "id": "ted-dr",
@@ -1812,9 +2154,10 @@
       "name_en": "Supply and Logistics Management",
       "type": "dr",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": null,
-      "info_url_en": null
+      "info_url_en": null,
+      "obs_code": "04"
     },
     {
       "id": "ype-yl",
@@ -1824,9 +2167,10 @@
       "name_en": "Structures Education",
       "type": "yl",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": null,
-      "info_url_en": null
+      "info_url_en": null,
+      "obs_code": "01"
     },
     {
       "id": "ype-dr",
@@ -1836,9 +2180,10 @@
       "name_en": "Structures Education",
       "type": "dr",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": null,
-      "info_url_en": null
+      "info_url_en": null,
+      "obs_code": "04"
     },
     {
       "id": "ype-tz",
@@ -1848,9 +2193,10 @@
       "name_en": "Structures Education",
       "type": "tz",
       "language": "tr",
-      "mode": "orgun",
+      "mode": "or",
       "info_url_tr": null,
-      "info_url_en": null
+      "info_url_en": null,
+      "obs_code": "07"
     }
   ]
 }
